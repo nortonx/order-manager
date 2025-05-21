@@ -1,0 +1,22 @@
+"use client";
+
+import React from "react";
+import Link from "next/link";
+import ModeToggle from "@/components/mode-toggle"
+
+export default function Header() {
+  
+  return (
+    <header className="flex justify-between items-center mt-10" data-testid="header-component">
+      <Link href="/" className="text-xl font-bold">
+        Flowa Order Management
+      </Link>
+      <div className="flex justify-between items-center gap-4">
+        <div>
+          Any other content that matters.
+        </div>
+        <ModeToggle />
+      </div>
+    </header>
+  )
+}

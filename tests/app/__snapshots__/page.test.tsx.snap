@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage renders the home page 1`] = `
+<div>
+  <div
+    class=""
+    data-testid="home-page"
+  >
+    <h1>
+      Home Page
+    </h1>
+  </div>
+</div>
+`;
