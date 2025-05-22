@@ -1,4 +1,4 @@
 import { formatCurrency } from "./currency";
-import { formatSide, formatStatus } from "./asset";
+import { formatSide, formatStatus, formatDate } from "./asset";
 
-export { formatCurrency, formatSide, formatStatus };
+export { formatCurrency, formatSide, formatStatus, formatDate };

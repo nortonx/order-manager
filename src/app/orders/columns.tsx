@@ -1,7 +1,8 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
-import { formatCurrency, formatSide, formatStatus } from "@/utils";
+import { formatCurrency, formatSide, formatStatus, formatDate } from "@/utils";
+
 
 export type Asset = {
   id: string;
@@ -17,11 +18,17 @@ export type Asset = {
 export const columns: ColumnDef<Asset>[] = [
   {
     accessorKey: "id",
-    header: "ID",
+    header: () => <div className="flex justify-center font-bold">ID</div>,
+    cell: ({ row }) => (
+      <div className="flex justify-center">{row.original.id}</div>
+    ),
   },
   {
     accessorKey: "symbol",
-    header: "Symbol",
+    header: () => <div className="flex justify-center font-bold">Ativo</div>,
+    cell: ({ row }) => (
+      <div className="flex justify-center">{row.original.symbol}</div>
+    ),
   },
   {
     accessorKey: "type",
@@ -66,6 +73,11 @@ export const columns: ColumnDef<Asset>[] = [
   },
   {
     accessorKey: "dateTime",
-    header: "Date Time",
+    header: () => <div className="flex justify-center font-bold">Date</div>,
+    cell: ({ row }) => (
+      <div className="flex justify-center">
+        {formatDate(row.original.dateTime)}
+      </div>
+    ),
   },
 ];
