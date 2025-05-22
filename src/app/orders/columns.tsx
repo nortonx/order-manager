@@ -39,7 +39,7 @@ export const columns: ColumnDef<Asset>[] = [
   },
   {
     accessorKey: "price",
-    header: () => <div className="flex justify-center font-bold">Price</div>,
+    header: () => <div className="flex justify-center font-bold">Preço</div>,
     cell: ({ row }) => (
       <div className="font-mono flex justify-center">
         {formatCurrency(row.original.price)}
@@ -48,14 +48,14 @@ export const columns: ColumnDef<Asset>[] = [
   },
   {
     accessorKey: "quantity",
-    header: () => <div className="flex justify-center">Quantity</div>,
+    header: () => <div className="flex justify-center">Quantidade</div>,
     cell: ({ row }) => (
       <div className="flex justify-center">{row.original.quantity}</div>
     ),
   },
   {
     accessorKey: "remainingQuantity",
-    header: () => <div className="flex justify-center">Remaining Quantity</div>,
+    header: () => <div className="flex justify-center">Quantidade Restante</div>,
     cell: ({ row }) => (
       <div className="flex justify-center">
         {row.original.remainingQuantity}
@@ -73,7 +73,7 @@ export const columns: ColumnDef<Asset>[] = [
   },
   {
     accessorKey: "dateTime",
-    header: () => <div className="flex justify-center font-bold">Date</div>,
+    header: () => <div className="flex justify-center font-bold">Date / Hora</div>,
     cell: ({ row }) => (
       <div className="flex justify-center">
         {formatDate(row.original.dateTime)}
