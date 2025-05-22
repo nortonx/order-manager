@@ -1,0 +1,1552 @@
+[
+  {
+    "id": "1",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 32.45,
+    "quantity": 100,
+    "remainingQuantity": 100,
+    "status": "OPEN",
+    "dateTime": "2024-06-01T10:15:00Z"
+  },
+  {
+    "id": "2",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 67.8,
+    "quantity": 50,
+    "remainingQuantity": 20,
+    "status": "OPEN",
+    "dateTime": "2024-06-02T11:30:00Z"
+  },
+  {
+    "id": "3",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.1,
+    "quantity": 200,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-06-03T09:45:00Z"
+  },
+  {
+    "id": "4",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 23.55,
+    "quantity": 150,
+    "remainingQuantity": 150,
+    "status": "OPEN",
+    "dateTime": "2024-06-04T14:20:00Z"
+  },
+  {
+    "id": "5",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 15.75,
+    "quantity": 300,
+    "remainingQuantity": 100,
+    "status": "OPEN",
+    "dateTime": "2024-06-05T13:10:00Z"
+  },
+  {
+    "id": "6",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 41.23,
+    "quantity": 120,
+    "remainingQuantity": 120,
+    "status": "OPEN",
+    "dateTime": "2024-06-06T10:00:00Z"
+  },
+  {
+    "id": "7",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.12,
+    "quantity": 80,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-06-07T11:15:00Z"
+  },
+  {
+    "id": "8",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 68.45,
+    "quantity": 60,
+    "remainingQuantity": 30,
+    "status": "OPEN",
+    "dateTime": "2024-06-08T12:30:00Z"
+  },
+  {
+    "id": "9",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 27.95,
+    "quantity": 90,
+    "remainingQuantity": 90,
+    "status": "OPEN",
+    "dateTime": "2024-06-09T13:45:00Z"
+  },
+  {
+    "id": "10",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 24.10,
+    "quantity": 110,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-06-10T14:20:00Z"
+  },
+  {
+    "id": "11",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 16.05,
+    "quantity": 200,
+    "remainingQuantity": 50,
+    "status": "OPEN",
+    "dateTime": "2024-06-11T15:10:00Z"
+  },
+  {
+    "id": "12",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 42.00,
+    "quantity": 100,
+    "remainingQuantity": 100,
+    "status": "OPEN",
+    "dateTime": "2024-06-12T10:00:00Z"
+  },
+  {
+    "id": "13",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 32.80,
+    "quantity": 150,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-06-13T11:15:00Z"
+  },
+  {
+    "id": "14",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 69.10,
+    "quantity": 70,
+    "remainingQuantity": 20,
+    "status": "OPEN",
+    "dateTime": "2024-06-14T12:30:00Z"
+  },
+  {
+    "id": "15",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.50,
+    "quantity": 130,
+    "remainingQuantity": 130,
+    "status": "OPEN",
+    "dateTime": "2024-06-15T13:45:00Z"
+  },
+  {
+    "id": "16",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 23.90,
+    "quantity": 140,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-06-16T14:20:00Z"
+  },
+  {
+    "id": "17",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 15.90,
+    "quantity": 250,
+    "remainingQuantity": 100,
+    "status": "OPEN",
+    "dateTime": "2024-06-17T15:10:00Z"
+  },
+  {
+    "id": "18",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 41.75,
+    "quantity": 130,
+    "remainingQuantity": 130,
+    "status": "OPEN",
+    "dateTime": "2024-06-18T10:00:00Z"
+  },
+  {
+    "id": "19",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.50,
+    "quantity": 120,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-06-19T11:15:00Z"
+  },
+  {
+    "id": "20",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 67.95,
+    "quantity": 80,
+    "remainingQuantity": 40,
+    "status": "OPEN",
+    "dateTime": "2024-06-20T12:30:00Z"
+  },
+  {
+    "id": "21",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.20,
+    "quantity": 110,
+    "remainingQuantity": 110,
+    "status": "OPEN",
+    "dateTime": "2024-06-21T13:45:00Z"
+  },
+  {
+    "id": "22",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 24.30,
+    "quantity": 160,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-06-22T14:20:00Z"
+  },
+  {
+    "id": "23",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 16.20,
+    "quantity": 220,
+    "remainingQuantity": 70,
+    "status": "OPEN",
+    "dateTime": "2024-06-23T15:10:00Z"
+  },
+  {
+    "id": "24",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 42.10,
+    "quantity": 140,
+    "remainingQuantity": 140,
+    "status": "OPEN",
+    "dateTime": "2024-06-24T10:00:00Z"
+  },
+  {
+    "id": "25",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 32.95,
+    "quantity": 100,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-06-25T11:15:00Z"
+  },
+  {
+    "id": "26",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 68.20,
+    "quantity": 90,
+    "remainingQuantity": 30,
+    "status": "OPEN",
+    "dateTime": "2024-06-26T12:30:00Z"
+  },
+  {
+    "id": "27",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.35,
+    "quantity": 140,
+    "remainingQuantity": 140,
+    "status": "OPEN",
+    "dateTime": "2024-06-27T13:45:00Z"
+  },
+  {
+    "id": "28",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 23.80,
+    "quantity": 120,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-06-28T14:20:00Z"
+  },
+  {
+    "id": "29",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 15.85,
+    "quantity": 210,
+    "remainingQuantity": 60,
+    "status": "OPEN",
+    "dateTime": "2024-06-29T15:10:00Z"
+  },
+  {
+    "id": "30",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 41.90,
+    "quantity": 110,
+    "remainingQuantity": 110,
+    "status": "OPEN",
+    "dateTime": "2024-06-30T10:00:00Z"
+  },
+  {
+    "id": "31",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.30,
+    "quantity": 130,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-07-01T11:15:00Z"
+  },
+  {
+    "id": "32",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 67.60,
+    "quantity": 100,
+    "remainingQuantity": 50,
+    "status": "OPEN",
+    "dateTime": "2024-07-02T12:30:00Z"
+  },
+  {
+    "id": "33",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.60,
+    "quantity": 120,
+    "remainingQuantity": 120,
+    "status": "OPEN",
+    "dateTime": "2024-07-03T13:45:00Z"
+  },
+  {
+    "id": "34",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 24.00,
+    "quantity": 150,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-07-04T14:20:00Z"
+  },
+  {
+    "id": "35",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 16.10,
+    "quantity": 230,
+    "remainingQuantity": 80,
+    "status": "OPEN",
+    "dateTime": "2024-07-05T15:10:00Z"
+  },
+  {
+    "id": "36",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 42.30,
+    "quantity": 120,
+    "remainingQuantity": 120,
+    "status": "OPEN",
+    "dateTime": "2024-07-06T10:00:00Z"
+  },
+  {
+    "id": "37",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.00,
+    "quantity": 140,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-07-07T11:15:00Z"
+  },
+  {
+    "id": "38",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 68.00,
+    "quantity": 110,
+    "remainingQuantity": 60,
+    "status": "OPEN",
+    "dateTime": "2024-07-08T12:30:00Z"
+  },
+  {
+    "id": "39",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.40,
+    "quantity": 100,
+    "remainingQuantity": 100,
+    "status": "OPEN",
+    "dateTime": "2024-07-09T13:45:00Z"
+  },
+  {
+    "id": "40",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 23.70,
+    "quantity": 130,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-07-10T14:20:00Z"
+  },
+  {
+    "id": "41",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 15.95,
+    "quantity": 240,
+    "remainingQuantity": 90,
+    "status": "OPEN",
+    "dateTime": "2024-07-11T15:10:00Z"
+  },
+  {
+    "id": "42",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 41.80,
+    "quantity": 130,
+    "remainingQuantity": 130,
+    "status": "OPEN",
+    "dateTime": "2024-07-12T10:00:00Z"
+  },
+  {
+    "id": "43",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.20,
+    "quantity": 150,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-07-13T11:15:00Z"
+  },
+  {
+    "id": "44",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 67.70,
+    "quantity": 120,
+    "remainingQuantity": 70,
+    "status": "OPEN",
+    "dateTime": "2024-07-14T12:30:00Z"
+  },
+  {
+    "id": "45",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.70,
+    "quantity": 110,
+    "remainingQuantity": 110,
+    "status": "OPEN",
+    "dateTime": "2024-07-15T13:45:00Z"
+  },
+  {
+    "id": "46",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 24.20,
+    "quantity": 140,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-07-16T14:20:00Z"
+  },
+  {
+    "id": "47",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 16.25,
+    "quantity": 250,
+    "remainingQuantity": 100,
+    "status": "OPEN",
+    "dateTime": "2024-07-17T15:10:00Z"
+  },
+  {
+    "id": "48",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 42.20,
+    "quantity": 140,
+    "remainingQuantity": 140,
+    "status": "OPEN",
+    "dateTime": "2024-07-18T10:00:00Z"
+  },
+  {
+    "id": "49",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 32.85,
+    "quantity": 120,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-07-19T11:15:00Z"
+  },
+  {
+    "id": "50",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 68.30,
+    "quantity": 130,
+    "remainingQuantity": 80,
+    "status": "OPEN",
+    "dateTime": "2024-07-20T12:30:00Z"
+  },
+  {
+    "id": "51",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.55,
+    "quantity": 120,
+    "remainingQuantity": 120,
+    "status": "OPEN",
+    "dateTime": "2024-07-21T13:45:00Z"
+  },
+  {
+    "id": "52",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 23.95,
+    "quantity": 150,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-07-22T14:20:00Z"
+  },
+  {
+    "id": "53",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 16.00,
+    "quantity": 260,
+    "remainingQuantity": 110,
+    "status": "OPEN",
+    "dateTime": "2024-07-23T15:10:00Z"
+  },
+  {
+    "id": "54",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 41.95,
+    "quantity": 150,
+    "remainingQuantity": 150,
+    "status": "OPEN",
+    "dateTime": "2024-07-24T10:00:00Z"
+  },
+  {
+    "id": "55",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.40,
+    "quantity": 130,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-07-25T11:15:00Z"
+  },
+  {
+    "id": "56",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 67.80,
+    "quantity": 140,
+    "remainingQuantity": 90,
+    "status": "OPEN",
+    "dateTime": "2024-07-26T12:30:00Z"
+  },
+  {
+    "id": "57",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.80,
+    "quantity": 130,
+    "remainingQuantity": 130,
+    "status": "OPEN",
+    "dateTime": "2024-07-27T13:45:00Z"
+  },
+  {
+    "id": "58",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 24.10,
+    "quantity": 160,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-07-28T14:20:00Z"
+  },
+  {
+    "id": "59",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 16.15,
+    "quantity": 270,
+    "remainingQuantity": 120,
+    "status": "OPEN",
+    "dateTime": "2024-07-29T15:10:00Z"
+  },
+  {
+    "id": "60",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 42.10,
+    "quantity": 160,
+    "remainingQuantity": 160,
+    "status": "OPEN",
+    "dateTime": "2024-07-30T10:00:00Z"
+  },
+  {
+    "id": "61",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.10,
+    "quantity": 140,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-07-31T11:15:00Z"
+  },
+  {
+    "id": "62",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 68.10,
+    "quantity": 150,
+    "remainingQuantity": 100,
+    "status": "OPEN",
+    "dateTime": "2024-08-01T12:30:00Z"
+  },
+  {
+    "id": "63",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.65,
+    "quantity": 140,
+    "remainingQuantity": 140,
+    "status": "OPEN",
+    "dateTime": "2024-08-02T13:45:00Z"
+  },
+  {
+    "id": "64",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 23.85,
+    "quantity": 170,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-08-03T14:20:00Z"
+  },
+  {
+    "id": "65",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 15.80,
+    "quantity": 280,
+    "remainingQuantity": 130,
+    "status": "OPEN",
+    "dateTime": "2024-08-04T15:10:00Z"
+  },
+  {
+    "id": "66",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 41.70,
+    "quantity": 170,
+    "remainingQuantity": 170,
+    "status": "OPEN",
+    "dateTime": "2024-08-05T10:00:00Z"
+  },
+  {
+    "id": "67",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.25,
+    "quantity": 150,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-08-06T11:15:00Z"
+  },
+  {
+    "id": "68",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 67.90,
+    "quantity": 160,
+    "remainingQuantity": 110,
+    "status": "OPEN",
+    "dateTime": "2024-08-07T12:30:00Z"
+  },
+  {
+    "id": "69",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.90,
+    "quantity": 150,
+    "remainingQuantity": 150,
+    "status": "OPEN",
+    "dateTime": "2024-08-08T13:45:00Z"
+  },
+  {
+    "id": "70",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 24.00,
+    "quantity": 180,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-08-09T14:20:00Z"
+  },
+  {
+    "id": "71",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 16.05,
+    "quantity": 290,
+    "remainingQuantity": 140,
+    "status": "OPEN",
+    "dateTime": "2024-08-10T15:10:00Z"
+  },
+  {
+    "id": "72",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 42.00,
+    "quantity": 180,
+    "remainingQuantity": 180,
+    "status": "OPEN",
+    "dateTime": "2024-08-11T10:00:00Z"
+  },
+  {
+    "id": "73",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 32.90,
+    "quantity": 160,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-08-12T11:15:00Z"
+  },
+  {
+    "id": "74",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 68.20,
+    "quantity": 170,
+    "remainingQuantity": 120,
+    "status": "OPEN",
+    "dateTime": "2024-08-13T12:30:00Z"
+  },
+  {
+    "id": "75",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.75,
+    "quantity": 160,
+    "remainingQuantity": 160,
+    "status": "OPEN",
+    "dateTime": "2024-08-14T13:45:00Z"
+  },
+  {
+    "id": "76",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 23.90,
+    "quantity": 190,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-08-15T14:20:00Z"
+  },
+  {
+    "id": "77",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 15.90,
+    "quantity": 300,
+    "remainingQuantity": 150,
+    "status": "OPEN",
+    "dateTime": "2024-08-16T15:10:00Z"
+  },
+  {
+    "id": "78",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 41.85,
+    "quantity": 190,
+    "remainingQuantity": 190,
+    "status": "OPEN",
+    "dateTime": "2024-08-17T10:00:00Z"
+  },
+  {
+    "id": "79",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.05,
+    "quantity": 170,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-08-18T11:15:00Z"
+  },
+  {
+    "id": "80",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 67.60,
+    "quantity": 180,
+    "remainingQuantity": 130,
+    "status": "OPEN",
+    "dateTime": "2024-08-19T12:30:00Z"
+  },
+  {
+    "id": "81",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.60,
+    "quantity": 170,
+    "remainingQuantity": 170,
+    "status": "OPEN",
+    "dateTime": "2024-08-20T13:45:00Z"
+  },
+  {
+    "id": "82",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 24.10,
+    "quantity": 200,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-08-21T14:20:00Z"
+  },
+  {
+    "id": "83",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 16.20,
+    "quantity": 310,
+    "remainingQuantity": 160,
+    "status": "OPEN",
+    "dateTime": "2024-08-22T15:10:00Z"
+  },
+  {
+    "id": "84",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 42.20,
+    "quantity": 200,
+    "remainingQuantity": 200,
+    "status": "OPEN",
+    "dateTime": "2024-08-23T10:00:00Z"
+  },
+  {
+    "id": "85",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.30,
+    "quantity": 180,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-08-24T11:15:00Z"
+  },
+  {
+    "id": "86",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 68.00,
+    "quantity": 190,
+    "remainingQuantity": 140,
+    "status": "OPEN",
+    "dateTime": "2024-08-25T12:30:00Z"
+  },
+  {
+    "id": "87",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.85,
+    "quantity": 180,
+    "remainingQuantity": 180,
+    "status": "OPEN",
+    "dateTime": "2024-08-26T13:45:00Z"
+  },
+  {
+    "id": "88",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 23.95,
+    "quantity": 210,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-08-27T14:20:00Z"
+  },
+  {
+    "id": "89",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 15.85,
+    "quantity": 320,
+    "remainingQuantity": 170,
+    "status": "OPEN",
+    "dateTime": "2024-08-28T15:10:00Z"
+  },
+  {
+    "id": "90",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 41.90,
+    "quantity": 210,
+    "remainingQuantity": 210,
+    "status": "OPEN",
+    "dateTime": "2024-08-29T10:00:00Z"
+  },
+  {
+    "id": "91",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.15,
+    "quantity": 190,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-08-30T11:15:00Z"
+  },
+  {
+    "id": "92",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 67.70,
+    "quantity": 200,
+    "remainingQuantity": 150,
+    "status": "OPEN",
+    "dateTime": "2024-08-31T12:30:00Z"
+  },
+  {
+    "id": "93",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.70,
+    "quantity": 190,
+    "remainingQuantity": 190,
+    "status": "OPEN",
+    "dateTime": "2024-09-01T13:45:00Z"
+  },
+  {
+    "id": "94",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 24.20,
+    "quantity": 220,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-09-02T14:20:00Z"
+  },
+  {
+    "id": "95",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 16.10,
+    "quantity": 330,
+    "remainingQuantity": 180,
+    "status": "OPEN",
+    "dateTime": "2024-09-03T15:10:00Z"
+  },
+  {
+    "id": "96",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 42.05,
+    "quantity": 220,
+    "remainingQuantity": 220,
+    "status": "OPEN",
+    "dateTime": "2024-09-04T10:00:00Z"
+  },
+  {
+    "id": "97",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 32.80,
+    "quantity": 200,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-09-05T11:15:00Z"
+  },
+  {
+    "id": "98",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 68.10,
+    "quantity": 210,
+    "remainingQuantity": 160,
+    "status": "OPEN",
+    "dateTime": "2024-09-06T12:30:00Z"
+  },
+  {
+    "id": "99",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.95,
+    "quantity": 200,
+    "remainingQuantity": 200,
+    "status": "OPEN",
+    "dateTime": "2024-09-07T13:45:00Z"
+  },
+  {
+    "id": "100",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 23.85,
+    "quantity": 230,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-09-08T14:20:00Z"
+  },
+  {
+    "id": "101",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 15.95,
+    "quantity": 340,
+    "remainingQuantity": 190,
+    "status": "OPEN",
+    "dateTime": "2024-09-09T15:10:00Z"
+  },
+  {
+    "id": "102",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 41.75,
+    "quantity": 230,
+    "remainingQuantity": 230,
+    "status": "OPEN",
+    "dateTime": "2024-09-10T10:00:00Z"
+  },
+  {
+    "id": "103",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.00,
+    "quantity": 210,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-09-11T11:15:00Z"
+  },
+  {
+    "id": "104",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 67.80,
+    "quantity": 220,
+    "remainingQuantity": 170,
+    "status": "OPEN",
+    "dateTime": "2024-09-12T12:30:00Z"
+  },
+  {
+    "id": "105",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.80,
+    "quantity": 210,
+    "remainingQuantity": 210,
+    "status": "OPEN",
+    "dateTime": "2024-09-13T13:45:00Z"
+  },
+  {
+    "id": "106",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 24.00,
+    "quantity": 240,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-09-14T14:20:00Z"
+  },
+  {
+    "id": "107",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 16.20,
+    "quantity": 350,
+    "remainingQuantity": 200,
+    "status": "OPEN",
+    "dateTime": "2024-09-15T15:10:00Z"
+  },
+  {
+    "id": "108",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 41.90,
+    "quantity": 240,
+    "remainingQuantity": 240,
+    "status": "OPEN",
+    "dateTime": "2024-09-16T10:00:00Z"
+  },
+  {
+    "id": "109",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.25,
+    "quantity": 220,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-09-17T11:15:00Z"
+  },
+  {
+    "id": "110",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 68.00,
+    "quantity": 230,
+    "remainingQuantity": 180,
+    "status": "OPEN",
+    "dateTime": "2024-09-18T12:30:00Z"
+  },
+  {
+    "id": "111",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.95,
+    "quantity": 220,
+    "remainingQuantity": 220,
+    "status": "OPEN",
+    "dateTime": "2024-09-19T13:45:00Z"
+  },
+  {
+    "id": "112",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 23.95,
+    "quantity": 250,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-09-20T14:20:00Z"
+  },
+  {
+    "id": "113",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 15.85,
+    "quantity": 360,
+    "remainingQuantity": 210,
+    "status": "OPEN",
+    "dateTime": "2024-09-21T15:10:00Z"
+  },
+  {
+    "id": "114",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 42.10,
+    "quantity": 250,
+    "remainingQuantity": 250,
+    "status": "OPEN",
+    "dateTime": "2024-09-22T10:00:00Z"
+  },
+  {
+    "id": "115",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.10,
+    "quantity": 230,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-09-23T11:15:00Z"
+  },
+  {
+    "id": "116",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 67.90,
+    "quantity": 240,
+    "remainingQuantity": 190,
+    "status": "OPEN",
+    "dateTime": "2024-09-24T12:30:00Z"
+  },
+  {
+    "id": "117",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.70,
+    "quantity": 230,
+    "remainingQuantity": 230,
+    "status": "OPEN",
+    "dateTime": "2024-09-25T13:45:00Z"
+  },
+  {
+    "id": "118",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 24.10,
+    "quantity": 260,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-09-26T14:20:00Z"
+  },
+  {
+    "id": "119",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 16.00,
+    "quantity": 370,
+    "remainingQuantity": 220,
+    "status": "OPEN",
+    "dateTime": "2024-09-27T15:10:00Z"
+  },
+  {
+    "id": "120",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 41.80,
+    "quantity": 260,
+    "remainingQuantity": 260,
+    "status": "OPEN",
+    "dateTime": "2024-09-28T10:00:00Z"
+  },
+  {
+    "id": "121",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.35,
+    "quantity": 240,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-09-29T11:15:00Z"
+  },
+  {
+    "id": "122",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 68.20,
+    "quantity": 250,
+    "remainingQuantity": 200,
+    "status": "OPEN",
+    "dateTime": "2024-09-30T12:30:00Z"
+  },
+  {
+    "id": "123",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.85,
+    "quantity": 240,
+    "remainingQuantity": 240,
+    "status": "OPEN",
+    "dateTime": "2024-10-01T13:45:00Z"
+  },
+  {
+    "id": "124",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 23.80,
+    "quantity": 270,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-10-02T14:20:00Z"
+  },
+  {
+    "id": "125",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 15.90,
+    "quantity": 380,
+    "remainingQuantity": 230,
+    "status": "OPEN",
+    "dateTime": "2024-10-03T15:10:00Z"
+  },
+  {
+    "id": "126",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 41.95,
+    "quantity": 270,
+    "remainingQuantity": 270,
+    "status": "OPEN",
+    "dateTime": "2024-10-04T10:00:00Z"
+  },
+  {
+    "id": "127",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.20,
+    "quantity": 250,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-10-05T11:15:00Z"
+  },
+  {
+    "id": "128",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 67.60,
+    "quantity": 260,
+    "remainingQuantity": 210,
+    "status": "OPEN",
+    "dateTime": "2024-10-06T12:30:00Z"
+  },
+  {
+    "id": "129",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.60,
+    "quantity": 250,
+    "remainingQuantity": 250,
+    "status": "OPEN",
+    "dateTime": "2024-10-07T13:45:00Z"
+  },
+  {
+    "id": "130",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 24.00,
+    "quantity": 280,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-10-08T14:20:00Z"
+  },
+  {
+    "id": "131",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 16.15,
+    "quantity": 390,
+    "remainingQuantity": 240,
+    "status": "OPEN",
+    "dateTime": "2024-10-09T15:10:00Z"
+  },
+  {
+    "id": "132",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 42.10,
+    "quantity": 280,
+    "remainingQuantity": 280,
+    "status": "OPEN",
+    "dateTime": "2024-10-10T10:00:00Z"
+  },
+  {
+    "id": "133",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 32.95,
+    "quantity": 260,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-10-11T11:15:00Z"
+  },
+  {
+    "id": "134",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 68.10,
+    "quantity": 270,
+    "remainingQuantity": 220,
+    "status": "OPEN",
+    "dateTime": "2024-10-12T12:30:00Z"
+  },
+  {
+    "id": "135",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.75,
+    "quantity": 260,
+    "remainingQuantity": 260,
+    "status": "OPEN",
+    "dateTime": "2024-10-13T13:45:00Z"
+  },
+  {
+    "id": "136",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 23.85,
+    "quantity": 290,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-10-14T14:20:00Z"
+  },
+  {
+    "id": "137",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 15.80,
+    "quantity": 400,
+    "remainingQuantity": 250,
+    "status": "OPEN",
+    "dateTime": "2024-10-15T15:10:00Z"
+  },
+  {
+    "id": "138",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 41.70,
+    "quantity": 290,
+    "remainingQuantity": 290,
+    "status": "OPEN",
+    "dateTime": "2024-10-16T10:00:00Z"
+  },
+  {
+    "id": "139",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.10,
+    "quantity": 270,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-10-17T11:15:00Z"
+  },
+  {
+    "id": "140",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 67.90,
+    "quantity": 280,
+    "remainingQuantity": 230,
+    "status": "OPEN",
+    "dateTime": "2024-10-18T12:30:00Z"
+  },
+  {
+    "id": "141",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.90,
+    "quantity": 270,
+    "remainingQuantity": 270,
+    "status": "OPEN",
+    "dateTime": "2024-10-19T13:45:00Z"
+  },
+  {
+    "id": "142",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 24.10,
+    "quantity": 300,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-10-20T14:20:00Z"
+  },
+  {
+    "id": "143",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 16.05,
+    "quantity": 410,
+    "remainingQuantity": 260,
+    "status": "OPEN",
+    "dateTime": "2024-10-21T15:10:00Z"
+  },
+  {
+    "id": "144",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 42.00,
+    "quantity": 300,
+    "remainingQuantity": 300,
+    "status": "OPEN",
+    "dateTime": "2024-10-22T10:00:00Z"
+  },
+  {
+    "id": "145",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.25,
+    "quantity": 280,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-10-23T11:15:00Z"
+  },
+  {
+    "id": "146",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 68.00,
+    "quantity": 290,
+    "remainingQuantity": 240,
+    "status": "OPEN",
+    "dateTime": "2024-10-24T12:30:00Z"
+  },
+  {
+    "id": "147",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.65,
+    "quantity": 280,
+    "remainingQuantity": 280,
+    "status": "OPEN",
+    "dateTime": "2024-10-25T13:45:00Z"
+  },
+  {
+    "id": "148",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 23.95,
+    "quantity": 310,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-10-26T14:20:00Z"
+  },
+  {
+    "id": "149",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 15.95,
+    "quantity": 420,
+    "remainingQuantity": 270,
+    "status": "OPEN",
+    "dateTime": "2024-10-27T15:10:00Z"
+  },
+  {
+    "id": "150",
+    "symbol": "BBAS3",
+    "type": "SELL",
+    "price": 41.85,
+    "quantity": 310,
+    "remainingQuantity": 310,
+    "status": "OPEN",
+    "dateTime": "2024-10-28T10:00:00Z"
+  },
+  {
+    "id": "151",
+    "symbol": "PETR4",
+    "type": "BUY",
+    "price": 33.00,
+    "quantity": 290,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-10-29T11:15:00Z"
+  },
+  {
+    "id": "152",
+    "symbol": "VALE3",
+    "type": "SELL",
+    "price": 67.60,
+    "quantity": 300,
+    "remainingQuantity": 250,
+    "status": "OPEN",
+    "dateTime": "2024-10-30T12:30:00Z"
+  },
+  {
+    "id": "153",
+    "symbol": "ITUB4",
+    "type": "BUY",
+    "price": 28.80,
+    "quantity": 290,
+    "remainingQuantity": 290,
+    "status": "OPEN",
+    "dateTime": "2024-10-31T13:45:00Z"
+  },
+  {
+    "id": "154",
+    "symbol": "BBDC4",
+    "type": "SELL",
+    "price": 24.00,
+    "quantity": 320,
+    "remainingQuantity": 0,
+    "status": "CLOSED",
+    "dateTime": "2024-11-01T14:20:00Z"
+  },
+  {
+    "id": "155",
+    "symbol": "ABEV3",
+    "type": "BUY",
+    "price": 16.10,
+    "quantity": 430,
+    "remainingQuantity": 280,
+    "status": "OPEN",
+    "dateTime": "2024-11-02T15:10:00Z"
+  }
+]

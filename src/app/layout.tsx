@@ -25,11 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className="dark"
-      style={{colorScheme:"dark"}}
-    >
+    <html lang="en" className="dark" style={{ colorScheme: "dark" }}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -39,11 +35,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="container mx-auto max-w-4xl dark:text-white text-slate-900">
+          <div className="container mx-auto max-w-6xl dark:text-white text-slate-900">
             <Header />
-            <main className="my-10">
-              {children}
-            </main>
+            <main className="my-10">{children}</main>
           </div>
         </ThemeProvider>
       </body>
