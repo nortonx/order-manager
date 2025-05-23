@@ -10,7 +10,7 @@ const customJestConfig = {
   testEnvironment: "jest-environment-jsdom",
   preset: "ts-jest",
   verbose: true,
-  testMatch: ["<rootDir>/__tests__/**/*.test.tsx"],
+  testMatch: ["<rootDir>/__tests__/**/*.test.tsx", "<rootDir>/__tests__/**/*.test.ts"],
 };
 
 module.exports = createJestConfig(customJestConfig);
