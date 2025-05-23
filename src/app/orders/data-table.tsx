@@ -11,7 +11,7 @@ import {
   useReactTable,
   getPaginationRowModel,
   getFilteredRowModel,
-  Row,
+  // Row,
   SortingState,
   VisibilityState
 } from "@tanstack/react-table";
@@ -19,19 +19,12 @@ import {
 import {
   Table,
   TableBody,
-  TableCaption,
+  // TableCaption,
   TableCell,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -64,7 +57,7 @@ export function DataTable<TData, TValue>({
 
   return (
     <>
-    <div className="rounded-md border">
+    <div className="rounded-md border" data-testid="data-table">
       <Table>
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
@@ -104,6 +97,14 @@ export function DataTable<TData, TValue>({
       </Table>
     </div>
     <div className="flex items-center justify-center space-x-1 p-4">
+      <Button
+        variant="outline"
+        size="sm"
+        onClick={() => table.previousPage()}
+        disabled={!table.getCanPreviousPage()}
+      >
+        Anterior
+      </Button>
       {Array.from({ length: table.getPageCount() }, (_, i) => (
         <Button
           key={i}
@@ -115,6 +116,14 @@ export function DataTable<TData, TValue>({
           {i + 1}
         </Button>
       ))}
+      <Button
+        variant="outline"
+        size="sm"
+        onClick={() => table.nextPage()}
+        disabled={!table.getCanNextPage()}
+      >
+        Próximo
+      </Button>
     </div>
     </>
   );
