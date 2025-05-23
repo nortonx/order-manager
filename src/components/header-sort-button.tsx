@@ -1,0 +1,17 @@
+import { ArrowUpDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { capitalizeFirstLetter } from "@/utils";
+export default function HeaderSortButton({ column, name }: Readonly<{
+  column: Column<any, any>;
+  name?: string;
+}>) {
+  return (
+    <Button
+      variant="ghost"
+      onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+    >
+      {name ? capitalizeFirstLetter(name) : capitalizeFirstLetter(column.id)}
+      <ArrowUpDown className="h-4 w-4" />
+    </Button>
+  );
+}

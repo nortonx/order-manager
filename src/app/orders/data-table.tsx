@@ -1,13 +1,14 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 
 import {
   ColumnDef,
   ColumnFiltersState,
   flexRender,
   getCoreRowModel,
+  getSortedRowModel,
   useReactTable,
   getPaginationRowModel,
   getFilteredRowModel,
@@ -34,7 +35,7 @@ interface DataTableProps<TData, TValue> {
 export function DataTable<TData, TValue>({
   columns,
   data,
-}: DataTableProps<TData, TValue>) {
+}: Readonly<DataTableProps<TData, TValue>>) {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({});
@@ -45,6 +46,7 @@ export function DataTable<TData, TValue>({
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     onSortingChange: setSorting,
+    getSortedRowModel: getSortedRowModel(),
     state: {
       sorting,
       columnFilters,
@@ -55,76 +57,82 @@ export function DataTable<TData, TValue>({
   getFilteredRowModel: getFilteredRowModel(),
 });
 
+  const paginationButtons = useMemo(() => {
+    const pageCount = table.getPageCount();
+    const currentPage = table.getState().pagination.pageIndex;
+    return Array.from({ length: pageCount }, (_, i) => (
+      <Button
+        key={i}
+        variant={currentPage === i ? "default" : "outline"}
+        size="sm"
+        onClick={() => table.setPageIndex(i)}
+        className="pagination-button"
+      >
+        {i + 1}
+      </Button>
+    ));
+  }, [table.getPageCount(), table.getState().pagination.pageIndex, table]);
+
   return (
     <>
-    <div className="rounded-md border" data-testid="data-table">
-      <Table>
-        <TableHeader>
-          {table.getHeaderGroups().map((headerGroup) => (
-            <TableRow key={headerGroup.id}>
-              {headerGroup.headers.map((header) => (
-                <TableHead key={header.id}>
-                  {header.isPlaceholder
-                    ? null
-                    : flexRender(
-                        header.column.columnDef.header,
-                        header.getContext(),
-                      )}
-                </TableHead>
-              ))}
-            </TableRow>
-          ))}
-        </TableHeader>
-        <TableBody>
-          {table.getRowModel().rows?.length ? (
-            table.getRowModel().rows.map((row) => (
-              <TableRow key={row.id}>
-                {row.getVisibleCells().map((cell) => (
-                  <TableCell key={cell.id}>
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                  </TableCell>
+      <div className="rounded-md border" data-testid="data-table">
+        <Table>
+          <TableHeader>
+            {table.getHeaderGroups().map((headerGroup) => (
+              <TableRow key={headerGroup.id}>
+                {headerGroup.headers.map((header) => (
+                  <TableHead key={header.id}>
+                    {header.isPlaceholder
+                      ? null
+                      : flexRender(
+                          header.column.columnDef.header,
+                          header.getContext(),
+                        )}
+                  </TableHead>
                 ))}
               </TableRow>
-            ))
-          ) : (
-            <TableRow>
-              <TableCell colSpan={columns.length} className="h-24 text-center">
-                No results.
-              </TableCell>
-            </TableRow>
-          )}
-        </TableBody>
-      </Table>
-    </div>
-    <div className="flex items-center justify-center space-x-1 p-4">
-      <Button
-        variant="outline"
-        size="sm"
-        onClick={() => table.previousPage()}
-        disabled={!table.getCanPreviousPage()}
-      >
-        Anterior
-      </Button>
-      {Array.from({ length: table.getPageCount() }, (_, i) => (
+            ))}
+          </TableHeader>
+          <TableBody>
+            {table.getRowModel().rows?.length ? (
+              table.getRowModel().rows.map((row) => (
+                <TableRow key={row.id}>
+                  {row.getVisibleCells().map((cell) => (
+                    <TableCell key={cell.id}>
+                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                    </TableCell>
+                  ))}
+                </TableRow>
+              ))
+            ) : (
+              <TableRow>
+                <TableCell colSpan={columns.length} className="h-24 text-center">
+                  No results.
+                </TableCell>
+              </TableRow>
+            )}
+          </TableBody>
+        </Table>
+      </div>
+      <div className="flex items-center justify-center space-x-1 p-4">
         <Button
-          key={i}
-          variant={table.getState().pagination.pageIndex === i ? "default" : "outline"}
+          variant="outline"
           size="sm"
-          onClick={() => table.setPageIndex(i)}
-          className="pagination-page"
+          onClick={() => table.previousPage()}
+          disabled={!table.getCanPreviousPage()}
         >
-          {i + 1}
+          Anterior
         </Button>
-      ))}
-      <Button
-        variant="outline"
-        size="sm"
-        onClick={() => table.nextPage()}
-        disabled={!table.getCanNextPage()}
-      >
-        Próximo
-      </Button>
-    </div>
+        {paginationButtons}
+        <Button
+          variant="outline"
+          size="sm"
+          onClick={() => table.nextPage()}
+          disabled={!table.getCanNextPage()}
+        >
+          Próximo
+        </Button>
+      </div>
     </>
   );
 }
