@@ -3,7 +3,6 @@
 import { ColumnDef } from "@tanstack/react-table";
 import { formatCurrency, formatSide, formatStatus, formatDate } from "@/utils";
 
-
 export type Asset = {
   id: string;
   symbol: string;
@@ -15,24 +14,38 @@ export type Asset = {
   dateTime: string;
 };
 
+import HeaderSortButton from "@/app/components/header-sort-button";
+
 export const columns: ColumnDef<Asset>[] = [
   {
     accessorKey: "id",
-    header: () => <div className="flex justify-center font-bold">ID</div>,
+    header: ({ column }) => (
+      <div className="flex justify-center font-bold">
+        <HeaderSortButton column={column} />
+      </div>
+    ),
     cell: ({ row }) => (
       <div className="flex justify-center">{row.original.id}</div>
     ),
   },
   {
     accessorKey: "symbol",
-    header: () => <div className="flex justify-center font-bold">Ativo</div>,
+    header: ({ column }) => (
+      <div className="flex justify-center font-bold">
+        <HeaderSortButton column={column} name="Instrumento" />
+      </div>
+    ),
     cell: ({ row }) => (
       <div className="flex justify-center">{row.original.symbol}</div>
     ),
   },
   {
     accessorKey: "type",
-    header: () => <div className="flex justify-center font-bold">Lado</div>,
+    header: ({ column }) => (
+      <div className="flex justify-center font-bold">
+        <HeaderSortButton column={column} name="Lado" />
+      </div>
+    ),
     cell: ({ row }) => (
       <div className="flex justify-center">{formatSide(row.original.type)}</div>
     ),
@@ -55,7 +68,9 @@ export const columns: ColumnDef<Asset>[] = [
   },
   {
     accessorKey: "remainingQuantity",
-    header: () => <div className="flex justify-center">Quantidade Restante</div>,
+    header: () => (
+      <div className="flex justify-center">Quantidade Restante</div>
+    ),
     cell: ({ row }) => (
       <div className="flex justify-center">
         {row.original.remainingQuantity}
@@ -64,7 +79,11 @@ export const columns: ColumnDef<Asset>[] = [
   },
   {
     accessorKey: "status",
-    header: () => <div className="flex justify-center font-bold">Status</div>,
+    header: ({ column }) => (
+      <div className="flex justify-center font-bold">
+        <HeaderSortButton column={column} />
+      </div>
+    ),
     cell: ({ row }) => (
       <div className="flex justify-center">
         {formatStatus(row.original.status)}
@@ -73,7 +92,11 @@ export const columns: ColumnDef<Asset>[] = [
   },
   {
     accessorKey: "dateTime",
-    header: () => <div className="flex justify-center font-bold">Date / Hora</div>,
+    header: ({ column }) => (
+      <div className="flex justify-center font-bold">
+        <HeaderSortButton column={column} name="Data/Hora" />
+      </div>
+    ),
     cell: ({ row }) => (
       <div className="flex justify-center">
         {formatDate(row.original.dateTime)}
