@@ -13,7 +13,7 @@ import { getAssets } from "@/actions/assets";
 
 export default function AssetForm() {
   const data = getAssets();
-
+  console.log(`data length is: ${data.length}`);
   return (
     <form className="p-4">
       <fieldset>

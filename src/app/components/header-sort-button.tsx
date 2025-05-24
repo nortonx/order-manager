@@ -1,12 +1,15 @@
+"use client";
+
 import { ArrowUpDown } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 import { capitalizeFirstLetter } from "@/utils";
+import { Column } from "@tanstack/react-table";
 
 export default function HeaderSortButton({
   column,
   name,
 }: Readonly<{
-  column: Column<any, any>;
+  column: Column<TData, TValue>;
   name?: string;
 }>) {
   return (

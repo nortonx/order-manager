@@ -5,12 +5,12 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Button } from "@/components/ui/button";
+} from "@/app/components/ui/dropdown-menu";
+import { Button } from "@/app/components/ui/button";
 import { MoreHorizontal } from "lucide-react";
-import { Asset } from "@/components/data-grid/columns";
+import { Asset } from "@/app/components/data-grid/columns";
 
-export default function RowActionButton({ asset }: Asset) {
+export default function RowActionButton({ asset }: { asset: Asset }) {
   function handleEdit(asset: Asset) {
     console.log(`Edit ${asset.id}`);
   }

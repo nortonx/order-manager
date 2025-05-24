@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import HeaderSortButton from "@/components/header-sort-button";
+import HeaderSortButton from "@/app/components/header-sort-button";
 
 describe("HeaderSortButton", () => {
   it("renders correctly", () => {

@@ -14,7 +14,7 @@ export type Asset = {
   dateTime: string;
 };
 
-import HeaderSortButton from "@/components/header-sort-button";
+import HeaderSortButton from "@/app/components/header-sort-button";
 
 export const columns: ColumnDef<Asset>[] = [
   {
