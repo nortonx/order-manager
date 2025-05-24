@@ -4,12 +4,13 @@ import { ArrowUpDown } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 import { capitalizeFirstLetter } from "@/utils";
 import { Column } from "@tanstack/react-table";
+import { Asset } from "@/app/components/data-grid/columns";
 
 export default function HeaderSortButton({
   column,
   name,
 }: Readonly<{
-  column: Column<TData, TValue>;
+  column: Column<Asset, unknown>;
   name?: string;
 }>) {
   return (

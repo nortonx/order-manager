@@ -57,9 +57,9 @@ export function DataTable<TData, TValue>({
     getFilteredRowModel: getFilteredRowModel(),
   });
 
+  const pageCount = table.getPageCount();
+  const currentPage = table.getState().pagination.pageIndex;
   const paginationButtons = useMemo(() => {
-    const pageCount = table.getPageCount();
-    const currentPage = table.getState().pagination.pageIndex;
     return Array.from({ length: pageCount }, (_, i) => (
       <Button
         key={i}
@@ -71,7 +71,7 @@ export function DataTable<TData, TValue>({
         {i + 1}
       </Button>
     ));
-  }, [table.getPageCount(), table.getState().pagination.pageIndex, table]);
+  }, [pageCount, currentPage, table]);
 
   return (
     <>

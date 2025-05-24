@@ -10,7 +10,7 @@ import { Button } from "@/app/components/ui/button";
 import { MoreHorizontal } from "lucide-react";
 import { Asset } from "@/app/components/data-grid/columns";
 
-export default function RowActionButton({ asset }: { asset: Asset }) {
+export default function RowActionButton({ asset }: Readonly<{ asset: Asset }>) {
   function handleEdit(asset: Asset) {
     console.log(`Edit ${asset.id}`);
   }
