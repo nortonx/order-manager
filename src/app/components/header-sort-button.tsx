@@ -1,7 +1,11 @@
 import { ArrowUpDown } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import { capitalizeFirstLetter } from "@/utils";
-export default function HeaderSortButton({ column, name }: Readonly<{
+
+export default function HeaderSortButton({
+  column,
+  name,
+}: Readonly<{
   column: Column<any, any>;
   name?: string;
 }>) {
