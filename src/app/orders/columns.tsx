@@ -32,7 +32,15 @@ export const columns: ColumnDef<Asset>[] = [
     header: () => <div className="flex justify-center font-bold">Ações</div>,
     cell: ({ row }) => {
       const asset = row.original;
-      
+
+      function handleEdit(asset: Asset) {
+        console.log(`Edit ${asset.id}`);
+      }
+
+      function handleDelete(asset: Asset) {
+        console.log(`Delete asset ${asset.id}`);
+      }
+
       return (
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -44,8 +52,12 @@ export const columns: ColumnDef<Asset>[] = [
           <DropdownMenuContent align="end">
             <DropdownMenuLabel>Actions</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem onClick={() => {}}>Edit</DropdownMenuItem>
-            <DropdownMenuItem onClick={() => {}}>Delete</DropdownMenuItem>
+            <DropdownMenuItem onClick={() => handleEdit(asset)}>
+              Edit
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => handleDelete(asset)}>
+              Delete
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       );
