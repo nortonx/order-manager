@@ -61,7 +61,7 @@
   },
   {
     "id": "7",
-    "symbol": "PETR4",
+    "symbol": "MGLU3",
     "type": "BUY",
     "price": 33.12,
     "quantity": 80,
@@ -71,7 +71,7 @@
   },
   {
     "id": "8",
-    "symbol": "VALE3",
+    "symbol": "LREN3",
     "type": "SELL",
     "price": 68.45,
     "quantity": 60,
@@ -81,7 +81,7 @@
   },
   {
     "id": "9",
-    "symbol": "ITUB4",
+    "symbol": "SUZB3",
     "type": "BUY",
     "price": 27.95,
     "quantity": 90,
@@ -91,7 +91,7 @@
   },
   {
     "id": "10",
-    "symbol": "BBDC4",
+    "symbol": "JBSS3",
     "type": "SELL",
     "price": 24.10,
     "quantity": 110,
@@ -101,7 +101,7 @@
   },
   {
     "id": "11",
-    "symbol": "ABEV3",
+    "symbol": "B3SA3",
     "type": "BUY",
     "price": 16.05,
     "quantity": 200,
@@ -111,7 +111,7 @@
   },
   {
     "id": "12",
-    "symbol": "BBAS3",
+    "symbol": "GGBR4",
     "type": "SELL",
     "price": 42.00,
     "quantity": 100,
@@ -121,7 +121,7 @@
   },
   {
     "id": "13",
-    "symbol": "PETR4",
+    "symbol": "WEGE3",
     "type": "BUY",
     "price": 32.80,
     "quantity": 150,
@@ -131,7 +131,7 @@
   },
   {
     "id": "14",
-    "symbol": "VALE3",
+    "symbol": "ITSA4",
     "type": "SELL",
     "price": 69.10,
     "quantity": 70,
@@ -141,7 +141,7 @@
   },
   {
     "id": "15",
-    "symbol": "ITUB4",
+    "symbol": "RENT3",
     "type": "BUY",
     "price": 28.50,
     "quantity": 130,
@@ -151,7 +151,7 @@
   },
   {
     "id": "16",
-    "symbol": "BBDC4",
+    "symbol": "AZUL4",
     "type": "SELL",
     "price": 23.90,
     "quantity": 140,
@@ -161,7 +161,7 @@
   },
   {
     "id": "17",
-    "symbol": "ABEV3",
+    "symbol": "UGPA3",
     "type": "BUY",
     "price": 15.90,
     "quantity": 250,
@@ -171,7 +171,7 @@
   },
   {
     "id": "18",
-    "symbol": "BBAS3",
+    "symbol": "VIVT3",
     "type": "SELL",
     "price": 41.75,
     "quantity": 130,
@@ -181,7 +181,7 @@
   },
   {
     "id": "19",
-    "symbol": "PETR4",
+    "symbol": "RADL3",
     "type": "BUY",
     "price": 33.50,
     "quantity": 120,
@@ -191,7 +191,7 @@
   },
   {
     "id": "20",
-    "symbol": "VALE3",
+    "symbol": "EQTL3",
     "type": "SELL",
     "price": 67.95,
     "quantity": 80,
@@ -201,7 +201,7 @@
   },
   {
     "id": "21",
-    "symbol": "ITUB4",
+    "symbol": "PRIO3",
     "type": "BUY",
     "price": 28.20,
     "quantity": 110,
@@ -211,7 +211,7 @@
   },
   {
     "id": "22",
-    "symbol": "BBDC4",
+    "symbol": "VBBR3",
     "type": "SELL",
     "price": 24.30,
     "quantity": 160,
@@ -221,7 +221,7 @@
   },
   {
     "id": "23",
-    "symbol": "ABEV3",
+    "symbol": "HAPV3",
     "type": "BUY",
     "price": 16.20,
     "quantity": 220,
@@ -231,7 +231,7 @@
   },
   {
     "id": "24",
-    "symbol": "BBAS3",
+    "symbol": "RAIL3",
     "type": "SELL",
     "price": 42.10,
     "quantity": 140,
@@ -241,7 +241,7 @@
   },
   {
     "id": "25",
-    "symbol": "PETR4",
+    "symbol": "SBSP3",
     "type": "BUY",
     "price": 32.95,
     "quantity": 100,
@@ -251,7 +251,7 @@
   },
   {
     "id": "26",
-    "symbol": "VALE3",
+    "symbol": "CSNA3",
     "type": "SELL",
     "price": 68.20,
     "quantity": 90,
@@ -261,7 +261,7 @@
   },
   {
     "id": "27",
-    "symbol": "ITUB4",
+    "symbol": "CMIG4",
     "type": "BUY",
     "price": 28.35,
     "quantity": 140,
@@ -271,7 +271,7 @@
   },
   {
     "id": "28",
-    "symbol": "BBDC4",
+    "symbol": "ELET3",
     "type": "SELL",
     "price": 23.80,
     "quantity": 120,
@@ -281,7 +281,7 @@
   },
   {
     "id": "29",
-    "symbol": "ABEV3",
+    "symbol": "EMBR3",
     "type": "BUY",
     "price": 15.85,
     "quantity": 210,
@@ -291,7 +291,7 @@
   },
   {
     "id": "30",
-    "symbol": "BBAS3",
+    "symbol": "COGN3",
     "type": "SELL",
     "price": 41.90,
     "quantity": 110,
@@ -301,7 +301,7 @@
   },
   {
     "id": "31",
-    "symbol": "PETR4",
+    "symbol": "NTCO3",
     "type": "BUY",
     "price": 33.30,
     "quantity": 130,
@@ -311,7 +311,7 @@
   },
   {
     "id": "32",
-    "symbol": "VALE3",
+    "symbol": "TIMS3",
     "type": "SELL",
     "price": 67.60,
     "quantity": 100,
@@ -321,7 +321,7 @@
   },
   {
     "id": "33",
-    "symbol": "ITUB4",
+    "symbol": "KLBN11",
     "type": "BUY",
     "price": 28.60,
     "quantity": 120,
@@ -331,7 +331,7 @@
   },
   {
     "id": "34",
-    "symbol": "BBDC4",
+    "symbol": "CYRE3",
     "type": "SELL",
     "price": 24.00,
     "quantity": 150,
@@ -341,7 +341,7 @@
   },
   {
     "id": "35",
-    "symbol": "ABEV3",
+    "symbol": "BRFS3",
     "type": "BUY",
     "price": 16.10,
     "quantity": 230,
@@ -351,7 +351,7 @@
   },
   {
     "id": "36",
-    "symbol": "BBAS3",
+    "symbol": "CSAN3",
     "type": "SELL",
     "price": 42.30,
     "quantity": 120,
@@ -361,7 +361,7 @@
   },
   {
     "id": "37",
-    "symbol": "PETR4",
+    "symbol": "CPLE6",
     "type": "BUY",
     "price": 33.00,
     "quantity": 140,
@@ -371,7 +371,7 @@
   },
   {
     "id": "38",
-    "symbol": "VALE3",
+    "symbol": "ASAI3",
     "type": "SELL",
     "price": 68.00,
     "quantity": 110,
@@ -381,7 +381,7 @@
   },
   {
     "id": "39",
-    "symbol": "ITUB4",
+    "symbol": "BBSE3",
     "type": "BUY",
     "price": 28.40,
     "quantity": 100,
@@ -391,7 +391,7 @@
   },
   {
     "id": "40",
-    "symbol": "BBDC4",
+    "symbol": "MRVE3",
     "type": "SELL",
     "price": 23.70,
     "quantity": 130,
@@ -401,7 +401,7 @@
   },
   {
     "id": "41",
-    "symbol": "ABEV3",
+    "symbol": "PCAR3",
     "type": "BUY",
     "price": 15.95,
     "quantity": 240,
@@ -411,7 +411,7 @@
   },
   {
     "id": "42",
-    "symbol": "BBAS3",
+    "symbol": "SANB11",
     "type": "SELL",
     "price": 41.80,
     "quantity": 130,
@@ -421,7 +421,7 @@
   },
   {
     "id": "43",
-    "symbol": "PETR4",
+    "symbol": "TOTS3",
     "type": "BUY",
     "price": 33.20,
     "quantity": 150,
@@ -431,7 +431,7 @@
   },
   {
     "id": "44",
-    "symbol": "VALE3",
+    "symbol": "RDOR3",
     "type": "SELL",
     "price": 67.70,
     "quantity": 120,
@@ -441,7 +441,7 @@
   },
   {
     "id": "45",
-    "symbol": "ITUB4",
+    "symbol": "GOAU4",
     "type": "BUY",
     "price": 28.70,
     "quantity": 110,
@@ -451,7 +451,7 @@
   },
   {
     "id": "46",
-    "symbol": "BBDC4",
+    "symbol": "CVCB3",
     "type": "SELL",
     "price": 24.20,
     "quantity": 140,
@@ -461,7 +461,7 @@
   },
   {
     "id": "47",
-    "symbol": "ABEV3",
+    "symbol": "YDUQ3",
     "type": "BUY",
     "price": 16.25,
     "quantity": 250,
@@ -471,7 +471,7 @@
   },
   {
     "id": "48",
-    "symbol": "BBAS3",
+    "symbol": "MULT3",
     "type": "SELL",
     "price": 42.20,
     "quantity": 140,
@@ -481,7 +481,7 @@
   },
   {
     "id": "49",
-    "symbol": "PETR4",
+    "symbol": "USIM5",
     "type": "BUY",
     "price": 32.85,
     "quantity": 120,
@@ -491,7 +491,7 @@
   },
   {
     "id": "50",
-    "symbol": "VALE3",
+    "symbol": "BRKM5",
     "type": "SELL",
     "price": 68.30,
     "quantity": 130,
@@ -501,7 +501,7 @@
   },
   {
     "id": "51",
-    "symbol": "ITUB4",
+    "symbol": "ENEV3",
     "type": "BUY",
     "price": 28.55,
     "quantity": 120,
@@ -511,7 +511,7 @@
   },
   {
     "id": "52",
-    "symbol": "BBDC4",
+    "symbol": "CRFB3",
     "type": "SELL",
     "price": 23.95,
     "quantity": 150,
@@ -521,7 +521,7 @@
   },
   {
     "id": "53",
-    "symbol": "ABEV3",
+    "symbol": "CCRO3",
     "type": "BUY",
     "price": 16.00,
     "quantity": 260,
@@ -531,7 +531,7 @@
   },
   {
     "id": "54",
-    "symbol": "BBAS3",
+    "symbol": "FLRY3",
     "type": "SELL",
     "price": 41.95,
     "quantity": 150,
@@ -541,7 +541,7 @@
   },
   {
     "id": "55",
-    "symbol": "PETR4",
+    "symbol": "HYPE3",
     "type": "BUY",
     "price": 33.40,
     "quantity": 130,
@@ -551,7 +551,7 @@
   },
   {
     "id": "56",
-    "symbol": "VALE3",
+    "symbol": "MRFG3",
     "type": "SELL",
     "price": 67.80,
     "quantity": 140,
@@ -561,7 +561,7 @@
   },
   {
     "id": "57",
-    "symbol": "ITUB4",
+    "symbol": "TAEE11",
     "type": "BUY",
     "price": 28.80,
     "quantity": 130,
@@ -571,7 +571,7 @@
   },
   {
     "id": "58",
-    "symbol": "BBDC4",
+    "symbol": "ALPA4",
     "type": "SELL",
     "price": 24.10,
     "quantity": 160,
@@ -581,7 +581,7 @@
   },
   {
     "id": "59",
-    "symbol": "ABEV3",
+    "symbol": "CPFE3",
     "type": "BUY",
     "price": 16.15,
     "quantity": 270,
@@ -591,7 +591,7 @@
   },
   {
     "id": "60",
-    "symbol": "BBAS3",
+    "symbol": "ECOR3",
     "type": "SELL",
     "price": 42.10,
     "quantity": 160,
@@ -601,7 +601,7 @@
   },
   {
     "id": "61",
-    "symbol": "PETR4",
+    "symbol": "PETZ3",
     "type": "BUY",
     "price": 33.10,
     "quantity": 140,
@@ -611,7 +611,7 @@
   },
   {
     "id": "62",
-    "symbol": "VALE3",
+    "symbol": "LWSA3",
     "type": "SELL",
     "price": 68.10,
     "quantity": 150,
@@ -621,7 +621,7 @@
   },
   {
     "id": "63",
-    "symbol": "ITUB4",
+    "symbol": "QUAL3",
     "type": "BUY",
     "price": 28.65,
     "quantity": 140,
@@ -631,7 +631,7 @@
   },
   {
     "id": "64",
-    "symbol": "BBDC4",
+    "symbol": "IRBR3",
     "type": "SELL",
     "price": 23.85,
     "quantity": 170,
@@ -641,7 +641,7 @@
   },
   {
     "id": "65",
-    "symbol": "ABEV3",
+    "symbol": "SLCE3",
     "type": "BUY",
     "price": 15.80,
     "quantity": 280,
@@ -651,7 +651,7 @@
   },
   {
     "id": "66",
-    "symbol": "BBAS3",
+    "symbol": "BEEF3",
     "type": "SELL",
     "price": 41.70,
     "quantity": 170,
@@ -661,7 +661,7 @@
   },
   {
     "id": "67",
-    "symbol": "PETR4",
+    "symbol": "DXCO3",
     "type": "BUY",
     "price": 33.25,
     "quantity": 150,
@@ -671,7 +671,7 @@
   },
   {
     "id": "68",
-    "symbol": "VALE3",
+    "symbol": "SOMA3",
     "type": "SELL",
     "price": 67.90,
     "quantity": 160,
@@ -681,7 +681,7 @@
   },
   {
     "id": "69",
-    "symbol": "ITUB4",
+    "symbol": "ARZZ3",
     "type": "BUY",
     "price": 28.90,
     "quantity": 150,
@@ -691,7 +691,7 @@
   },
   {
     "id": "70",
-    "symbol": "BBDC4",
+    "symbol": "ANIM3",
     "type": "SELL",
     "price": 24.00,
     "quantity": 180,
@@ -701,7 +701,7 @@
   },
   {
     "id": "71",
-    "symbol": "ABEV3",
+    "symbol": "SMFT3",
     "type": "BUY",
     "price": 16.05,
     "quantity": 290,
@@ -711,7 +711,7 @@
   },
   {
     "id": "72",
-    "symbol": "BBAS3",
+    "symbol": "BPAC11",
     "type": "SELL",
     "price": 42.00,
     "quantity": 180,
@@ -721,7 +721,7 @@
   },
   {
     "id": "73",
-    "symbol": "PETR4",
+    "symbol": "EZTC3",
     "type": "BUY",
     "price": 32.90,
     "quantity": 160,
@@ -731,7 +731,7 @@
   },
   {
     "id": "74",
-    "symbol": "VALE3",
+    "symbol": "MOVI3",
     "type": "SELL",
     "price": 68.20,
     "quantity": 170,
@@ -741,7 +741,7 @@
   },
   {
     "id": "75",
-    "symbol": "ITUB4",
+    "symbol": "ALOS3",
     "type": "BUY",
     "price": 28.75,
     "quantity": 160,
@@ -751,7 +751,7 @@
   },
   {
     "id": "76",
-    "symbol": "BBDC4",
+    "symbol": "CEAB3",
     "type": "SELL",
     "price": 23.90,
     "quantity": 190,
@@ -761,7 +761,7 @@
   },
   {
     "id": "77",
-    "symbol": "ABEV3",
+    "symbol": "POMO4",
     "type": "BUY",
     "price": 15.90,
     "quantity": 300,
@@ -771,7 +771,7 @@
   },
   {
     "id": "78",
-    "symbol": "BBAS3",
+    "symbol": "AMER3",
     "type": "SELL",
     "price": 41.85,
     "quantity": 190,
@@ -781,7 +781,7 @@
   },
   {
     "id": "79",
-    "symbol": "PETR4",
+    "symbol": "RRRP3",
     "type": "BUY",
     "price": 33.05,
     "quantity": 170,
@@ -791,7 +791,7 @@
   },
   {
     "id": "80",
-    "symbol": "VALE3",
+    "symbol": "RECV3",
     "type": "SELL",
     "price": 67.60,
     "quantity": 180,
@@ -801,7 +801,7 @@
   },
   {
     "id": "81",
-    "symbol": "ITUB4",
+    "symbol": "CIEL3",
     "type": "BUY",
     "price": 28.60,
     "quantity": 170,
@@ -811,7 +811,7 @@
   },
   {
     "id": "82",
-    "symbol": "BBDC4",
+    "symbol": "BRAP4",
     "type": "SELL",
     "price": 24.10,
     "quantity": 200,
@@ -821,7 +821,7 @@
   },
   {
     "id": "83",
-    "symbol": "ABEV3",
+    "symbol": "CMIN3",
     "type": "BUY",
     "price": 16.20,
     "quantity": 310,
@@ -831,7 +831,7 @@
   },
   {
     "id": "84",
-    "symbol": "BBAS3",
+    "symbol": "VAMO3",
     "type": "SELL",
     "price": 42.20,
     "quantity": 200,
@@ -841,7 +841,7 @@
   },
   {
     "id": "85",
-    "symbol": "PETR4",
+    "symbol": "AURE3",
     "type": "BUY",
     "price": 33.30,
     "quantity": 180,
@@ -851,7 +851,7 @@
   },
   {
     "id": "86",
-    "symbol": "VALE3",
+    "symbol": "TRPL4",
     "type": "SELL",
     "price": 68.00,
     "quantity": 190,
@@ -861,7 +861,7 @@
   },
   {
     "id": "87",
-    "symbol": "ITUB4",
+    "symbol": "PSSA3",
     "type": "BUY",
     "price": 28.85,
     "quantity": 180,
@@ -871,7 +871,7 @@
   },
   {
     "id": "88",
-    "symbol": "BBDC4",
+    "symbol": "EGIE3",
     "type": "SELL",
     "price": 23.95,
     "quantity": 210,
@@ -881,7 +881,7 @@
   },
   {
     "id": "89",
-    "symbol": "ABEV3",
+    "symbol": "CASH3",
     "type": "BUY",
     "price": 15.85,
     "quantity": 320,
@@ -891,7 +891,7 @@
   },
   {
     "id": "90",
-    "symbol": "BBAS3",
+    "symbol": "CURY3",
     "type": "SELL",
     "price": 41.90,
     "quantity": 210,
@@ -901,7 +901,7 @@
   },
   {
     "id": "91",
-    "symbol": "PETR4",
+    "symbol": "RAIZ4",
     "type": "BUY",
     "price": 33.15,
     "quantity": 190,
@@ -911,7 +911,7 @@
   },
   {
     "id": "92",
-    "symbol": "VALE3",
+    "symbol": "SIMH3",
     "type": "SELL",
     "price": 67.70,
     "quantity": 200,
@@ -921,7 +921,7 @@
   },
   {
     "id": "93",
-    "symbol": "ITUB4",
+    "symbol": "ENGI11",
     "type": "BUY",
     "price": 28.70,
     "quantity": 190,
@@ -931,7 +931,7 @@
   },
   {
     "id": "94",
-    "symbol": "BBDC4",
+    "symbol": "VIIA3",
     "type": "SELL",
     "price": 24.20,
     "quantity": 220,
@@ -941,7 +941,7 @@
   },
   {
     "id": "95",
-    "symbol": "ABEV3",
+    "symbol": "GETT3",
     "type": "BUY",
     "price": 16.10,
     "quantity": 330,
@@ -951,7 +951,7 @@
   },
   {
     "id": "96",
-    "symbol": "BBAS3",
+    "symbol": "MDIA3",
     "type": "SELL",
     "price": 42.05,
     "quantity": 220,
@@ -961,7 +961,7 @@
   },
   {
     "id": "97",
-    "symbol": "PETR4",
+    "symbol": "NEOE3",
     "type": "BUY",
     "price": 32.80,
     "quantity": 200,
@@ -971,7 +971,7 @@
   },
   {
     "id": "98",
-    "symbol": "VALE3",
+    "symbol": "AMBP3",
     "type": "SELL",
     "price": 68.10,
     "quantity": 210,
@@ -981,7 +981,7 @@
   },
   {
     "id": "99",
-    "symbol": "ITUB4",
+    "symbol": "DIRR3",
     "type": "BUY",
     "price": 28.95,
     "quantity": 200,
@@ -991,7 +991,7 @@
   },
   {
     "id": "100",
-    "symbol": "BBDC4",
+    "symbol": "GOLL4",
     "type": "SELL",
     "price": 23.85,
     "quantity": 230,
@@ -1001,7 +1001,7 @@
   },
   {
     "id": "101",
-    "symbol": "ABEV3",
+    "symbol": "HBSA3",
     "type": "BUY",
     "price": 15.95,
     "quantity": 340,
@@ -1011,7 +1011,7 @@
   },
   {
     "id": "102",
-    "symbol": "BBAS3",
+    "symbol": "TASA4",
     "type": "SELL",
     "price": 41.75,
     "quantity": 230,
@@ -1021,7 +1021,7 @@
   },
   {
     "id": "103",
-    "symbol": "PETR4",
+    "symbol": "SMTO3",
     "type": "BUY",
     "price": 33.00,
     "quantity": 210,
@@ -1031,7 +1031,7 @@
   },
   {
     "id": "104",
-    "symbol": "VALE3",
+    "symbol": "LJQQ3",
     "type": "SELL",
     "price": 67.80,
     "quantity": 220,
@@ -1041,7 +1041,7 @@
   },
   {
     "id": "105",
-    "symbol": "ITUB4",
+    "symbol": "BRIT3",
     "type": "BUY",
     "price": 28.80,
     "quantity": 210,
@@ -1051,7 +1051,7 @@
   },
   {
     "id": "106",
-    "symbol": "BBDC4",
+    "symbol": "SEQL3",
     "type": "SELL",
     "price": 24.00,
     "quantity": 240,
@@ -1061,7 +1061,7 @@
   },
   {
     "id": "107",
-    "symbol": "ABEV3",
+    "symbol": "CLSA3",
     "type": "BUY",
     "price": 16.20,
     "quantity": 350,
@@ -1071,7 +1071,7 @@
   },
   {
     "id": "108",
-    "symbol": "BBAS3",
+    "symbol": "LOGG3",
     "type": "SELL",
     "price": 41.90,
     "quantity": 240,
@@ -1081,7 +1081,7 @@
   },
   {
     "id": "109",
-    "symbol": "PETR4",
+    "symbol": "GUAR3",
     "type": "BUY",
     "price": 33.25,
     "quantity": 220,
@@ -1091,7 +1091,7 @@
   },
   {
     "id": "110",
-    "symbol": "VALE3",
+    "symbol": "JHSF3",
     "type": "SELL",
     "price": 68.00,
     "quantity": 230,
@@ -1101,7 +1101,7 @@
   },
   {
     "id": "111",
-    "symbol": "ITUB4",
+    "symbol": "MELK3",
     "type": "BUY",
     "price": 28.95,
     "quantity": 220,
@@ -1111,7 +1111,7 @@
   },
   {
     "id": "112",
-    "symbol": "BBDC4",
+    "symbol": "TRIS3",
     "type": "SELL",
     "price": 23.95,
     "quantity": 250,
@@ -1121,7 +1121,7 @@
   },
   {
     "id": "113",
-    "symbol": "ABEV3",
+    "symbol": "PORT3",
     "type": "BUY",
     "price": 15.85,
     "quantity": 360,
@@ -1131,7 +1131,7 @@
   },
   {
     "id": "114",
-    "symbol": "BBAS3",
+    "symbol": "MYPK3",
     "type": "SELL",
     "price": 42.10,
     "quantity": 250,
@@ -1141,7 +1141,7 @@
   },
   {
     "id": "115",
-    "symbol": "PETR4",
+    "symbol": "BLAU3",
     "type": "BUY",
     "price": 33.10,
     "quantity": 230,
@@ -1151,7 +1151,7 @@
   },
   {
     "id": "116",
-    "symbol": "VALE3",
+    "symbol": "AERI3",
     "type": "SELL",
     "price": 67.90,
     "quantity": 240,
@@ -1161,7 +1161,7 @@
   },
   {
     "id": "117",
-    "symbol": "ITUB4",
+    "symbol": "MATD3",
     "type": "BUY",
     "price": 28.70,
     "quantity": 230,
@@ -1171,7 +1171,7 @@
   },
   {
     "id": "118",
-    "symbol": "BBDC4",
+    "symbol": "SEER3",
     "type": "SELL",
     "price": 24.10,
     "quantity": 260,
@@ -1181,7 +1181,7 @@
   },
   {
     "id": "119",
-    "symbol": "ABEV3",
+    "symbol": "TGMA3",
     "type": "BUY",
     "price": 16.00,
     "quantity": 370,
@@ -1191,7 +1191,7 @@
   },
   {
     "id": "120",
-    "symbol": "BBAS3",
+    "symbol": "VIVA3",
     "type": "SELL",
     "price": 41.80,
     "quantity": 260,
@@ -1201,7 +1201,7 @@
   },
   {
     "id": "121",
-    "symbol": "PETR4",
+    "symbol": "CAML3",
     "type": "BUY",
     "price": 33.35,
     "quantity": 240,
@@ -1211,7 +1211,7 @@
   },
   {
     "id": "122",
-    "symbol": "VALE3",
+    "symbol": "TFCO4",
     "type": "SELL",
     "price": 68.20,
     "quantity": 250,
@@ -1221,7 +1221,7 @@
   },
   {
     "id": "123",
-    "symbol": "ITUB4",
+    "symbol": "SHUL4",
     "type": "BUY",
     "price": 28.85,
     "quantity": 240,
@@ -1231,7 +1231,7 @@
   },
   {
     "id": "124",
-    "symbol": "BBDC4",
+    "symbol": "ODPV3",
     "type": "SELL",
     "price": 23.80,
     "quantity": 270,
@@ -1241,7 +1241,7 @@
   },
   {
     "id": "125",
-    "symbol": "ABEV3",
+    "symbol": "PFRM3",
     "type": "BUY",
     "price": 15.90,
     "quantity": 380,
@@ -1251,7 +1251,7 @@
   },
   {
     "id": "126",
-    "symbol": "BBAS3",
+    "symbol": "LUPA3",
     "type": "SELL",
     "price": 41.95,
     "quantity": 270,
@@ -1261,7 +1261,7 @@
   },
   {
     "id": "127",
-    "symbol": "PETR4",
+    "symbol": "PGMN3",
     "type": "BUY",
     "price": 33.20,
     "quantity": 250,
@@ -1271,7 +1271,7 @@
   },
   {
     "id": "128",
-    "symbol": "VALE3",
+    "symbol": "LAND3",
     "type": "SELL",
     "price": 67.60,
     "quantity": 260,
@@ -1281,7 +1281,7 @@
   },
   {
     "id": "129",
-    "symbol": "ITUB4",
+    "symbol": "TTEN3",
     "type": "BUY",
     "price": 28.60,
     "quantity": 250,
@@ -1291,7 +1291,7 @@
   },
   {
     "id": "130",
-    "symbol": "BBDC4",
+    "symbol": "AESB3",
     "type": "SELL",
     "price": 24.00,
     "quantity": 280,
@@ -1301,7 +1301,7 @@
   },
   {
     "id": "131",
-    "symbol": "ABEV3",
+    "symbol": "BMGB4",
     "type": "BUY",
     "price": 16.15,
     "quantity": 390,
@@ -1311,7 +1311,7 @@
   },
   {
     "id": "132",
-    "symbol": "BBAS3",
+    "symbol": "MODL3",
     "type": "SELL",
     "price": 42.10,
     "quantity": 280,
@@ -1321,7 +1321,7 @@
   },
   {
     "id": "133",
-    "symbol": "PETR4",
+    "symbol": "PINE4",
     "type": "BUY",
     "price": 32.95,
     "quantity": 260,
@@ -1331,7 +1331,7 @@
   },
   {
     "id": "134",
-    "symbol": "VALE3",
+    "symbol": "RPAD5",
     "type": "SELL",
     "price": 68.10,
     "quantity": 270,
@@ -1341,7 +1341,7 @@
   },
   {
     "id": "135",
-    "symbol": "ITUB4",
+    "symbol": "ALSO3",
     "type": "BUY",
     "price": 28.75,
     "quantity": 260,
@@ -1351,7 +1351,7 @@
   },
   {
     "id": "136",
-    "symbol": "BBDC4",
+    "symbol": "CSMG3",
     "type": "SELL",
     "price": 23.85,
     "quantity": 290,
@@ -1361,7 +1361,7 @@
   },
   {
     "id": "137",
-    "symbol": "ABEV3",
+    "symbol": "SAPR4",
     "type": "BUY",
     "price": 15.80,
     "quantity": 400,
@@ -1371,7 +1371,7 @@
   },
   {
     "id": "138",
-    "symbol": "BBAS3",
+    "symbol": "FESA4",
     "type": "SELL",
     "price": 41.70,
     "quantity": 290,
@@ -1381,7 +1381,7 @@
   },
   {
     "id": "139",
-    "symbol": "PETR4",
+    "symbol": "GRND3",
     "type": "BUY",
     "price": 33.10,
     "quantity": 270,
@@ -1391,7 +1391,7 @@
   },
   {
     "id": "140",
-    "symbol": "VALE3",
+    "symbol": "HBOR3",
     "type": "SELL",
     "price": 67.90,
     "quantity": 280,
@@ -1401,7 +1401,7 @@
   },
   {
     "id": "141",
-    "symbol": "ITUB4",
+    "symbol": "LAVV3",
     "type": "BUY",
     "price": 28.90,
     "quantity": 270,
@@ -1411,7 +1411,7 @@
   },
   {
     "id": "142",
-    "symbol": "BBDC4",
+    "symbol": "JFEN3",
     "type": "SELL",
     "price": 24.10,
     "quantity": 300,
@@ -1421,7 +1421,7 @@
   },
   {
     "id": "143",
-    "symbol": "ABEV3",
+    "symbol": "PMAM3",
     "type": "BUY",
     "price": 16.05,
     "quantity": 410,
@@ -1431,7 +1431,7 @@
   },
   {
     "id": "144",
-    "symbol": "BBAS3",
+    "symbol": "PDGR3",
     "type": "SELL",
     "price": 42.00,
     "quantity": 300,
@@ -1441,7 +1441,7 @@
   },
   {
     "id": "145",
-    "symbol": "PETR4",
+    "symbol": "EVEN3",
     "type": "BUY",
     "price": 33.25,
     "quantity": 280,
@@ -1451,7 +1451,7 @@
   },
   {
     "id": "146",
-    "symbol": "VALE3",
+    "symbol": "RCSL3",
     "type": "SELL",
     "price": 68.00,
     "quantity": 290,
@@ -1461,7 +1461,7 @@
   },
   {
     "id": "147",
-    "symbol": "ITUB4",
+    "symbol": "MTRE3",
     "type": "BUY",
     "price": 28.65,
     "quantity": 280,
@@ -1471,7 +1471,7 @@
   },
   {
     "id": "148",
-    "symbol": "BBDC4",
+    "symbol": "PLPL3",
     "type": "SELL",
     "price": 23.95,
     "quantity": 310,
@@ -1481,7 +1481,7 @@
   },
   {
     "id": "149",
-    "symbol": "ABEV3",
+    "symbol": "TELB4",
     "type": "BUY",
     "price": 15.95,
     "quantity": 420,
@@ -1491,7 +1491,7 @@
   },
   {
     "id": "150",
-    "symbol": "BBAS3",
+    "symbol": "VSTE3",
     "type": "SELL",
     "price": 41.85,
     "quantity": 310,
@@ -1501,7 +1501,7 @@
   },
   {
     "id": "151",
-    "symbol": "PETR4",
+    "symbol": "GSHP3",
     "type": "BUY",
     "price": 33.00,
     "quantity": 290,
@@ -1511,7 +1511,7 @@
   },
   {
     "id": "152",
-    "symbol": "VALE3",
+    "symbol": "FRAS3",
     "type": "SELL",
     "price": 67.60,
     "quantity": 300,
@@ -1521,7 +1521,7 @@
   },
   {
     "id": "153",
-    "symbol": "ITUB4",
+    "symbol": "KEPL3",
     "type": "BUY",
     "price": 28.80,
     "quantity": 290,
@@ -1531,7 +1531,7 @@
   },
   {
     "id": "154",
-    "symbol": "BBDC4",
+    "symbol": "INEP4",
     "type": "SELL",
     "price": 24.00,
     "quantity": 320,
@@ -1541,7 +1541,7 @@
   },
   {
     "id": "155",
-    "symbol": "ABEV3",
+    "symbol": "ROMI3",
     "type": "BUY",
     "price": 16.10,
     "quantity": 430,

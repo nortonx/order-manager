@@ -14,7 +14,7 @@ import {
   getFilteredRowModel,
   // Row,
   SortingState,
-  VisibilityState
+  VisibilityState,
 } from "@tanstack/react-table";
 
 import {
@@ -54,8 +54,8 @@ export function DataTable<TData, TValue>({
     },
     onColumnFiltersChange: setColumnFilters,
     onColumnVisibilityChange: setColumnVisibility,
-  getFilteredRowModel: getFilteredRowModel(),
-});
+    getFilteredRowModel: getFilteredRowModel(),
+  });
 
   const paginationButtons = useMemo(() => {
     const pageCount = table.getPageCount();
@@ -99,14 +99,20 @@ export function DataTable<TData, TValue>({
                 <TableRow key={row.id}>
                   {row.getVisibleCells().map((cell) => (
                     <TableCell key={cell.id}>
-                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                      {flexRender(
+                        cell.column.columnDef.cell,
+                        cell.getContext(),
+                      )}
                     </TableCell>
                   ))}
                 </TableRow>
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={columns.length} className="h-24 text-center">
+                <TableCell
+                  colSpan={columns.length}
+                  className="h-24 text-center"
+                >
                   No results.
                 </TableCell>
               </TableRow>
