@@ -5,7 +5,7 @@ export type Asset = {
   id: string;
   symbol: string;
   type: Side | string;
-  price: number;
+  price: number | undefined;
   quantity: number;
   remainingQuantity: number;
   status: Status | string;
