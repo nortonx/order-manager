@@ -11,6 +11,9 @@ const customJestConfig = {
   preset: "ts-jest",
   verbose: true,
   testMatch: ["<rootDir>/__tests__/**/*.test.tsx", "<rootDir>/__tests__/**/*.test.ts"],
+  moduleNameMapper: {
+    "^@/(.*)$": "<rootDir>/src/$1",
+  },
 };
 
 module.exports = createJestConfig(customJestConfig);
