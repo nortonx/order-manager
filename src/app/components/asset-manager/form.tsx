@@ -1,104 +1,130 @@
 "use client";
 
-import { Input } from "@/app/components/ui/input";
-import { Button } from "@/app/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/app/components/ui/select";
-
-import { getAssets } from "@/actions";
-import { Asset } from "@/types/asset.type";
 import { useState, useRef, useEffect } from "react";
+import { Asset } from "@/types/asset.type";
+import { getAssets } from "@/actions";
 import useAssetStore from "@/store/useAssetStore";
-import { formatCurrency } from '@/utils/currency';
+import { AssetSearch } from "./asset-search";
+import { AssetFormFields } from "./asset-form-fields";
+import { OrderSummary } from "./order-summary";
+import { ActionButtons } from "./action-buttons";
 
 export default function AssetForm() {
-  const searchField = useRef<HTMLInputElement>(null);
-  const priceField = useRef<HTMLInputElement>(null);
+  const searchField = useRef<HTMLInputElement>(null as unknown as HTMLInputElement);
   const [result, setResult] = useState<Asset[]>([]);
   const [symbol, setSymbol] = useState<string>("");
   const [selectedAsset, setSelectedAsset] = useState<Asset | null>(null);
-  const price = formatCurrency(selectedAsset?.price, "BRL") || 0;
+  const [quantity, setQuantity] = useState<number>(1);
+  const [assetType, setAssetType] = useState<string>("");
+  const [totalPrice, setTotalPrice] = useState<number>(0);
   
   const data = getAssets();
   
   useEffect(() => {
     searchField.current?.focus();
-  }, [])
+  }, []);
+
+  // Update price calculation when selected asset or quantity changes
+  useEffect(() => {
+    if (selectedAsset?.price && quantity) {
+      const price = selectedAsset.price * quantity;
+      setTotalPrice(price);
+    } else {
+      setTotalPrice(0);
+    }
+  }, [selectedAsset, quantity]);
 
   const handleFilterAssets = (value: string) => {
+    if (!value) {
+      setResult([]);
+      return;
+    }
+    
     const filteredAssets = data.filter((asset: Asset) => {
       const assetValue = asset.symbol.toLowerCase();
-      setSymbol(assetValue.toUpperCase());
       return assetValue.includes(value.toLowerCase());
     });
     setResult(filteredAssets);
+    setSymbol(value);
   };
 
   const handleSelectedAsset = (asset: Asset) => {
     setSelectedAsset(asset);
-    setResult((prev) => prev.filter((item) => item.id !== asset.id));
     setSymbol(asset.symbol);
-  }
+    setAssetType(asset.type || "buy");
+    setResult([]);
+    // Reset quantity to 1 when asset changes
+    setQuantity(1);
+  };
 
-  const handleCalculatePrice = (asset: Asset) => {
-    // calculate the price based on the selected asset and quantity
-  }
+  const handleQuantityChange = (newQuantity: number) => {
+    setQuantity(newQuantity);
+  };
+  
+  const handleTypeChange = (type: string) => {
+    setAssetType(type);
+  };
+  
+  const handleAddAsset = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!selectedAsset) return;
+    
+    // Use type assertion to add the asset with additional properties
+    useAssetStore.getState().addAsset({
+      ...selectedAsset, 
+      quantity, 
+      totalPrice, 
+      type: assetType
+    } as Asset & { quantity: number; totalPrice: number; type: string });
+    
+    // Reset form after adding
+    resetForm();
+  };
+  
+  const resetForm = () => {
+    setSelectedAsset(null);
+    setSymbol("");
+    setQuantity(1);
+    setAssetType("");
+    setTotalPrice(0);
+    setResult([]);
+  };
 
   return (
-    <form className="p-4">
+    <form className="p-4" onSubmit={handleAddAsset}>
       <fieldset>
         <legend>Assets (data length is: {data.length})</legend>
-        <Input
-          placeholder="Instrumento"
-          className="my-1"
-          onChange={(e) => handleFilterAssets(e.target.value)}
-          ref={searchField}
-          value={selectedAsset?.symbol}
+        
+        <AssetFormFields
+          symbol={symbol}
+          assetType={assetType}
+          quantity={quantity}
+          totalPrice={totalPrice}
+          searchFieldRef={searchField}
+          onFilterAssets={handleFilterAssets}
+          onTypeChange={handleTypeChange}
+          onQuantityChange={handleQuantityChange}
         />
-        <div className="select-container my-1">
-          <Select value={selectedAsset?.type} >
-            <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Compra ou Venda?" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="buy">Compra</SelectItem>
-              <SelectItem value="sell">Venda</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
-        <Input type="number" placeholder="Quantidade" className="my-1" value={1} onChange={handleCalculatePrice}/>
-        <Input type="text" placeholder="Preço" className="my-1" disabled ref={priceField} value={price} />
       </fieldset>
-      <div className="action-buttons p-2 flex justify-evenly">
-        <Button>Adicionar</Button>
-        <Button variant="secondary">Cancelar</Button>
-      </div>
-      <ul className="filtered-assets-list">
-        {result.length > 0 ? (
-          result.map((asset) => (
-            <li key={asset.id} className="flex justify-between border p-2 my-1">
-              <Button 
-                variant="outline"
-                onClick={() => handleSelectedAsset(asset)}
-              >
-                {asset.symbol}
-              </Button>
-              <Button variant="secondary">
-                {asset.type}
-              </Button>
-              
-            </li>
-          ))
-        ) : (
-          <li>No results yet</li>
-        )}
-      </ul>
-      <code className="my-4 w-full">Selected Asset value: {JSON.stringify(selectedAsset)}</code>
+      
+      <ActionButtons 
+        hasSelectedAsset={!!selectedAsset}
+        onReset={resetForm}
+      />
+      
+      <AssetSearch 
+        results={result}
+        onSelectAsset={handleSelectedAsset}
+      />
+      
+      {selectedAsset && (
+        <OrderSummary
+          selectedAsset={selectedAsset}
+          assetType={assetType}
+          quantity={quantity}
+          totalPrice={totalPrice}
+        />
+      )}
     </form>
   );
 }

@@ -5,8 +5,9 @@ export type Asset = {
   id: string;
   symbol: string;
   type: Side | string;
-  price: number | undefined;
-  quantity: number;
+  price?: number;
+  totalPrice?: number;
+  quantity?: number;
   remainingQuantity: number;
   status: Status | string;
   dateTime: string;
