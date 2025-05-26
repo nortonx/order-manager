@@ -39,7 +39,7 @@ export function AssetFormFields({
         ref={searchFieldRef}
         value={symbol}
       />
-      <div className="select-container my-1">
+      <div className="select-container my-2">
         <Select value={assetType} onValueChange={onTypeChange} data-testid="asset-type-select">
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Compra ou Venda?" />
@@ -59,9 +59,9 @@ export function AssetFormFields({
         onChange={(e) => onQuantityChange(Number(e.target.value))}
       />
       <Input 
-        type="text" 
-        placeholder="Preço" 
-        className="my-1" 
+        type="text"
+        placeholder="Preço"
+        className="my-2"
         disabled 
         value={totalPrice ? formatCurrency(totalPrice, "BRL") : ""} 
       />

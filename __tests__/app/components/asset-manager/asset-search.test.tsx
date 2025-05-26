@@ -22,12 +22,12 @@ describe("AssetSearch", () => {
     render(<AssetSearch results={mockAssets} onSelectAsset={jest.fn()} />);
     expect(screen.getByText("AAPL")).toBeInTheDocument();
     expect(screen.getByText("GOOGL")).toBeInTheDocument();
-    expect(screen.queryByText("No results yet")).not.toBeInTheDocument();
+    expect(screen.queryByText("Nenhum resultado listado")).not.toBeInTheDocument();
   });
 
-  it('renders "No results yet" when results are empty', () => {
+  it('renders "Nenhum resultado listado" when results are empty', () => {
     render(<AssetSearch results={[]} onSelectAsset={jest.fn()} />);
-    expect(screen.getByText("No results yet")).toBeInTheDocument();
+    expect(screen.getByText("Nenhum resultado listado")).toBeInTheDocument();
   });
 
   it("calls onSelectAsset with correct asset when button is clicked", () => {

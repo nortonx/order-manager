@@ -10,7 +10,7 @@ type AssetStore = {
   getLength: () => number;
 };
 
-const useAssetStore = create<AssetStore>((set) => ({
+const useAssetStore = create<AssetStore>((set, get) => ({
   assets: [],
   addAsset: (asset: Asset) => set((state: AssetStore) => ({ assets: [...state.assets, asset] })),
   removeAsset: (id: string) => set((state: AssetStore) => ({ assets: state.assets.filter(asset => asset.id !== id) })),
@@ -18,7 +18,7 @@ const useAssetStore = create<AssetStore>((set) => ({
     assets: state.assets.map(asset => asset.id === updatedAsset.id ? updatedAsset : asset)
   })),
   clearAssets: () => set({ assets: [] }),
-  getLength: (): number => useAssetStore.getState().assets.length,
+  getLength: (): number => get().assets.length
 }));
 
-export default useAssetStore;
+export { useAssetStore };

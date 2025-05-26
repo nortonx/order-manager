@@ -25,7 +25,7 @@ describe("OrderSummary Component", () => {
     jest.clearAllMocks();
   });
 
-  test("renders with all required information", () => {
+  it("renders with all required information", () => {
     render(<OrderSummary {...defaultProps} />);
     
     // Check for heading
@@ -51,14 +51,14 @@ describe("OrderSummary Component", () => {
     expect(formatCurrency).toHaveBeenCalledWith(2845, "BRL");
   });
 
-  test("renders sell type correctly", () => {
+  it("renders sell type correctly", () => {
     render(<OrderSummary {...defaultProps} assetType="sell" />);
     
     // Check that it displays "Venda" for sell type
     expect(screen.getByText("Type: Venda")).toBeInTheDocument();
   });
 
-  test("handles missing price gracefully", () => {
+  it("handles missing price gracefully", () => {
     const assetWithoutPrice = {
       ...defaultProps,
       selectedAsset: {
@@ -78,7 +78,7 @@ describe("OrderSummary Component", () => {
     expect(formatCurrency).toHaveBeenCalledWith(0, "BRL");
   });
 
-  test("displays correct total amount based on props", () => {
+  it("displays correct total amount based on props", () => {
     const customProps = {
       ...defaultProps,
       quantity: 50,
