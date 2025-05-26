@@ -11,7 +11,8 @@
     "test:watch": "jest --watchAll",
     "test:updateSnapshots": "jest --updateSnapshot",
     "test:playwright": "playwright test --reporter=dot",
-    "test:ui": "playwright test --ui"
+    "test:ui": "playwright test --ui",
+    "precommit": "npm run lint && npm run test && npm run build"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.15",
