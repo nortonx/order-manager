@@ -4,10 +4,11 @@ import type { Side } from "../enums/side.enum";
 export type Asset = {
   id: string;
   symbol: string;
-  type: Side;
-  price: number;
-  quantity: number;
+  type: Side | string;
+  price?: number;
+  totalPrice?: number;
+  quantity?: number;
   remainingQuantity: number;
-  status: Status;
+  status: Status | string;
   dateTime: string;
 };
