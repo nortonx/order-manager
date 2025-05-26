@@ -7,9 +7,9 @@ interface ActionButtonsProps {
 
 export function ActionButtons({ hasSelectedAsset, onReset }: ActionButtonsProps) {
   return (
-    <div className="action-buttons p-2 flex justify-evenly">
-      <Button type="submit" disabled={!hasSelectedAsset}>Adicionar</Button>
-      <Button type="button" variant="secondary" onClick={onReset}>Cancelar</Button>
+    <div className="action-buttons flex justify-between">
+      <Button type="submit" disabled={!hasSelectedAsset} size="sm">Adicionar</Button>
+      <Button type="button" variant="secondary" onClick={onReset} size="sm">Cancelar</Button>
     </div>
   );
 }

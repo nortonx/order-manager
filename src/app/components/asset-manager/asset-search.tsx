@@ -7,24 +7,25 @@ interface AssetSearchProps {
   onSelectAsset: (asset: Asset) => void;
 }
 
-export function AssetSearch({ results, onSelectAsset }: AssetSearchProps) {
+export function AssetSearch({ results, onSelectAsset }: Readonly<AssetSearchProps>) {
   return (
-    <ul className="filtered-assets-list">
+    <ul className="filtered-assets-list mt-3">
       {results.length > 0 ? (
         results.map((asset) => (
-          <li key={asset.id} className="flex justify-between border p-2 my-1">
+          <li key={asset.id} className="flex justify-between items-center border p-2 my-y">
             <Button 
               type="button"
               variant="outline"
               onClick={() => onSelectAsset(asset)}
+              size="sm"
             >
               {asset.symbol}
             </Button>
-            <span>{formatCurrency(asset.price ?? 0, "BRL")}</span>
+            <div className="text-sm mr-2">{formatCurrency(asset.price ?? 0, "BRL")}</div>
           </li>
         ))
       ) : (
-        <li>No results yet</li>
+        <li>Nenhum resultado listado</li>
       )}
     </ul>
   );

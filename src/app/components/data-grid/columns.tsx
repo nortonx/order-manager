@@ -2,21 +2,11 @@
 
 import { ColumnDef } from "@tanstack/react-table";
 import { formatCurrency, formatSide, formatStatus, formatDate } from "@/utils";
-
-export type Asset = {
-  id: string;
-  symbol: string;
-  type: string; // side: buy/sell
-  price: number;
-  quantity: number;
-  remainingQuantity: number;
-  status: string; // status: open/closed
-  dateTime: string;
-};
+import type { Order } from "@/types/order.type";
 
 import HeaderSortButton from "@/app/components/header-sort-button";
 
-export const columns: ColumnDef<Asset>[] = [
+export const columns: ColumnDef<Order>[] = [
   {
     accessorKey: "id",
     header: ({ column }) => (
@@ -55,7 +45,18 @@ export const columns: ColumnDef<Asset>[] = [
     header: () => <div className="flex justify-center font-bold">Preço</div>,
     cell: ({ row }) => (
       <div className="font-mono flex justify-center">
-        {formatCurrency(row.original.price)}
+        {formatCurrency(row.original.price ?? 0)}
+      </div>
+    ),
+  },
+  {
+    accessorKey: "requestedQuantity",
+    header: () => (
+      <div className="flex justify-center font-bold">Quantidade Solicitada</div>
+    ),
+    cell: ({ row }) => (
+      <div className="flex justify-center">
+        {row.original.requestedQuantity}
       </div>
     ),
   },

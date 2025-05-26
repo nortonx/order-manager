@@ -1,5 +1,5 @@
 import data from "@/app/data/data.json";
-import useAssetStore from "@/store/useAssetStore";
+import { useAssetStore } from "@/store/useAssetStore";
 import { Asset } from "@/types/asset.type";
 
 export const getAssets = () => {

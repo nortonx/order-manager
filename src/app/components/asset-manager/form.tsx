@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Asset } from "@/types/asset.type";
 import { getAssets } from "@/actions";
-import useAssetStore from "@/store/useAssetStore";
+import { useOrderStore } from "@/store/useOrderStore";
 import { AssetSearch } from "./asset-search";
 import { AssetFormFields } from "./asset-form-fields";
 import { OrderSummary } from "./order-summary";
@@ -60,7 +60,7 @@ export default function AssetForm() {
   const handleQuantityChange = (newQuantity: number) => {
     setQuantity(newQuantity);
   };
-  
+
   const handleTypeChange = (type: string) => {
     setAssetType(type);
   };
@@ -68,16 +68,15 @@ export default function AssetForm() {
   const handleAddAsset = (e: React.FormEvent) => {
     e.preventDefault();
     if (!selectedAsset) return;
-    
-    // Use type assertion to add the asset with additional properties
-    useAssetStore.getState().addAsset({
-      ...selectedAsset, 
-      quantity, 
-      totalPrice, 
-      type: assetType
-    } as Asset & { quantity: number; totalPrice: number; type: string });
-    
-    // Reset form after adding
+
+    useOrderStore.getState().addOrder({
+      ...selectedAsset,
+      totalPrice,
+      type: assetType,
+      requestedQuantity: quantity,
+      remainingQuantity: selectedAsset.remainingQuantity - quantity,
+    });
+
     resetForm();
   };
   
@@ -93,7 +92,7 @@ export default function AssetForm() {
   return (
     <form className="p-4" onSubmit={handleAddAsset}>
       <fieldset>
-        <legend>Assets (data length is: {data.length})</legend>
+        <legend>Ativos</legend>
         
         <AssetFormFields
           symbol={symbol}

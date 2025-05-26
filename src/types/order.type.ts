@@ -1,10 +1,5 @@
-export type Order = {
-  id: string;
-  instrument: string;
-  side: string;
-  price: number;
-  quantity: number;
-  remainingQuantity: number;
-  status: string; // open/closed
-  dateTime: Date;
+import { Asset } from './asset.type';
+
+export type Order = Asset & {
+  requestedQuantity?: number ;
 };
