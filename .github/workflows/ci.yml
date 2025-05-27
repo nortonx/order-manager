@@ -21,5 +21,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Check code style
+        run: npx prettier . --check
+
+      - name: Run linting
+        run: npm run lint
+
       - name: Run tests
         run: npm test
