@@ -6,11 +6,11 @@ export default async function Page() {
   const data = getAssets();
   return (
     <div
-      className="grid grid-cols-12 gap-6 max-w-fit border rounded-sm p-2"
+      className="container mx-auto p-4"
       data-testid="orders-page"
     >
       <div
-        className="col-span-12 w-full"
+        className="bg-white dark:bg-slate-800 rounded-lg shadow"
         data-testid="assets-table"
       >
         <DataTable

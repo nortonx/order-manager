@@ -12,7 +12,10 @@ export function AssetSearch({
   onSelectAsset,
 }: Readonly<AssetSearchProps>) {
   return (
-    <ul className="filtered-assets-list mt-3">
+    <ul
+      className="filtered-assets-list mt-3"
+      data-testid="asset-search"
+    >
       {results.length > 0 ? (
         results.map((asset) => (
           <li

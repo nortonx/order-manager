@@ -15,7 +15,7 @@ export default function AssetManager() {
       data-testid="manager-page"
     >
       <div
-        className="col-span-10 w-full"
+        className="col-span-10 w-full bg-white dark:bg-slate-800 rounded-lg shadow"
         data-testid="orders-table"
       >
         {store.orders.length > 0 ? (
@@ -28,7 +28,7 @@ export default function AssetManager() {
         )}
       </div>
       <div
-        className="col-span-2 border border-slate-800 rounded-sm"
+        className="col-span-2 border border-slate-800 rounded-sm bg-white dark:bg-slate-800 rounded-lg shadow"
         data-testid="manager-panel"
       >
         <AssetForm />

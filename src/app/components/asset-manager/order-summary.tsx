@@ -15,7 +15,10 @@ export function OrderSummary({
   totalPrice,
 }: OrderSummaryProps) {
   return (
-    <div className="order-summary mt-4 p-3 border rounded">
+    <div
+      className="order-summary mt-4 p-3 border rounded"
+      data-testid="order-summary"
+    >
       <h3 className="font-bold">Order Summary</h3>
       <p>Symbol: {selectedAsset.symbol}</p>
       <p>Type: {assetType === "buy" ? "Compra" : "Venda"}</p>
