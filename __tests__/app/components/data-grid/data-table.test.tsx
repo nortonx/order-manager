@@ -39,7 +39,7 @@ const mockData: TestData[] = [
 ];
 
 describe("DataTable", () => {
-  it("renders table with data correctly", () => {
+  it("renders table with data correctly and match snapshot", () => {
     render(
       <DataTable
         columns={mockColumns}

@@ -5,7 +5,7 @@ import { DataTable } from "@/app/components/data-grid/data-table";
 import AssetForm from "@/app/components/asset-manager/form";
 import { useOrderStore } from "@/store/useOrderStore";
 
-export default function AssetManager() {
+export default function OrderManagerPage() {
   const store = useOrderStore();
   const data = store.orders;
 

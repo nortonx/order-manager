@@ -1,0 +1,1129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AssetsPage renders the AssetsManager page and match snapshot 1`] = `
+<div>
+  <div
+    class="w-full p-4"
+    data-testid="assets-page"
+  >
+    <div
+      class="bg-white dark:bg-slate-800 rounded-lg shadow"
+      data-testid="assets-table"
+    >
+      <div
+        class="rounded-md border"
+        data-testid="data-table"
+      >
+        <div
+          class="relative w-full overflow-x-auto"
+          data-slot="table-container"
+        >
+          <table
+            class="w-full caption-bottom text-sm"
+            data-slot="table"
+          >
+            <thead
+              class="[&_tr]:border-b"
+              data-slot="table-header"
+            >
+              <tr
+                class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"
+                data-slot="table-row"
+              >
+                <th
+                  class="text-foreground h-10 px-2 text-left align-middle font-medium whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-head"
+                >
+                  <div
+                    class="flex justify-center font-bold"
+                  >
+                    <button
+                      class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                      data-slot="button"
+                    >
+                      Id
+                      <svg
+                        class="lucide lucide-arrow-up-down h-4 w-4"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m21 16-4 4-4-4"
+                        />
+                        <path
+                          d="M17 20V4"
+                        />
+                        <path
+                          d="m3 8 4-4 4 4"
+                        />
+                        <path
+                          d="M7 4v16"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </th>
+                <th
+                  class="text-foreground h-10 px-2 text-left align-middle font-medium whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-head"
+                >
+                  <div
+                    class="flex justify-center font-bold"
+                  >
+                    <button
+                      class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                      data-slot="button"
+                    >
+                      Instrumento
+                      <svg
+                        class="lucide lucide-arrow-up-down h-4 w-4"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m21 16-4 4-4-4"
+                        />
+                        <path
+                          d="M17 20V4"
+                        />
+                        <path
+                          d="m3 8 4-4 4 4"
+                        />
+                        <path
+                          d="M7 4v16"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </th>
+                <th
+                  class="text-foreground h-10 px-2 text-left align-middle font-medium whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-head"
+                >
+                  <div
+                    class="flex justify-center font-bold"
+                  >
+                    <button
+                      class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                      data-slot="button"
+                    >
+                      Lado
+                      <svg
+                        class="lucide lucide-arrow-up-down h-4 w-4"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m21 16-4 4-4-4"
+                        />
+                        <path
+                          d="M17 20V4"
+                        />
+                        <path
+                          d="m3 8 4-4 4 4"
+                        />
+                        <path
+                          d="M7 4v16"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </th>
+                <th
+                  class="text-foreground h-10 px-2 text-left align-middle font-medium whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-head"
+                >
+                  <div
+                    class="flex justify-center font-bold"
+                  >
+                    Preço
+                  </div>
+                </th>
+                <th
+                  class="text-foreground h-10 px-2 text-left align-middle font-medium whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-head"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Quantidade Restante
+                  </div>
+                </th>
+                <th
+                  class="text-foreground h-10 px-2 text-left align-middle font-medium whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-head"
+                >
+                  <div
+                    class="flex justify-center font-bold"
+                  >
+                    <button
+                      class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                      data-slot="button"
+                    >
+                      Status
+                      <svg
+                        class="lucide lucide-arrow-up-down h-4 w-4"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m21 16-4 4-4-4"
+                        />
+                        <path
+                          d="M17 20V4"
+                        />
+                        <path
+                          d="m3 8 4-4 4 4"
+                        />
+                        <path
+                          d="M7 4v16"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </th>
+                <th
+                  class="text-foreground h-10 px-2 text-left align-middle font-medium whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-head"
+                >
+                  <div
+                    class="flex justify-center font-bold"
+                  >
+                    <button
+                      class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                      data-slot="button"
+                    >
+                      Data/Hora
+                      <svg
+                        class="lucide lucide-arrow-up-down h-4 w-4"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m21 16-4 4-4-4"
+                        />
+                        <path
+                          d="M17 20V4"
+                        />
+                        <path
+                          d="m3 8 4-4 4 4"
+                        />
+                        <path
+                          d="M7 4v16"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="[&_tr:last-child]:border-0"
+              data-slot="table-body"
+            >
+              <tr
+                class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"
+                data-slot="table-row"
+              >
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    1
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    PETR4
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Compra
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="font-mono flex justify-center"
+                  >
+                    R$ 32,45
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    100
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Aberto
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    01/06/2024, 07:15:00
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"
+                data-slot="table-row"
+              >
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    2
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    VALE3
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Venda
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="font-mono flex justify-center"
+                  >
+                    R$ 67,80
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    20
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Aberto
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    02/06/2024, 08:30:00
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"
+                data-slot="table-row"
+              >
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    3
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    ITUB4
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Compra
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="font-mono flex justify-center"
+                  >
+                    R$ 28,10
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    287
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Fechado
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    03/06/2024, 06:45:00
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"
+                data-slot="table-row"
+              >
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    4
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    BBDC4
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Venda
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="font-mono flex justify-center"
+                  >
+                    R$ 23,55
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    150
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Aberto
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    04/06/2024, 11:20:00
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"
+                data-slot="table-row"
+              >
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    5
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    ABEV3
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Compra
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="font-mono flex justify-center"
+                  >
+                    R$ 15,75
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    100
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Aberto
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    05/06/2024, 10:10:00
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"
+                data-slot="table-row"
+              >
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    6
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    BBAS3
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Venda
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="font-mono flex justify-center"
+                  >
+                    R$ 41,23
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    120
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Aberto
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    06/06/2024, 07:00:00
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"
+                data-slot="table-row"
+              >
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    7
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    MGLU3
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Compra
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="font-mono flex justify-center"
+                  >
+                    R$ 33,12
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    259
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Fechado
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    07/06/2024, 08:15:00
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"
+                data-slot="table-row"
+              >
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    8
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    LREN3
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Venda
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="font-mono flex justify-center"
+                  >
+                    R$ 68,45
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    30
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Aberto
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    08/06/2024, 09:30:00
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"
+                data-slot="table-row"
+              >
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    9
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    SUZB3
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Compra
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="font-mono flex justify-center"
+                  >
+                    R$ 27,95
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    90
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Aberto
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    09/06/2024, 10:45:00
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"
+                data-slot="table-row"
+              >
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    10
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    JBSS3
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Venda
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="font-mono flex justify-center"
+                  >
+                    R$ 24,10
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    235
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    Fechado
+                  </div>
+                </td>
+                <td
+                  class="p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  data-slot="table-cell"
+                >
+                  <div
+                    class="flex justify-center"
+                  >
+                    10/06/2024, 11:20:00
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div
+        class="flex items-center justify-center space-x-1 p-4 pagination-component"
+      >
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5"
+          data-slot="button"
+          disabled=""
+        >
+          Anterior
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          1
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          2
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          3
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          4
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          5
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          6
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          7
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          8
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          9
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          10
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          11
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          12
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          13
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          14
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          15
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 pagination-button"
+          data-slot="button"
+        >
+          16
+        </button>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5"
+          data-slot="button"
+        >
+          Próximo
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
