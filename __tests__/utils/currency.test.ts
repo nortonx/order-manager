@@ -11,7 +11,6 @@ describe("formatCurrency", () => {
     expect(formatCurrency(1234.56)).toMatch(/^R\$\s*1\.234,56$/);
     expect(formatCurrency(-1234)).toMatch(/^-R\$\s*1\.234,00$/);
     expect(formatCurrency(0)).toMatch(/^R\$\s*0,00$/);
-
   });
 
   it("formats USD in en-US", () => {

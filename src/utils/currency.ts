@@ -12,7 +12,7 @@ export const formatCurrency = (
 ) => {
   // Check for invalid input
   if (typeof amount !== "number" || Number.isNaN(Number(amount))) {
-    return "NaN";  // Return "NaN" as a string instead of the NaN value
+    return "NaN"; // Return "NaN" as a string instead of the NaN value
   }
 
   return new Intl.NumberFormat(locale, {
