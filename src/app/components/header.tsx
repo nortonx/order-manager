@@ -14,7 +14,16 @@ export default function Header() {
         Flowa Order Management
       </Link>
       <div className="flex justify-between items-center gap-4">
-        <div>Any other content that matters.</div>
+        <div>
+          <Link href="/assets" className="text-lg hover:underline">
+            Assets
+          </Link>
+        </div>
+        <div>
+          <Link href="/manager" className="text-lg hover:underline">
+            Order Manager
+          </Link>
+        </div>
         <ModeToggle />
       </div>
     </header>

@@ -5,16 +5,22 @@ import { Asset } from "@/types/asset.type";
 describe("AssetSearch", () => {
   const mockAssets: Asset[] = [
     {
-      id: "1", symbol: "AAPL", price: 150, type: "buy",
+      id: "1",
+      symbol: "AAPL",
+      price: 150,
+      type: "buy",
       remainingQuantity: 0,
       status: "",
-      dateTime: ""
+      dateTime: "",
     },
     {
-      id: "2", symbol: "GOOGL", price: 2500, type: "buy",
+      id: "2",
+      symbol: "GOOGL",
+      price: 2500,
+      type: "buy",
       remainingQuantity: 0,
       status: "",
-      dateTime: ""
+      dateTime: "",
     },
   ];
 
@@ -22,7 +28,9 @@ describe("AssetSearch", () => {
     render(<AssetSearch results={mockAssets} onSelectAsset={jest.fn()} />);
     expect(screen.getByText("AAPL")).toBeInTheDocument();
     expect(screen.getByText("GOOGL")).toBeInTheDocument();
-    expect(screen.queryByText("Nenhum resultado listado")).not.toBeInTheDocument();
+    expect(
+      screen.queryByText("Nenhum resultado listado"),
+    ).not.toBeInTheDocument();
   });
 
   it('renders "Nenhum resultado listado" when results are empty', () => {
@@ -40,6 +48,13 @@ describe("AssetSearch", () => {
 
   it("displays formatted price for each asset", () => {
     render(<AssetSearch results={mockAssets} onSelectAsset={jest.fn()} />);
-    expect(screen.getAllByText(/\d/).some(el => el.textContent?.includes("150") || el.textContent?.includes("2500"))).toBe(true);
+    expect(
+      screen
+        .getAllByText(/\d/)
+        .some(
+          (el) =>
+            el.textContent?.includes("150") || el.textContent?.includes("2500"),
+        ),
+    ).toBe(true);
   });
 });

@@ -1,5 +1,5 @@
-import { Asset } from './asset.type';
+import { Asset } from "./asset.type";
 
 export type Order = Asset & {
-  requestedQuantity?: number ;
+  requestedQuantity?: number;
 };

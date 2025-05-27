@@ -21,4 +21,4 @@ export const loadAssetsToStore = () => {
   assets.forEach((asset: Asset) => {
     assetStore.addAsset(asset);
   });
-}
+};

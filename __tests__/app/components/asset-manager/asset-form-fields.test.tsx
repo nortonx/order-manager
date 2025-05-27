@@ -8,7 +8,8 @@ describe("AssetFormFields", () => {
     assetType: "buy",
     quantity: 10,
     totalPrice: 1000,
-    searchFieldRef: createRef<HTMLInputElement>() as RefObject<HTMLInputElement>,
+    searchFieldRef:
+      createRef<HTMLInputElement>() as RefObject<HTMLInputElement>,
     onFilterAssets: jest.fn(),
     onTypeChange: jest.fn(),
     onQuantityChange: jest.fn(),
@@ -48,6 +49,6 @@ describe("AssetFormFields", () => {
   it("displays formatted total price", () => {
     render(<AssetFormFields {...defaultProps} totalPrice={1234.56} />);
     // The formatted value depends on formatCurrency, so just check for a string
-    expect((screen.getByPlaceholderText("Preço").value)).toMatch(/\d/);
+    expect(screen.getByPlaceholderText("Preço").value).toMatch(/\d/);
   });
 });

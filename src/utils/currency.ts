@@ -10,10 +10,7 @@ export const formatCurrency = (
   }).format(amount);
 };
 
-export const formatCurrencyToNumber = (
-  amount: number,
-  locale = "pt-BR",
-) => {
+export const formatCurrencyToNumber = (amount: number, locale = "pt-BR") => {
   if (Number.isNaN(amount)) return NaN;
   return new Intl.NumberFormat(locale).format(amount);
 };

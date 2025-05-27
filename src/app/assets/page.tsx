@@ -5,10 +5,12 @@ import { getAssets } from "@/actions/assets";
 export default async function Page() {
   const data = getAssets();
   return (
-    <div className="container mx-auto py-8" data-testid="orders-page">
-      <DataTable columns={columns} data={data} />
-      <div>
-        <h2>Orders</h2>
+    <div
+      className="grid grid-cols-12 gap-6 max-w-fit border rounded-sm p-2"
+      data-testid="orders-page"
+    >
+      <div className="col-span-12 w-full" data-testid="assets-table">
+        <DataTable columns={columns} data={data} />
       </div>
     </div>
   );

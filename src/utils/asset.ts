@@ -36,6 +36,4 @@ export const formatDate = (date: string) => {
     second: "2-digit",
   };
   return new Date(date).toLocaleString("pt-BR", options);
-}
-
-
+};
