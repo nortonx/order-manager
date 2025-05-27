@@ -38,7 +38,7 @@ describe("formatCurrency", () => {
     expect(formatCurrency(1e12, "USD", "en-US")).toBe("$1,000,000,000,000.00");
     expect(formatCurrency(1e-2, "USD", "en-US")).toBe("$0.01");
     expect(formatCurrency(-1e12, "USD", "en-US")).toBe(
-      "-$1,000,000,000,000.00",
+      "-$1,000,000,000,000.00"
     );
     expect(formatCurrency(-1e-2, "USD", "en-US")).toBe("-$0.01");
   });

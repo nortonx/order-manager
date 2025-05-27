@@ -55,7 +55,12 @@ describe("OrderSummary Component", () => {
   });
 
   it("renders sell type correctly", () => {
-    render(<OrderSummary {...defaultProps} assetType="sell" />);
+    render(
+      <OrderSummary
+        {...defaultProps}
+        assetType="sell"
+      />
+    );
 
     // Check that it displays "Venda" for sell type
     expect(screen.getByText("Type: Venda")).toBeInTheDocument();

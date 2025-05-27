@@ -47,7 +47,12 @@ describe("AssetFormFields", () => {
   });
 
   it("displays formatted total price", () => {
-    render(<AssetFormFields {...defaultProps} totalPrice={1234.56} />);
+    render(
+      <AssetFormFields
+        {...defaultProps}
+        totalPrice={1234.56}
+      />
+    );
     // The formatted value depends on formatCurrency, so just check for a string
     expect(screen.getByPlaceholderText("Preço").value).toMatch(/\d/);
   });

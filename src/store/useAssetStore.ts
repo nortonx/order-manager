@@ -21,7 +21,7 @@ const useAssetStore = create<AssetStore>((set, get) => ({
   updateAsset: (updatedAsset: Asset) =>
     set((state: AssetStore) => ({
       assets: state.assets.map((asset) =>
-        asset.id === updatedAsset.id ? updatedAsset : asset,
+        asset.id === updatedAsset.id ? updatedAsset : asset
       ),
     })),
   clearAssets: () => set({ assets: [] }),

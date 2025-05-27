@@ -20,7 +20,7 @@ const useOrderStore = create<OrderStore>((set) => ({
   updateOrder: (updatedOrder: Order) =>
     set((state: OrderStore) => ({
       orders: state.orders.map((order) =>
-        order.id === updatedOrder.id ? updatedOrder : order,
+        order.id === updatedOrder.id ? updatedOrder : order
       ),
     })),
   clearOrders: () => set({ orders: [] }),

@@ -11,7 +11,7 @@ import { ActionButtons } from "./action-buttons";
 
 export default function AssetForm() {
   const searchField = useRef<HTMLInputElement>(
-    null as unknown as HTMLInputElement,
+    null as unknown as HTMLInputElement
   );
   const [result, setResult] = useState<Asset[]>([]);
   const [symbol, setSymbol] = useState<string>("");
@@ -106,7 +106,10 @@ export default function AssetForm() {
   };
 
   return (
-    <form className="p-4" onSubmit={handleAddAsset}>
+    <form
+      className="p-4"
+      onSubmit={handleAddAsset}
+    >
       <fieldset>
         <legend>Ativos</legend>
 
@@ -122,9 +125,15 @@ export default function AssetForm() {
         />
       </fieldset>
 
-      <ActionButtons hasSelectedAsset={!!selectedAsset} onReset={resetForm} />
+      <ActionButtons
+        hasSelectedAsset={!!selectedAsset}
+        onReset={resetForm}
+      />
 
-      <AssetSearch results={result} onSelectAsset={handleSelectedAsset} />
+      <AssetSearch
+        results={result}
+        onSelectAsset={handleSelectedAsset}
+      />
 
       {selectedAsset && (
         <OrderSummary

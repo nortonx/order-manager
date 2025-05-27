@@ -5,7 +5,7 @@ import { formatCurrency, formatSide, formatStatus, formatDate } from "@/utils";
 import type { Order } from "@/types/order.type";
 import HeaderSortButton from "@/app/components/header-sort-button";
 
-export const columns: ColumnDef<Order>[] = [
+export const columnsAssets: ColumnDef<Order>[] = [
   {
     accessorKey: "id",
     header: ({ column }) => (
@@ -52,24 +52,6 @@ export const columns: ColumnDef<Order>[] = [
       <div className="font-mono flex justify-center">
         {formatCurrency(row.original.price ?? 0)}
       </div>
-    ),
-  },
-  {
-    accessorKey: "requestedQuantity",
-    header: () => (
-      <div className="flex justify-center font-bold">Quantidade Solicitada</div>
-    ),
-    cell: ({ row }) => (
-      <div className="flex justify-center">
-        {row.original.requestedQuantity}
-      </div>
-    ),
-  },
-  {
-    accessorKey: "quantity",
-    header: () => <div className="flex justify-center">Quantidade</div>,
-    cell: ({ row }) => (
-      <div className="flex justify-center">{row.original.quantity}</div>
     ),
   },
   {

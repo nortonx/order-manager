@@ -1,7 +1,7 @@
 export const formatCurrency = (
   amount: number,
   currency = "BRL",
-  locale = "pt-BR",
+  locale = "pt-BR"
 ) => {
   if (Number.isNaN(amount)) return NaN;
   return new Intl.NumberFormat(locale, {

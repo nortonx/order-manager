@@ -78,7 +78,10 @@ jest.mock("@/app/components/asset-manager/asset-search", () => ({
     <div data-testid="asset-search">
       <ul>
         {results.map((asset) => (
-          <li key={asset.id} data-testid={`asset-${asset.id}`}>
+          <li
+            key={asset.id}
+            data-testid={`asset-${asset.id}`}
+          >
             <button onClick={() => onSelectAsset(asset)}>{asset.symbol}</button>
           </li>
         ))}
@@ -109,7 +112,10 @@ jest.mock("@/app/components/asset-manager/action-buttons", () => ({
       >
         Add
       </button>
-      <button data-testid="reset-button" onClick={onReset}>
+      <button
+        data-testid="reset-button"
+        onClick={onReset}
+      >
         Reset
       </button>
     </div>

@@ -14,9 +14,15 @@ export default function AssetManager() {
       className="grid grid-cols-12 gap-6 max-w-fit border rounded-sm p-2"
       data-testid="manager-page"
     >
-      <div className="col-span-10 w-full" data-testid="orders-table">
+      <div
+        className="col-span-10 w-full"
+        data-testid="orders-table"
+      >
         {store.orders.length > 0 ? (
-          <DataTable columns={columns} data={data} />
+          <DataTable
+            columns={columns}
+            data={data}
+          />
         ) : (
           <p className="mx-auto">Nenhum resultado listado</p>
         )}
