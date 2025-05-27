@@ -11,11 +11,11 @@ export default function AssetManager() {
 
   return (
     <div
-      className="grid grid-cols-12 gap-6 max-w-fit border rounded-sm p-2"
+      className="grid grid-cols-12 gap-6 w-full border rounded-sm p-2"
       data-testid="manager-page"
     >
       <div
-        className="col-span-10 w-full bg-white dark:bg-slate-800 rounded-lg shadow"
+        className="col-span-9 w-full bg-white dark:bg-slate-800 rounded-lg shadow"
         data-testid="orders-table"
       >
         {store.orders.length > 0 ? (
@@ -24,11 +24,11 @@ export default function AssetManager() {
             data={data}
           />
         ) : (
-          <p className="mx-auto">Nenhum resultado listado</p>
+          <p className="max-w-fit mx-auto p-4">Nenhum resultado listado</p>
         )}
       </div>
       <div
-        className="col-span-2 border border-slate-800 rounded-sm bg-white dark:bg-slate-800 rounded-lg shadow"
+        className="col-span-3 border border-slate-800 bg-white dark:bg-slate-800 rounded-lg shadow"
         data-testid="manager-panel"
       >
         <AssetForm />

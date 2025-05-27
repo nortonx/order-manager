@@ -57,7 +57,7 @@ export const columns: ColumnDef<Order>[] = [
   {
     accessorKey: "requestedQuantity",
     header: () => (
-      <div className="flex justify-center font-bold">Quantidade Solicitada</div>
+      <div className="flex justify-center font-bold">Qtd. Solicitada</div>
     ),
     cell: ({ row }) => (
       <div className="flex justify-center">
@@ -66,17 +66,8 @@ export const columns: ColumnDef<Order>[] = [
     ),
   },
   {
-    accessorKey: "quantity",
-    header: () => <div className="flex justify-center">Quantidade</div>,
-    cell: ({ row }) => (
-      <div className="flex justify-center">{row.original.quantity}</div>
-    ),
-  },
-  {
     accessorKey: "remainingQuantity",
-    header: () => (
-      <div className="flex justify-center">Quantidade Restante</div>
-    ),
+    header: () => <div className="flex justify-center">Qtd. Restante</div>,
     cell: ({ row }) => (
       <div className="flex justify-center">
         {row.original.remainingQuantity}

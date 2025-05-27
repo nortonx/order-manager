@@ -6,7 +6,7 @@ export default async function Page() {
   const data = getAssets();
   return (
     <div
-      className="container mx-auto p-4"
+      className="w-full p-4"
       data-testid="orders-page"
     >
       <div

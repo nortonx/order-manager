@@ -9,7 +9,7 @@
     "lint": "next lint",
     "test": "jest --collectCoverage",
     "test:watch": "jest --watchAll",
-    "test:updateSnapshots": "jest --updateSnapshot",
+    "test:updateSnapshot": "jest --updateSnapshot",
     "test:playwright": "playwright test --reporter=dot",
     "test:ui": "playwright test --ui",
     "precommit": "npm run lint && npm run format:check && npm run test && npm run build",

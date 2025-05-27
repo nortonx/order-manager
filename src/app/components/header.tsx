@@ -7,7 +7,7 @@ import ModeToggle from "@/app/components/mode-toggle";
 export default function Header() {
   return (
     <header
-      className="flex justify-between items-center mt-10"
+      className="flex justify-between items-center mt-10 p-4"
       data-testid="header-component"
     >
       <Link
