@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AssetsPage renders the AssetsManager page and match snapshot 1`] = `
+exports[`AssetsPage renders the AssetsPage and match snapshot 1`] = `
 <div>
   <div
     class="w-full p-4"
