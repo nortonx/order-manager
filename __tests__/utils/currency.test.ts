@@ -2,11 +2,16 @@ import { formatCurrency } from "@/utils/currency";
 import { describe, it, expect } from "@jest/globals";
 
 describe("formatCurrency", () => {
-  xit("formats BRL in pt-BR by default", () => {
-    expect(formatCurrency(1234)).toBe("R$ 1.234,00");
-    expect(formatCurrency(1234.56)).toBe("R$ 1.234,56");
-    expect(formatCurrency(-1234)).toBe("-R$ 1.234,00");
-    expect(formatCurrency(0)).toBe("R$ 0,00");
+  it("formats BRL in pt-BR by default", () => {
+    // First check if the result is a string
+    expect(typeof formatCurrency(1234)).toBe("string");
+
+    // Then check the format with a regex that allows for flexible spacing
+    expect(formatCurrency(1234)).toMatch(/^R\$\s*1\.234,00$/);
+    expect(formatCurrency(1234.56)).toMatch(/^R\$\s*1\.234,56$/);
+    expect(formatCurrency(-1234)).toMatch(/^-R\$\s*1\.234,00$/);
+    expect(formatCurrency(0)).toMatch(/^R\$\s*0,00$/);
+
   });
 
   it("formats USD in en-US", () => {
@@ -43,14 +48,22 @@ describe("formatCurrency", () => {
     expect(formatCurrency(-1e-2, "USD", "en-US")).toBe("-$0.01");
   });
 
-  // it("handles NaN and invalid input", () => {
-  //   // @ts-expect-error
-  //   expect(formatCurrency("#")).toMatch(/NaN/);
-  //   // @ts-expect-error
-  //   expect(formatCurrency(undefined)).toMatch(/NaN/);
-  //   // @ts-expect-error
-  //   expect(formatCurrency(null)).toMatch(/NaN/);
-  //   // @ts-expect-error
-  //   expect(formatCurrency("123")).toMatch(/NaN/);
-  // });
+  it("handles NaN and invalid input", () => {
+    // Now we expect the string "NaN" for invalid inputs
+
+    // @ts-expect-error - Testing with invalid type (string instead of number)
+    expect(formatCurrency("#")).toBe("NaN");
+
+    // @ts-expect-error - Testing with undefined
+    expect(formatCurrency(undefined)).toBe("NaN");
+
+    // @ts-expect-error - Testing with null
+    expect(formatCurrency(null)).toBe("NaN");
+
+    // Test with NaN value
+    expect(formatCurrency(NaN)).toBe("NaN");
+
+    // @ts-expect-error - Testing with string number (should be parsed by Number() before passing)
+    expect(formatCurrency("123")).toBe("NaN");
+  });
 });

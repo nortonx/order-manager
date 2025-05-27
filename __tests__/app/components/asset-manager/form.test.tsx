@@ -124,9 +124,33 @@ jest.mock("@/app/components/asset-manager/action-buttons", () => ({
 
 describe("AssetForm", () => {
   const mockAssets = [
-    { id: "1", symbol: "AAPL", price: 150, type: "buy" },
-    { id: "2", symbol: "GOOGL", price: 2500, type: "buy" },
-    { id: "3", symbol: "MSFT", price: 300, type: "sell" },
+    {
+      id: "1",
+      symbol: "AAPL",
+      price: 150,
+      type: "BUY",
+      remainingQuantity: 100,
+      status: "OPEN",
+      dateTime: "2024-06-01T10:15:00Z",
+    },
+    {
+      id: "2",
+      symbol: "GOOGL",
+      price: 2500,
+      type: "BUY",
+      remainingQuantity: 50,
+      status: "OPEN",
+      dateTime: "2024-06-01T10:15:00Z",
+    },
+    {
+      id: "3",
+      symbol: "MSFT",
+      price: 300,
+      type: "SELL",
+      remainingQuantity: 75,
+      status: "OPEN",
+      dateTime: "2024-06-01T10:15:00Z",
+    },
   ];
 
   beforeEach(() => {
@@ -154,14 +178,14 @@ describe("AssetForm", () => {
     expect(screen.getByTestId("asset-1")).toBeInTheDocument();
   });
 
-  it("selects an asset when clicked and sets the correct type", () => {
+  it("selects an asset when clicked and normalizes uppercase BUY type to lowercase buy", () => {
     render(<AssetForm />);
 
     // Search for assets first
     const input = screen.getByTestId("symbol-input");
     fireEvent.change(input, { target: { value: "A" } });
 
-    // Select the asset
+    // Select the asset (has type "BUY" in uppercase)
     const assetButton = screen.getByText("AAPL");
     fireEvent.click(assetButton);
 
@@ -169,7 +193,7 @@ describe("AssetForm", () => {
     expect(screen.getByTestId("order-summary")).toBeInTheDocument();
     expect(screen.getByText("AAPL")).toBeInTheDocument();
 
-    // Check if the type select has the correct value (should be normalized to lowercase)
+    // Check if the type select has the correct normalized lowercase value
     expect(screen.getByTestId("type-select")).toHaveValue("buy");
   });
 
@@ -287,18 +311,18 @@ describe("AssetForm", () => {
     expect(screen.getByTestId("type-select")).toHaveValue("sell");
   });
 
-  it('sets the correct asset type when selecting an asset with type "sell"', () => {
+  it("normalizes uppercase SELL type to lowercase sell when selecting an asset", () => {
     render(<AssetForm />);
 
-    // Search for assets with type 'sell'
+    // Search for assets with type 'SELL' (uppercase in data)
     const input = screen.getByTestId("symbol-input");
     fireEvent.change(input, { target: { value: "M" } });
 
-    // Select the asset (MSFT has type 'sell' in our mock data)
+    // Select the asset (MSFT has type 'SELL' uppercase in our mock data)
     const assetButton = screen.getByText("MSFT");
     fireEvent.click(assetButton);
 
-    // Check if the type select has the correct value (should be normalized to lowercase)
+    // Check if the type select has the correct normalized lowercase value
     expect(screen.getByTestId("type-select")).toHaveValue("sell");
   });
 });

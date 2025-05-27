@@ -14,12 +14,12 @@ describe("OrderSummary Component", () => {
       id: "123",
       symbol: "PETR4",
       price: 28.45,
-      type: "buy",
+      type: "BUY",
       remainingQuantity: 100,
-      status: "active",
+      status: "ACTIVE",
       dateTime: new Date().toISOString(),
     },
-    assetType: "buy",
+    assetType: "buy", // This is already normalized for the UI
     quantity: 100,
     totalPrice: 2845,
   };

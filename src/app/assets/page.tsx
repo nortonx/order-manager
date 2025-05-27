@@ -1,4 +1,4 @@
-import { columns } from "@/app/components/data-grid/columns";
+import { columnsAssets } from "@/app/assets/columns";
 import { DataTable } from "@/app/components/data-grid/data-table";
 import { getAssets } from "@/actions/assets";
 
@@ -14,7 +14,7 @@ export default async function Page() {
         data-testid="assets-table"
       >
         <DataTable
-          columns={columns}
+          columns={columnsAssets}
           data={data}
         />
       </div>

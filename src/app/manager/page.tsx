@@ -1,6 +1,6 @@
 "use client";
 
-import { columns } from "@/app/components/data-grid/columns";
+import { columns } from "@/app/manager/columns";
 import { DataTable } from "@/app/components/data-grid/data-table";
 import AssetForm from "@/app/components/asset-manager/form";
 import { useOrderStore } from "@/store/useOrderStore";
