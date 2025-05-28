@@ -18,7 +18,7 @@ test.describe("Asset Manager Page", () => {
       await symbolInput.fill("PETR4");
 
       // Wait for and verify search results
-      const searchResults = page.getByTestId("asset-search");
+      const searchResults = page.getByTestId("asset-search-results");
       await expect(searchResults).toBeVisible();
 
       // Select asset from results
