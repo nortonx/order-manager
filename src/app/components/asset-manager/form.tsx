@@ -11,8 +11,8 @@ import { ActionButtons } from "./action-buttons";
 
 export default function AssetForm() {
   const searchField = useRef<HTMLInputElement>(
-    null as unknown as HTMLInputElement
-  );
+    null
+  ) as React.RefObject<HTMLInputElement>;
   const [result, setResult] = useState<Asset[]>([]);
   const [symbol, setSymbol] = useState<string>("");
   const [selectedAsset, setSelectedAsset] = useState<Asset | null>(null);
@@ -37,6 +37,7 @@ export default function AssetForm() {
   }, [selectedAsset, quantity]);
 
   const handleFilterAssets = (value: string) => {
+    console.log("Filtering assets with value:", value);
     if (!value) {
       setResult([]);
       return;

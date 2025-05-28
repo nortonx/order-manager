@@ -14,7 +14,7 @@ export default function HeaderSortButton({
   name?: string;
 }>) {
   return (
-    <div className="flex flex-col items-center justify-center gap-1 py-2">
+    <div className="flex flex-col items-center py-2">
       <Button
         variant="ghost"
         onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}

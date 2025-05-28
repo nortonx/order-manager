@@ -24,6 +24,7 @@ export function OrderSummary({
       <p>Type: {assetType === "buy" ? "Compra" : "Venda"}</p>
       <p>Price per unit: {formatCurrency(selectedAsset.price ?? 0, "BRL")}</p>
       <p>Quantity: {quantity}</p>
+      <p>Remaining Quantity: {selectedAsset.remainingQuantity - quantity}</p>
       <p className="font-bold">Total: {formatCurrency(totalPrice, "BRL")}</p>
     </div>
   );
