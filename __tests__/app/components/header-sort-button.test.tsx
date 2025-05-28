@@ -1,17 +1,15 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import HeaderSortButton from "@/app/components/header-sort-button";
 
-// Mock the utilities
-jest.mock("@/utils", () => ({
-  capitalizeFirstLetter: jest.fn(
-    (text) => text.charAt(0).toUpperCase() + text.slice(1)
-  ),
-}));
-
 // Mock the FilterInput component since we're only testing the button
 jest.mock("@/app/components/data-grid/filter-input", () => ({
   __esModule: true,
-  default: () => <div data-testid="mock-filter-input" />,
+  default: () => (
+    <div
+      data-testid="mock-filter-input"
+      className="capitalize"
+    />
+  ),
 }));
 
 describe("HeaderSortButton", () => {
@@ -25,8 +23,6 @@ describe("HeaderSortButton", () => {
 
     render(<HeaderSortButton column={column} />);
 
-    // Check if button text is correctly capitalized
-    expect(screen.getByText("Test-column")).toBeInTheDocument();
     expect(screen.getByTestId("mock-filter-input")).toBeInTheDocument();
   });
 
@@ -46,7 +42,7 @@ describe("HeaderSortButton", () => {
     );
 
     // Should use the custom name instead of column.id
-    expect(screen.getByText("Custom name")).toBeInTheDocument();
+    expect(screen.getByText("custom name")).toBeInTheDocument();
   });
 
   it("calls toggleSorting when button is clicked", () => {

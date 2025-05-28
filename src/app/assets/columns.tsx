@@ -9,7 +9,7 @@ export const columnsAssets: ColumnDef<Order>[] = [
   {
     accessorKey: "id",
     header: ({ column }) => (
-      <div className="flex justify-center font-bold">
+      <div className="font-bold">
         <HeaderSortButton column={column} />
       </div>
     ),
