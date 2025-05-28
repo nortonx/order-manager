@@ -3,11 +3,21 @@
 import React from "react";
 import Link from "next/link";
 import ModeToggle from "@/app/components/mode-toggle";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  const pathname = usePathname();
+
+  const getLinkClassName = (href: string) => {
+    const baseClasses = "text-lg font-bold";
+    const activeClasses = "active font-bold text-green-600 dark:text-green-400";
+
+    return pathname === href ? `${baseClasses} ${activeClasses}` : baseClasses;
+  };
+
   return (
     <header
-      className="flex justify-between items-center mt-10 p-4"
+      className="flex justify-between items-center mt-10 p-4 "
       data-testid="header-component"
     >
       <Link
@@ -20,7 +30,7 @@ export default function Header() {
         <div>
           <Link
             href="/assets"
-            className="text-lg hover:underline"
+            className={getLinkClassName("/assets")}
           >
             Assets
           </Link>
@@ -28,7 +38,7 @@ export default function Header() {
         <div>
           <Link
             href="/manager"
-            className="text-lg hover:underline"
+            className={getLinkClassName("/manager")}
           >
             Order Manager
           </Link>

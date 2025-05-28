@@ -9,8 +9,8 @@ describe("getAssetById", () => {
       price: 32.45,
       quantity: 1,
       remainingQuantity: 100,
-      status: "OPEN",
-      type: "BUY",
+      status: "aberto",
+      type: "compra",
       dateTime: "2024-06-01T10:15:00Z",
     });
   });
@@ -25,8 +25,8 @@ describe("getAssetBySymbol", () => {
       price: 32.45,
       quantity: 1,
       remainingQuantity: 100,
-      status: "OPEN",
-      type: "BUY",
+      status: "aberto",
+      type: "compra",
       dateTime: "2024-06-01T10:15:00Z",
     });
   });

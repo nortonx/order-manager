@@ -4,6 +4,7 @@ import { Column } from "@tanstack/react-table";
 import { useState, useEffect } from "react";
 import { Input } from "@/app/components/ui/input";
 import type { Order } from "@/types/order.type";
+
 export default function FilterInput({
   column,
   placeholder,

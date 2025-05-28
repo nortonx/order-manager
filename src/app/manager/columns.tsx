@@ -42,7 +42,7 @@ export const columns: ColumnDef<Order>[] = [
       </div>
     ),
     cell: ({ row }) => (
-      <div className="flex justify-center">{formatSide(row.original.type)}</div>
+      <div className="flex justify-center">{row.original.type}</div>
     ),
   },
   {
@@ -82,9 +82,7 @@ export const columns: ColumnDef<Order>[] = [
       </div>
     ),
     cell: ({ row }) => (
-      <div className="flex justify-center">
-        {formatStatus(row.original.status)}
-      </div>
+      <div className="flex justify-center">{row.original.status}</div>
     ),
   },
   {
