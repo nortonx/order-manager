@@ -52,6 +52,7 @@ Instruções:
     - Um script NPM chamado "precommit" foi criado para rodar os scripts de linting e formatação de código antes de cada commit. Esse script verifica se há erros de linting e formatação. Caso existam erros, faça os ajustes necessários e o rode novamente. Se não houver erros, o CI vai rodar sem problemas no Github.
 
     ## Stack utilizada
+
     - Next.js
     - Zod (Validação)
     - ShadCn (UI Components)
