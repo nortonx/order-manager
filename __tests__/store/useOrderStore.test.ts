@@ -14,8 +14,8 @@ describe("useOrderStore", () => {
     requestedQuantity: 5,
     remainingQuantity: 5,
     totalPrice: 12500,
-    type: "sell",
-    status: "pending",
+    type: "venda",
+    status: "pendente",
     dateTime: new Date().toISOString(),
   };
 
@@ -26,8 +26,8 @@ describe("useOrderStore", () => {
     requestedQuantity: 5,
     remainingQuantity: 5,
     totalPrice: 12500,
-    type: "sell",
-    status: "pending",
+    type: "venda",
+    status: "pendente",
     dateTime: new Date().toISOString(),
   };
 

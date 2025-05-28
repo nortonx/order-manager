@@ -9,7 +9,7 @@ describe("getAssetById", () => {
       price: 32.45,
       quantity: 1,
       remainingQuantity: 100,
-      status: "aberto",
+      status: "aberta",
       type: "compra",
       dateTime: "2024-06-01T10:15:00Z",
     });
@@ -25,7 +25,7 @@ describe("getAssetBySymbol", () => {
       price: 32.45,
       quantity: 1,
       remainingQuantity: 100,
-      status: "aberto",
+      status: "aberta",
       type: "compra",
       dateTime: "2024-06-01T10:15:00Z",
     });

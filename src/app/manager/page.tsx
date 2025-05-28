@@ -1,10 +1,10 @@
 "use client";
 
 import { columns } from "@/app/manager/columns";
-import { DataTable } from "@/app/components/data-grid/data-table";
-import AssetForm from "@/app/components/asset-manager/form";
+import { DataTable } from "@/components/data-grid/data-table";
+import AssetForm from "@/components/asset-manager/form";
 import { useOrderStore } from "@/store/useOrderStore";
-import PageTitle from "@/app/components/page-title";
+import PageTitle from "@/components/page-title";
 
 export default function OrderManagerPage() {
   const store = useOrderStore();

@@ -3,8 +3,8 @@
 import { ColumnDef } from "@tanstack/react-table";
 import { formatCurrency, formatDate } from "@/utils";
 import type { Order } from "@/types/order.type";
-import HeaderSortButton from "@/app/components/header-sort-button";
-import StatusButton from "@/app/components/asset-manager/status-button";
+import HeaderSortButton from "@/components/header-sort-button";
+import StatusButton from "@/components/asset-manager/status-button";
 
 export const columnsAssets: ColumnDef<Order>[] = [
   {

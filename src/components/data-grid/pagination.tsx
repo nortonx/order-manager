@@ -1,4 +1,4 @@
-import { Button } from "@/app/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { useMemo } from "react";
 import type { Table } from "@tanstack/react-table";
 

@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import { AssetSearchResults } from "@/app/components/asset-manager/asset-search-results";
+import { AssetSearchResults } from "@/components/asset-manager/asset-search-results";
 import { Asset } from "@/types/asset.type";
 
 describe("AssetSearchResults", () => {

@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import { DataTable } from "@/app/components/data-grid/data-table";
+import { DataTable } from "@/components/data-grid/data-table";
 import type { ColumnDef } from "@tanstack/react-table";
 
 // Mock the Pagination component
-jest.mock("@/app/components/data-grid/pagination", () => ({
+jest.mock("@/components/data-grid/pagination", () => ({
   Pagination: ({ table }: { table: { getPageCount: () => number } }) => (
     <div data-testid="pagination-mock">
       Pagination Component - Page Count: {table.getPageCount()}

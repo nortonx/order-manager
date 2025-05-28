@@ -1,10 +1,10 @@
 "use client";
 
 import { ArrowUpDown } from "lucide-react";
-import { Button } from "@/app/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { Column } from "@tanstack/react-table";
 import type { Order } from "@/types/order.type";
-import FilterInput from "@/app/components/data-grid/filter-input";
+import FilterInput from "@/components/data-grid/filter-input";
 
 export default function HeaderSortButton({
   column,

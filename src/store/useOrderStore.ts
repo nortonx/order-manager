@@ -7,6 +7,14 @@ type OrderStore = {
   removeOrder: (id: string) => void;
   updateOrder: (updatedOrder: Order) => void;
   clearOrders: () => void;
+  triggerUpdate: () => void;
+  getOrderStatus: (id: string) => string | undefined;
+};
+
+const getOrderStatus = (id: string) => {
+  const state = useOrderStore.getState();
+  const order = state.orders.find((order) => order.id === id);
+  return order ? order.status : undefined;
 };
 
 const useOrderStore = create<OrderStore>((set) => ({
@@ -24,6 +32,23 @@ const useOrderStore = create<OrderStore>((set) => ({
       ),
     })),
   clearOrders: () => set({ orders: [] }),
+  triggerUpdate: () => {
+    setTimeout(() => {
+      set((state) => {
+        if (state.orders.length === 0) return {};
+        const orders = [...state.orders];
+        const lastIndex = orders.length - 1;
+        orders[lastIndex] = {
+          ...orders[lastIndex],
+          dateTime: new Date().toISOString(),
+          fulfilledAt: new Date().toISOString(),
+          status: "fechada",
+        };
+        return { orders };
+      });
+    }, 8000);
+  },
+  getOrderStatus, // assign the function here
 }));
 
 export { useOrderStore };

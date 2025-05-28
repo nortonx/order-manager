@@ -1,7 +1,7 @@
 import { columnsAssets } from "@/app/assets/columns";
-import { DataTable } from "@/app/components/data-grid/data-table";
+import { DataTable } from "@/components/data-grid/data-table";
 import { getAssets } from "@/actions/assets";
-import PageTitle from "@/app/components/page-title";
+import PageTitle from "@/components/page-title";
 
 export default function AssetsPage() {
   const data = getAssets();

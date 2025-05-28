@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import { AssetFormFields } from "@/app/components/asset-manager/asset-form-fields";
+import { AssetFormFields } from "@/components/asset-manager/asset-form-fields";
 import { RefObject, createRef } from "react";
 
 describe("AssetFormFields", () => {

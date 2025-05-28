@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { OrderSummary } from "@/app/components/asset-manager/order-summary";
+import { OrderSummary } from "@/components/asset-manager/order-summary";
 import { formatCurrency } from "@/utils/currency";
 
 // Mock the currency formatter
@@ -16,7 +16,7 @@ describe("OrderSummary Component", () => {
       price: 28.45,
       type: "compra",
       remainingQuantity: 100,
-      status: "aberto",
+      status: "aberta",
       dateTime: new Date().toISOString(),
     },
     assetType: "compra",
@@ -75,7 +75,7 @@ describe("OrderSummary Component", () => {
         type: "compra",
         // price is missing
         remainingQuantity: 100,
-        status: "aberto",
+        status: "aberta",
         dateTime: new Date().toISOString(),
       },
     };

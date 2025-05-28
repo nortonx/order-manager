@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import ModeToggle from "@/app/components/mode-toggle";
+import ModeToggle from "@/components/mode-toggle";
 import { usePathname } from "next/navigation";
 
 export default function Header() {

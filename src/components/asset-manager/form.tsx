@@ -97,6 +97,11 @@ export default function AssetForm() {
   };
 
   const handleSelectedAsset = (asset: Asset) => {
+    // Mark that user has interacted with the form
+    if (!hasUserInteracted) {
+      setHasUserInteracted(true);
+    }
+
     setSelectedAsset(asset);
     setSymbol(asset.symbol);
 
@@ -197,6 +202,8 @@ export default function AssetForm() {
         requestedQuantity: quantity,
         remainingQuantity: selectedAsset.remainingQuantity - quantity,
       });
+
+      useOrderStore.getState().triggerUpdate();
 
       resetForm();
     } catch (error) {
