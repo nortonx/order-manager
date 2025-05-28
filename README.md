@@ -50,3 +50,13 @@ Instruções:
     - Foram criados Pipelines no GitHub Actions para rodar os testes e verificar a cobertura de testes.
     - Foram criados, para o DX (Developer Experience), scripts de análise estática de código, linting e formatação de código.
     - Um script NPM chamado "precommit" foi criado para rodar os scripts de linting e formatação de código antes de cada commit. Esse script verifica se há erros de linting e formatação. Caso existam erros, faça os ajustes necessários e o rode novamente. Se não houver erros, o CI vai rodar sem problemas no Github.
+
+    ## Stack utilizada
+    - Next.js
+    - Zod (Validação)
+    - ShadCn (UI Components)
+    - TailwindCSS (CSS Framework)
+    - Jest (Testing Framework)
+    - Playwright (End-to-End Testing Framework)
+    - Prettier (Formatting)
+    - ESLint (Linting and Formatting)
