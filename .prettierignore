@@ -1,0 +1,21 @@
+# Next.js specific
+.next/
+out/
+
+# Standard
+node_modules/
+build/
+dist/
+coverage/
+__snapshots__/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.development
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

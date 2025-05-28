@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@/app/components/ui/button";
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
+import { Pagination } from "./pagination";
 
 import {
   ColumnDef,
@@ -57,25 +57,12 @@ export function DataTable<TData, TValue>({
     getFilteredRowModel: getFilteredRowModel(),
   });
 
-  const pageCount = table.getPageCount();
-  const currentPage = table.getState().pagination.pageIndex;
-  const paginationButtons = useMemo(() => {
-    return Array.from({ length: pageCount }, (_, i) => (
-      <Button
-        key={i}
-        variant={currentPage === i ? "default" : "outline"}
-        size="sm"
-        onClick={() => table.setPageIndex(i)}
-        className="pagination-button"
-      >
-        {i + 1}
-      </Button>
-    ));
-  }, [pageCount, currentPage, table]);
-
   return (
     <>
-      <div className="rounded-md border" data-testid="data-table">
+      <div
+        className="rounded-md border"
+        data-testid="data-table"
+      >
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -86,7 +73,7 @@ export function DataTable<TData, TValue>({
                       ? null
                       : flexRender(
                           header.column.columnDef.header,
-                          header.getContext(),
+                          header.getContext()
                         )}
                   </TableHead>
                 ))}
@@ -101,7 +88,7 @@ export function DataTable<TData, TValue>({
                     <TableCell key={cell.id}>
                       {flexRender(
                         cell.column.columnDef.cell,
-                        cell.getContext(),
+                        cell.getContext()
                       )}
                     </TableCell>
                   ))}
@@ -120,25 +107,7 @@ export function DataTable<TData, TValue>({
           </TableBody>
         </Table>
       </div>
-      <div className="flex items-center justify-center space-x-1 p-4">
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.previousPage()}
-          disabled={!table.getCanPreviousPage()}
-        >
-          Anterior
-        </Button>
-        {paginationButtons}
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.nextPage()}
-          disabled={!table.getCanNextPage()}
-        >
-          Próximo
-        </Button>
-      </div>
+      <Pagination table={table} />
     </>
   );
 }

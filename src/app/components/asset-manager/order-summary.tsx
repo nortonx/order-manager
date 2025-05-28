@@ -1,5 +1,5 @@
 import { Asset } from "@/types/asset.type";
-import { formatCurrency } from '@/utils/currency';
+import { formatCurrency } from "@/utils/currency";
 
 interface OrderSummaryProps {
   readonly selectedAsset: Asset;
@@ -12,15 +12,19 @@ export function OrderSummary({
   selectedAsset,
   assetType,
   quantity,
-  totalPrice
+  totalPrice,
 }: OrderSummaryProps) {
   return (
-    <div className="order-summary mt-4 p-3 border rounded">
+    <div
+      className="order-summary mt-4 p-3 border rounded"
+      data-testid="order-summary"
+    >
       <h3 className="font-bold">Order Summary</h3>
       <p>Symbol: {selectedAsset.symbol}</p>
       <p>Type: {assetType === "buy" ? "Compra" : "Venda"}</p>
       <p>Price per unit: {formatCurrency(selectedAsset.price ?? 0, "BRL")}</p>
       <p>Quantity: {quantity}</p>
+      <p>Remaining Quantity: {selectedAsset.remainingQuantity - quantity}</p>
       <p className="font-bold">Total: {formatCurrency(totalPrice, "BRL")}</p>
     </div>
   );

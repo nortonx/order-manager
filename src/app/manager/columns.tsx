@@ -3,7 +3,6 @@
 import { ColumnDef } from "@tanstack/react-table";
 import { formatCurrency, formatSide, formatStatus, formatDate } from "@/utils";
 import type { Order } from "@/types/order.type";
-
 import HeaderSortButton from "@/app/components/header-sort-button";
 
 export const columns: ColumnDef<Order>[] = [
@@ -22,7 +21,10 @@ export const columns: ColumnDef<Order>[] = [
     accessorKey: "symbol",
     header: ({ column }) => (
       <div className="flex justify-center font-bold">
-        <HeaderSortButton column={column} name="Instrumento" />
+        <HeaderSortButton
+          column={column}
+          name="Instrumento"
+        />
       </div>
     ),
     cell: ({ row }) => (
@@ -33,7 +35,10 @@ export const columns: ColumnDef<Order>[] = [
     accessorKey: "type",
     header: ({ column }) => (
       <div className="flex justify-center font-bold">
-        <HeaderSortButton column={column} name="Lado" />
+        <HeaderSortButton
+          column={column}
+          name="Lado"
+        />
       </div>
     ),
     cell: ({ row }) => (
@@ -52,7 +57,7 @@ export const columns: ColumnDef<Order>[] = [
   {
     accessorKey: "requestedQuantity",
     header: () => (
-      <div className="flex justify-center font-bold">Quantidade Solicitada</div>
+      <div className="flex justify-center font-bold">Qtd. Solicitada</div>
     ),
     cell: ({ row }) => (
       <div className="flex justify-center">
@@ -61,17 +66,8 @@ export const columns: ColumnDef<Order>[] = [
     ),
   },
   {
-    accessorKey: "quantity",
-    header: () => <div className="flex justify-center">Quantidade</div>,
-    cell: ({ row }) => (
-      <div className="flex justify-center">{row.original.quantity}</div>
-    ),
-  },
-  {
     accessorKey: "remainingQuantity",
-    header: () => (
-      <div className="flex justify-center">Quantidade Restante</div>
-    ),
+    header: () => <div className="flex justify-center">Qtd. Restante</div>,
     cell: ({ row }) => (
       <div className="flex justify-center">
         {row.original.remainingQuantity}
@@ -95,7 +91,10 @@ export const columns: ColumnDef<Order>[] = [
     accessorKey: "dateTime",
     header: ({ column }) => (
       <div className="flex justify-center font-bold">
-        <HeaderSortButton column={column} name="Data/Hora" />
+        <HeaderSortButton
+          column={column}
+          name="Data/Hora"
+        />
       </div>
     ),
     cell: ({ row }) => (

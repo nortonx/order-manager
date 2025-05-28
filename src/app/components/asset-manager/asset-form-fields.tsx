@@ -6,8 +6,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/app/components/ui/select";
-import { formatCurrency } from '@/utils/currency';
-import { RefObject } from 'react';
+import { formatCurrency } from "@/utils/currency";
+import { RefObject } from "react";
 
 interface AssetFormFieldsProps {
   symbol: string;
@@ -28,19 +28,25 @@ export function AssetFormFields({
   searchFieldRef,
   onFilterAssets,
   onTypeChange,
-  onQuantityChange
+  onQuantityChange,
 }: Readonly<AssetFormFieldsProps>) {
   return (
     <div data-testid="asset-form-fields">
       <Input
         placeholder="Instrumento"
-        className="my-1"
+        className="my-2"
         onChange={(e) => onFilterAssets(e.target.value)}
         ref={searchFieldRef}
         value={symbol}
+        name="symbol"
       />
       <div className="select-container my-2">
-        <Select value={assetType} onValueChange={onTypeChange} data-testid="asset-type-select">
+        <Select
+          value={assetType}
+          onValueChange={onTypeChange}
+          data-testid="asset-type-select"
+          name="type"
+        >
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Compra ou Venda?" />
           </SelectTrigger>
@@ -53,17 +59,19 @@ export function AssetFormFields({
       <Input
         type="number"
         placeholder="Quantidade"
-        className="my-1"
+        className="my-2"
         min="1"
         value={quantity}
         onChange={(e) => onQuantityChange(Number(e.target.value))}
+        name="quantity"
       />
-      <Input 
+      <Input
         type="text"
         placeholder="Preço"
         className="my-2"
-        disabled 
-        value={totalPrice ? formatCurrency(totalPrice, "BRL") : ""} 
+        disabled
+        value={totalPrice ? formatCurrency(totalPrice, "BRL") : ""}
+        name="totalPrice"
       />
     </div>
   );

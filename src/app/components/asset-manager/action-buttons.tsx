@@ -5,11 +5,27 @@ interface ActionButtonsProps {
   readonly onReset: () => void;
 }
 
-export function ActionButtons({ hasSelectedAsset, onReset }: ActionButtonsProps) {
+export function ActionButtons({
+  hasSelectedAsset,
+  onReset,
+}: ActionButtonsProps) {
   return (
     <div className="action-buttons flex justify-between">
-      <Button type="submit" disabled={!hasSelectedAsset} size="sm">Adicionar</Button>
-      <Button type="button" variant="secondary" onClick={onReset} size="sm">Cancelar</Button>
+      <Button
+        type="submit"
+        disabled={!hasSelectedAsset}
+        size="sm"
+      >
+        Adicionar
+      </Button>
+      <Button
+        type="button"
+        variant="secondary"
+        onClick={onReset}
+        size="sm"
+      >
+        Cancelar
+      </Button>
     </div>
   );
 }

@@ -9,10 +9,12 @@
     "lint": "next lint",
     "test": "jest --collectCoverage",
     "test:watch": "jest --watchAll",
-    "test:updateSnapshots": "jest --updateSnapshot",
+    "test:updateSnapshot": "jest --updateSnapshot",
     "test:playwright": "playwright test --reporter=dot",
     "test:ui": "playwright test --ui",
-    "precommit": "npm run lint && npm run test && npm run build"
+    "precommit": "npm run lint && npm run format:check && npm run test && npm run build",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.15",
@@ -45,10 +47,12 @@
     "dotenv": "^16.5.0",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
+    "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-jest": "^28.11.0",
     "jest": "^29.7.0",
     "jest-dom": "^4.0.0",
     "jest-environment-jsdom": "^29.7.0",
+    "prettier": "3.5.3",
     "tailwindcss": "^4",
     "ts-jest": "^29.3.1",
     "ts-node": "^10.9.2",
