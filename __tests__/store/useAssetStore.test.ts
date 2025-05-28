@@ -11,7 +11,7 @@ describe("useAssetStore", () => {
     id: "123",
     symbol: "AAPL",
     price: 150.5,
-    type: "buy",
+    type: "compra",
     remainingQuantity: 100,
     status: "active",
     dateTime: new Date().toISOString(),

@@ -1,4 +1,4 @@
-import { Button } from "@/app/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 interface ActionButtonsProps {
   readonly hasSelectedAsset: boolean;
@@ -20,7 +20,7 @@ export function ActionButtons({
       </Button>
       <Button
         type="button"
-        variant="secondary"
+        variant="outline"
         onClick={onReset}
         size="sm"
       >

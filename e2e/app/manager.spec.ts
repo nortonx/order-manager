@@ -5,7 +5,7 @@ test.describe("Asset Manager Page", () => {
     // Navigate to home page and then to manager
     await test.step("navigate to manager page", async () => {
       await page.goto("http://localhost:3000");
-      await page.getByRole("link", { name: "Order Manager" }).click();
+      await page.getByRole("link", { name: "Gerenciador de Ordens" }).click();
       await expect(page.getByTestId("manager-page")).toBeVisible();
     });
   });
@@ -18,7 +18,7 @@ test.describe("Asset Manager Page", () => {
       await symbolInput.fill("PETR4");
 
       // Wait for and verify search results
-      const searchResults = page.getByTestId("asset-search");
+      const searchResults = page.getByTestId("asset-search-results");
       await expect(searchResults).toBeVisible();
 
       // Select asset from results

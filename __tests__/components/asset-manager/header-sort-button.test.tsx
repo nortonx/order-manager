@@ -1,8 +1,8 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import HeaderSortButton from "@/app/components/header-sort-button";
+import HeaderSortButton from "@/components/header-sort-button";
 
 // Mock the FilterInput component since we're only testing the button
-jest.mock("@/app/components/data-grid/filter-input", () => ({
+jest.mock("@/components/data-grid/filter-input", () => ({
   __esModule: true,
   default: () => (
     <div

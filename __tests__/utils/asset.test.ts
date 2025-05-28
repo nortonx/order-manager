@@ -1,60 +1,30 @@
-import { formatSide, formatStatus } from "@/utils/asset";
+import { formatDate } from "@/utils/asset";
 import { describe, it, expect } from "@jest/globals";
 
-describe("formatSide", () => {
-  it("should return 'Compra' for 'buy' (case-insensitive)", () => {
-    expect(formatSide("buy")).toBe("Compra");
-    expect(formatSide("BUY")).toBe("Compra");
-    expect(formatSide("BuY")).toBe("Compra");
+describe("formatDate function", () => {
+  it("should format date string correctly", () => {
+    const dateString = "2023-10-01T12:00:00Z";
+    const formattedDate = formatDate(dateString);
+
+    // Check format pattern instead of exact time (timezone-independent)
+    expect(formattedDate).toMatch(/^\d{2}\/\d{2}\/\d{4}, \d{2}:\d{2}:\d{2}$/);
+    // Verify that the date part is correct, regardless of the time
+    expect(formattedDate).toContain("01/10/2023");
   });
 
-  it("should return 'Venda' for 'sell' (case-insensitive)", () => {
-    expect(formatSide("sell")).toBe("Venda");
-    expect(formatSide("SELL")).toBe("Venda");
-    expect(formatSide("SeLl")).toBe("Venda");
+  it("should handle invalid date string", () => {
+    const formattedDate = formatDate("invalid-date");
+    expect(formattedDate).toBe("Invalid Date");
   });
 
-  it("should return 'Desconhecido' for unknown values", () => {
-    expect(formatSide("hold")).toBe("Desconhecido");
-    expect(formatSide("")).toBe("Desconhecido");
-    expect(formatSide("random")).toBe("Desconhecido");
-  });
-});
-
-describe("formatStatus", () => {
-  it("should return 'Aberto' for 'open' (case-insensitive)", () => {
-    expect(formatStatus("open")).toBe("Aberto");
-    expect(formatStatus("OPEN")).toBe("Aberto");
-    expect(formatStatus("OpEn")).toBe("Aberto");
+  it("should handle empty string", () => {
+    const formattedDate = formatDate("");
+    expect(formattedDate).toBe("Invalid Date");
   });
 
-  it("should return 'Fechado' for 'closed' (case-insensitive)", () => {
-    expect(formatStatus("closed")).toBe("Fechado");
-    expect(formatStatus("CLOSED")).toBe("Fechado");
-    expect(formatStatus("ClOsEd")).toBe("Fechado");
-  });
-
-  it("should return 'Pendente' for 'pending' (case-insensitive)", () => {
-    expect(formatStatus("pending")).toBe("Pendente");
-    expect(formatStatus("PENDING")).toBe("Pendente");
-    expect(formatStatus("PeNdInG")).toBe("Pendente");
-  });
-
-  it("should return 'Concluído' for 'completed' (case-insensitive)", () => {
-    expect(formatStatus("completed")).toBe("Concluído");
-    expect(formatStatus("COMPLETED")).toBe("Concluído");
-    expect(formatStatus("CoMpLeTeD")).toBe("Concluído");
-  });
-
-  it("should return 'Cancelado' for 'cancelled' (case-insensitive)", () => {
-    expect(formatStatus("cancelled")).toBe("Cancelado");
-    expect(formatStatus("CANCELLED")).toBe("Cancelado");
-    expect(formatStatus("CaNcElLeD")).toBe("Cancelado");
-  });
-
-  it("should return 'Desconhecido' for unknown values", () => {
-    expect(formatStatus("in progress")).toBe("Desconhecido");
-    expect(formatStatus("")).toBe("Desconhecido");
-    expect(formatStatus("random")).toBe("Desconhecido");
+  it("should handle null input", () => {
+    // @ts-expect-error - Testing runtime behavior with wrong type
+    const formattedDate = formatDate(null);
+    expect(formattedDate).toBe("Invalid Date");
   });
 });

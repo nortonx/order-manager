@@ -16,15 +16,15 @@ export function OrderSummary({
 }: OrderSummaryProps) {
   return (
     <div
-      className="order-summary mt-4 p-3 border rounded"
+      className="order-summary mt-4 p-3 border rounded text-sm"
       data-testid="order-summary"
     >
-      <h3 className="font-bold">Order Summary</h3>
-      <p>Symbol: {selectedAsset.symbol}</p>
-      <p>Type: {assetType === "buy" ? "Compra" : "Venda"}</p>
-      <p>Price per unit: {formatCurrency(selectedAsset.price ?? 0, "BRL")}</p>
-      <p>Quantity: {quantity}</p>
-      <p>Remaining Quantity: {selectedAsset.remainingQuantity - quantity}</p>
+      <h3 className="font-bold underline mb-2">Ativo Selecionado</h3>
+      <p>Instrumento: {selectedAsset.symbol}</p>
+      <p>Lado: {assetType === "compra" ? "Compra" : "Venda"}</p>
+      <p>Preço unitário: {formatCurrency(selectedAsset.price ?? 0, "BRL")}</p>
+      <p>Quantidade solicitada: {quantity}</p>
+      <p>Quantidade Restante: {selectedAsset.remainingQuantity - quantity}</p>
       <p className="font-bold">Total: {formatCurrency(totalPrice, "BRL")}</p>
     </div>
   );

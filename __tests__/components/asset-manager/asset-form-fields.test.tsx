@@ -1,11 +1,11 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import { AssetFormFields } from "@/app/components/asset-manager/asset-form-fields";
+import { AssetFormFields } from "@/components/asset-manager/asset-form-fields";
 import { RefObject, createRef } from "react";
 
 describe("AssetFormFields", () => {
   const defaultProps = {
     symbol: "PETR4",
-    assetType: "buy",
+    assetType: "compra",
     quantity: 10,
     totalPrice: 1000,
     searchFieldRef:
@@ -39,7 +39,7 @@ describe("AssetFormFields", () => {
     expect(onTypeChangeMock).toBeDefined();
 
     // Ensure the default props include the expected assetType
-    expect(defaultProps.assetType).toBe("buy");
+    expect(defaultProps.assetType).toBe("compra");
   });
 
   it("calls onQuantityChange when quantity input changes", () => {

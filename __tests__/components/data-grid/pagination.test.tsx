@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import { Pagination } from "@/app/components/data-grid/pagination";
+import { Pagination } from "@/components/data-grid/pagination";
 import type { Table } from "@tanstack/react-table";
 
 // Mock table object for testing

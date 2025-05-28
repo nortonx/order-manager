@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import { ActionButtons } from "@/app/components/asset-manager/action-buttons";
+import { ActionButtons } from "@/components/asset-manager/action-buttons";
 
 describe("ActionButtons", () => {
   it("renders both buttons", () => {

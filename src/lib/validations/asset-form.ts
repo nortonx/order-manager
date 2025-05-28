@@ -6,14 +6,14 @@ import { z } from "zod";
 export const assetFormSchema = z.object({
   symbol: z
     .string()
-    .min(1, "Símbolo do instrumento é obrigatório")
-    .max(10, "Símbolo não pode ter mais de 10 caracteres")
+    .min(1, "O campo Instrumento é obrigatório")
+    .max(10, "O campo Instrumento não pode ter mais de 10 caracteres")
     .regex(
       /^[A-Z0-9]+$/,
-      "Símbolo deve conter apenas letras maiúsculas e números"
+      "O campo Instrumento deve conter apenas letras maiúsculas e números"
     ),
 
-  assetType: z.enum(["buy", "sell"], {
+  assetType: z.enum(["compra", "venda"], {
     errorMap: () => ({ message: "Tipo deve ser 'Compra' ou 'Venda'" }),
   }),
 

@@ -1,6 +1,6 @@
 export enum Status {
-  OPEN = "OPEN",
-  CLOSED = "CLOSED",
-  PENDING = "PENDING",
-  CANCELLED = "CANCELLED",
+  OPEN = "aberta",
+  CLOSED = "fechada",
+  PENDING = "pendente",
+  CANCELLED = "cancelado",
 }

@@ -9,7 +9,7 @@ describe("Asset Form Validation", () => {
   describe("assetFormSchema", () => {
     const validData: AssetFormData = {
       symbol: "PETR4",
-      assetType: "buy",
+      assetType: "compra",
       quantity: 100,
       selectedAssetId: "123",
     };
@@ -28,7 +28,7 @@ describe("Asset Form Validation", () => {
         expect(result.success).toBe(false);
         if (!result.success) {
           expect(result.error.errors[0].message).toBe(
-            "Símbolo do instrumento é obrigatório"
+            "O campo Instrumento é obrigatório"
           );
         }
       });
@@ -41,7 +41,7 @@ describe("Asset Form Validation", () => {
         expect(result.success).toBe(false);
         if (!result.success) {
           expect(result.error.errors[0].message).toBe(
-            "Símbolo não pode ter mais de 10 caracteres"
+            "O campo Instrumento não pode ter mais de 10 caracteres"
           );
         }
       });
@@ -54,7 +54,7 @@ describe("Asset Form Validation", () => {
         expect(result.success).toBe(false);
         if (!result.success) {
           expect(result.error.errors[0].message).toBe(
-            "Símbolo deve conter apenas letras maiúsculas e números"
+            "O campo Instrumento deve conter apenas letras maiúsculas e números"
           );
         }
       });
@@ -72,18 +72,18 @@ describe("Asset Form Validation", () => {
     });
 
     describe("assetType validation", () => {
-      it("should accept 'buy'", () => {
+      it("should accept 'compra'", () => {
         const result = assetFormSchema.safeParse({
           ...validData,
-          assetType: "buy",
+          assetType: "compra",
         });
         expect(result.success).toBe(true);
       });
 
-      it("should accept 'sell'", () => {
+      it("should accept 'venda'", () => {
         const result = assetFormSchema.safeParse({
           ...validData,
-          assetType: "sell",
+          assetType: "venda",
         });
         expect(result.success).toBe(true);
       });
@@ -91,7 +91,7 @@ describe("Asset Form Validation", () => {
       it("should reject invalid type", () => {
         const result = assetFormSchema.safeParse({
           ...validData,
-          assetType: "hold" as any,
+          assetType: "hold" as unknown as AssetFormData["assetType"],
         });
         expect(result.success).toBe(false);
         if (!result.success) {
@@ -156,7 +156,7 @@ describe("Asset Form Validation", () => {
       it("should reject non-number quantity", () => {
         const result = assetFormSchema.safeParse({
           ...validData,
-          quantity: "invalid" as any,
+          quantity: "invalid" as unknown as number,
         });
         expect(result.success).toBe(false);
         if (!result.success) {
@@ -201,7 +201,7 @@ describe("Asset Form Validation", () => {
     it("should return error for invalid field", () => {
       const result = validateField("symbol", "");
       expect(result.success).toBe(false);
-      expect(result.error).toBe("Símbolo do instrumento é obrigatório");
+      expect(result.error).toBe("O campo Instrumento é obrigatório");
     });
 
     it("should handle validation errors gracefully", () => {
@@ -214,7 +214,7 @@ describe("Asset Form Validation", () => {
   describe("validateAssetForm", () => {
     const validData: AssetFormData = {
       symbol: "PETR4",
-      assetType: "buy",
+      assetType: "compra",
       quantity: 100,
       selectedAssetId: "123",
     };
@@ -228,7 +228,7 @@ describe("Asset Form Validation", () => {
     it("should return multiple errors for invalid form", () => {
       const invalidData: Partial<AssetFormData> = {
         symbol: "",
-        assetType: "invalid" as any,
+        assetType: "invalid" as unknown as AssetFormData["assetType"],
         quantity: 0,
         selectedAssetId: "",
       };
@@ -237,7 +237,7 @@ describe("Asset Form Validation", () => {
       expect(result.success).toBe(false);
       expect(Object.keys(result.errors)).toHaveLength(4);
       expect(result.errors.symbol).toBe(
-        "Símbolo deve conter apenas letras maiúsculas e números"
+        "O campo Instrumento deve conter apenas letras maiúsculas e números"
       );
       expect(result.errors.assetType).toBe("Tipo deve ser 'Compra' ou 'Venda'");
       expect(result.errors.quantity).toBe("Quantidade deve ser pelo menos 1");
@@ -254,8 +254,8 @@ describe("Asset Form Validation", () => {
 
       const result = validateAssetForm(partialData);
       expect(result.success).toBe(false);
-      expect(result.errors.assetType).toContain("Tipo");
-      expect(result.errors.selectedAssetId).toContain("Required");
+      expect(result.errors.assetType).toBe("Tipo deve ser 'Compra' ou 'Venda'");
+      expect(result.errors.selectedAssetId).toBe("Required");
     });
   });
 });
