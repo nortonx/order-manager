@@ -198,9 +198,10 @@ export default function AssetForm() {
       useOrderStore.getState().addOrder({
         ...selectedAsset,
         totalPrice,
-        type: assetType,
+        type: "compra",
         requestedQuantity: quantity,
         remainingQuantity: selectedAsset.remainingQuantity - quantity,
+        status: "aberta",
       });
 
       useOrderStore.getState().triggerUpdate();

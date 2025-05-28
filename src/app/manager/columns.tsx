@@ -5,9 +5,8 @@ import { formatCurrency, formatDate } from "@/utils";
 import type { Order } from "@/types/order.type";
 import HeaderSortButton from "@/components/header-sort-button";
 import StatusButton from "@/components/asset-manager/status-button";
-import { Button } from "@/components/ui/button";
-import { CircleX } from "lucide-react";
 import { useOrderStore } from "@/store/useOrderStore";
+import ConfirmationDialog from "@/components/asset-manager/confirmation-dialog";
 
 export const columns: ColumnDef<Order>[] = [
   {
@@ -90,25 +89,13 @@ export const columns: ColumnDef<Order>[] = [
       </div>
     ),
     cell: ({ row }) => {
-      function handleCancel() {
-        useOrderStore.getState().removeOrder(row.original.id);
-      }
-
       const isAssetOpen =
         useOrderStore.getState().getOrderStatus(row.original.id) === "aberta";
 
       return (
         <div className="flex justify-evenly items-center gap-2">
           <StatusButton row={row.original} />
-          {isAssetOpen && (
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={handleCancel}
-            >
-              <CircleX className="h-4 w-4" />
-            </Button>
-          )}
+          {isAssetOpen && <ConfirmationDialog row={row.original} />}
         </div>
       );
     },

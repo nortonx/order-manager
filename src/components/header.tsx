@@ -24,7 +24,7 @@ export default function Header() {
         href="/"
         className="text-xl font-bold"
       >
-        Flowa Order Management
+        Flowa - Gerenciador de Ordens (Home)
       </Link>
       <div className="flex justify-between items-center gap-4">
         <div>
@@ -32,7 +32,7 @@ export default function Header() {
             href="/assets"
             className={getLinkClassName("/assets")}
           >
-            Assets
+            Ativos
           </Link>
         </div>
         <div>
@@ -40,7 +40,7 @@ export default function Header() {
             href="/manager"
             className={getLinkClassName("/manager")}
           >
-            Order Manager
+            Gerenciador de Ordens
           </Link>
         </div>
         <ModeToggle />
