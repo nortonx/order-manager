@@ -1,7 +1,7 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
-import { formatCurrency, formatSide, formatStatus, formatDate } from "@/utils";
+import { formatCurrency, formatDate } from "@/utils";
 import type { Order } from "@/types/order.type";
 import HeaderSortButton from "@/app/components/header-sort-button";
 
@@ -42,7 +42,7 @@ export const columns: ColumnDef<Order>[] = [
       </div>
     ),
     cell: ({ row }) => (
-      <div className="flex justify-center">{row.original.type}</div>
+      <div className="flex justify-center capitalize">{row.original.type}</div>
     ),
   },
   {

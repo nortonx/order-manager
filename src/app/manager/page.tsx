@@ -28,8 +28,8 @@ export default function OrderManagerPage() {
               data={data}
             />
           ) : (
-            <p className="max-w-fit mx-auto p-4">
-              <h1 className="font-bold text-xl">Nenhum resultado listado</h1>
+            <p className="max-w-fit mx-auto p-4 font-bold text-xl">
+              Nenhum resultado listado
             </p>
           )}
         </div>

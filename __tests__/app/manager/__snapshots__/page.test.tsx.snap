@@ -19,13 +19,9 @@ exports[`AssetsManagerPage renders the AssetsManager page 1`] = `
         data-testid="orders-table"
       >
         <p
-          class="max-w-fit mx-auto p-4"
+          class="max-w-fit mx-auto p-4 font-bold text-xl"
         >
-          <h1
-            class="font-bold text-xl"
-          >
-            Nenhum resultado listado
-          </h1>
+          Nenhum resultado listado
         </p>
       </div>
       <div
