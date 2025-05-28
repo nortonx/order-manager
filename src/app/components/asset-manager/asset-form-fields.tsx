@@ -31,9 +31,9 @@ interface FieldWrapperProps {
 
 function FieldWrapper({ children, error, label }: Readonly<FieldWrapperProps>) {
   return (
-    <div className="mb-2">
+    <div className="mb-4">
       {label && (
-        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
           {label}
         </label>
       )}
@@ -111,8 +111,8 @@ export function AssetFormFields({
               <SelectValue placeholder="Selecione: Compra ou Venda?" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="buy">Compra</SelectItem>
-              <SelectItem value="sell">Venda</SelectItem>
+              <SelectItem value="compra">Compra</SelectItem>
+              <SelectItem value="venda">Venda</SelectItem>
             </SelectContent>
           </Select>
         </div>

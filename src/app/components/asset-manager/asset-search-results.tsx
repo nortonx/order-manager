@@ -2,32 +2,32 @@ import { Button } from "@/app/components/ui/button";
 import { Asset } from "@/types/asset.type";
 import { formatCurrency } from "@/utils/currency";
 
-interface AssetSearchProps {
+interface AssetSearchResultsProps {
   results: Asset[];
   onSelectAsset: (asset: Asset) => void;
 }
 
-export function AssetSearch({
+export function AssetSearchResults({
   results,
   onSelectAsset,
-}: Readonly<AssetSearchProps>) {
+}: Readonly<AssetSearchResultsProps>) {
   return (
     <ul
-      className="filtered-assets-list mt-3"
-      data-testid="asset-search"
+      className="filtered-assets-list mt-4 text-sm"
+      data-testid="asset-search-results"
     >
       {results.length > 0 ? (
         results.map((asset) => (
           <li
             key={asset.id}
-            className="flex justify-between items-center border p-2 my-y"
+            className="flex justify-between items-center p-2"
           >
             <Button
               type="button"
               variant="outline"
               onClick={() => onSelectAsset(asset)}
               size="sm"
-              name="addAsset"
+              name="assetButton"
             >
               {asset.symbol}
             </Button>

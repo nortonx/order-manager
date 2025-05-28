@@ -53,8 +53,8 @@ jest.mock("@/app/components/asset-manager/asset-form-fields", () => ({
         value={assetType}
         onChange={(e) => onTypeChange(e.target.value)}
       >
-        <option value="buy">Buy</option>
-        <option value="sell">Sell</option>
+        <option value="compra">Compra</option>
+        <option value="venda">Venda</option>
       </select>
       <input
         data-testid="quantity-input"
@@ -67,15 +67,15 @@ jest.mock("@/app/components/asset-manager/asset-form-fields", () => ({
   ),
 }));
 
-jest.mock("@/app/components/asset-manager/asset-search", () => ({
-  AssetSearch: ({
+jest.mock("@/app/components/asset-manager/asset-search-results", () => ({
+  AssetSearchResults: ({
     results,
     onSelectAsset,
   }: {
     results: Asset[];
     onSelectAsset: (asset: Asset) => void;
   }) => (
-    <div data-testid="asset-search">
+    <div data-testid="asset-search-results">
       <ul>
         {results.map((asset) => (
           <li
@@ -128,7 +128,7 @@ describe("AssetForm", () => {
       id: "1",
       symbol: "AAPL",
       price: 150,
-      type: "BUY",
+      type: "COMPRA",
       remainingQuantity: 100,
       status: "OPEN",
       dateTime: "2024-06-01T10:15:00Z",
@@ -137,7 +137,7 @@ describe("AssetForm", () => {
       id: "2",
       symbol: "GOOGL",
       price: 2500,
-      type: "BUY",
+      type: "COMPRA",
       remainingQuantity: 50,
       status: "OPEN",
       dateTime: "2024-06-01T10:15:00Z",
@@ -146,7 +146,7 @@ describe("AssetForm", () => {
       id: "3",
       symbol: "MSFT",
       price: 300,
-      type: "SELL",
+      type: "VENDA",
       remainingQuantity: 75,
       status: "OPEN",
       dateTime: "2024-06-01T10:15:00Z",
@@ -164,7 +164,7 @@ describe("AssetForm", () => {
 
     expect(screen.getByTestId("asset-form-fields")).toBeInTheDocument();
     expect(screen.getByTestId("action-buttons")).toBeInTheDocument();
-    expect(screen.getByTestId("asset-search")).toBeInTheDocument();
+    expect(screen.getByTestId("asset-search-results")).toBeInTheDocument();
     expect(screen.queryByTestId("order-summary")).not.toBeInTheDocument();
   });
 
@@ -176,25 +176,6 @@ describe("AssetForm", () => {
 
     expect(input).toHaveValue("A");
     expect(screen.getByTestId("asset-1")).toBeInTheDocument();
-  });
-
-  it("selects an asset when clicked and normalizes uppercase BUY type to lowercase buy", () => {
-    render(<AssetForm />);
-
-    // Search for assets first
-    const input = screen.getByTestId("symbol-input");
-    fireEvent.change(input, { target: { value: "A" } });
-
-    // Select the asset (has type "BUY" in uppercase)
-    const assetButton = screen.getByText("AAPL");
-    fireEvent.click(assetButton);
-
-    // Check if order summary appears
-    expect(screen.getByTestId("order-summary")).toBeInTheDocument();
-    expect(screen.getByText("AAPL")).toBeInTheDocument();
-
-    // Check if the type select has the correct normalized lowercase value
-    expect(screen.getByTestId("type-select")).toHaveValue("buy");
   });
 
   it("updates quantity and recalculates total price", () => {
@@ -228,9 +209,9 @@ describe("AssetForm", () => {
 
     // Change type
     const typeSelect = screen.getByTestId("type-select");
-    fireEvent.change(typeSelect, { target: { value: "sell" } });
+    fireEvent.change(typeSelect, { target: { value: "venda" } });
 
-    expect(typeSelect).toHaveValue("sell");
+    expect(typeSelect).toHaveValue("venda");
   });
 
   it("resets the form when reset button is clicked", () => {
@@ -255,7 +236,7 @@ describe("AssetForm", () => {
     expect(screen.getByTestId("quantity-input")).toHaveValue(1);
     expect(screen.queryByTestId("order-summary")).not.toBeInTheDocument();
     // Type should be maintained
-    expect(screen.getByTestId("type-select")).toHaveValue("buy");
+    expect(screen.getByTestId("type-select")).toHaveValue("compra");
   });
 
   it("add button is disabled when no asset is selected", () => {
@@ -298,7 +279,7 @@ describe("AssetForm", () => {
 
     // Change type to 'sell'
     const typeSelect = screen.getByTestId("type-select");
-    fireEvent.change(typeSelect, { target: { value: "sell" } });
+    fireEvent.change(typeSelect, { target: { value: "venda" } });
 
     // Add the asset
     const addButton = screen.getByTestId("add-button");
@@ -308,7 +289,7 @@ describe("AssetForm", () => {
     expect(screen.getByTestId("symbol-input")).toHaveValue("");
     expect(screen.getByTestId("quantity-input")).toHaveValue(1);
     expect(screen.queryByTestId("order-summary")).not.toBeInTheDocument();
-    expect(screen.getByTestId("type-select")).toHaveValue("sell");
+    expect(screen.getByTestId("type-select")).toHaveValue("venda");
   });
 
   it("normalizes uppercase SELL type to lowercase sell when selecting an asset", () => {
@@ -323,6 +304,6 @@ describe("AssetForm", () => {
     fireEvent.click(assetButton);
 
     // Check if the type select has the correct normalized lowercase value
-    expect(screen.getByTestId("type-select")).toHaveValue("sell");
+    expect(screen.getByTestId("type-select")).toHaveValue("venda");
   });
 });

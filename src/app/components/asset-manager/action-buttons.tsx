@@ -20,7 +20,7 @@ export function ActionButtons({
       </Button>
       <Button
         type="button"
-        variant="secondary"
+        variant="outline"
         onClick={onReset}
         size="sm"
       >

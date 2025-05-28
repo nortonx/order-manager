@@ -4,6 +4,7 @@ import { ColumnDef } from "@tanstack/react-table";
 import { formatCurrency, formatDate } from "@/utils";
 import type { Order } from "@/types/order.type";
 import HeaderSortButton from "@/app/components/header-sort-button";
+import StatusButton from "@/app/components/asset-manager/status-button";
 
 export const columns: ColumnDef<Order>[] = [
   {
@@ -41,9 +42,13 @@ export const columns: ColumnDef<Order>[] = [
         />
       </div>
     ),
-    cell: ({ row }) => (
-      <div className="flex justify-center capitalize">{row.original.type}</div>
-    ),
+    cell: ({ row }) => {
+      return (
+        <div className="flex justify-center capitalize">
+          {row.original.type}
+        </div>
+      );
+    },
   },
   {
     accessorKey: "price",
@@ -81,9 +86,7 @@ export const columns: ColumnDef<Order>[] = [
         <HeaderSortButton column={column} />
       </div>
     ),
-    cell: ({ row }) => (
-      <div className="flex justify-center">{row.original.status}</div>
-    ),
+    cell: ({ row }) => <StatusButton row={row.original} />,
   },
   {
     accessorKey: "dateTime",

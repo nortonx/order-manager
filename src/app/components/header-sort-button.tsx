@@ -18,7 +18,7 @@ export default function HeaderSortButton({
       <Button
         variant="ghost"
         onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-        className="capitalize"
+        className="capitalize font-bold"
       >
         {name ?? column.id}
         <ArrowUpDown className="h-4 w-4" />

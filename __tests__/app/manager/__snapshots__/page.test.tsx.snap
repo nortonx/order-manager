@@ -11,7 +11,7 @@ exports[`AssetsManagerPage renders the AssetsManager page 1`] = `
       Gerenciador de Ordens
     </h1>
     <div
-      class="grid grid-cols-12 gap-2 w-full p-2"
+      class="grid grid-cols-12 gap-2 w-full"
       data-testid="manager-page"
     >
       <div
@@ -41,10 +41,10 @@ exports[`AssetsManagerPage renders the AssetsManager page 1`] = `
               data-testid="asset-form-fields"
             >
               <div
-                class="mb-2"
+                class="mb-4"
               >
                 <label
-                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                 >
                   Instrumento
                 </label>
@@ -58,10 +58,10 @@ exports[`AssetsManagerPage renders the AssetsManager page 1`] = `
                 />
               </div>
               <div
-                class="mb-2"
+                class="mb-4"
               >
                 <label
-                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                 >
                   Tipo de Operação
                 </label>
@@ -113,12 +113,12 @@ exports[`AssetsManagerPage renders the AssetsManager page 1`] = `
                   >
                     <option
                       selected=""
-                      value="buy"
+                      value="compra"
                     >
                       Compra
                     </option>
                     <option
-                      value="sell"
+                      value="venda"
                     >
                       Venda
                     </option>
@@ -126,10 +126,10 @@ exports[`AssetsManagerPage renders the AssetsManager page 1`] = `
                 </div>
               </div>
               <div
-                class="mb-2"
+                class="mb-4"
               >
                 <label
-                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                 >
                   Quantidade
                 </label>
@@ -146,10 +146,10 @@ exports[`AssetsManagerPage renders the AssetsManager page 1`] = `
                 />
               </div>
               <div
-                class="mb-2"
+                class="mb-4"
               >
                 <label
-                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                 >
                   Preço Total
                 </label>
@@ -178,7 +178,7 @@ exports[`AssetsManagerPage renders the AssetsManager page 1`] = `
               Adicionar
             </button>
             <button
-              class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5"
+              class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5"
               data-slot="button"
               type="button"
             >
@@ -186,8 +186,8 @@ exports[`AssetsManagerPage renders the AssetsManager page 1`] = `
             </button>
           </div>
           <ul
-            class="filtered-assets-list mt-3"
-            data-testid="asset-search"
+            class="filtered-assets-list mt-4 text-sm"
+            data-testid="asset-search-results"
           >
             <li>
               Nenhum resultado listado

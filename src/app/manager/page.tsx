@@ -15,7 +15,7 @@ export default function OrderManagerPage() {
       <PageTitle name="Gerenciador de Ordens" />
 
       <div
-        className="grid grid-cols-12 gap-2 w-full p-2"
+        className="grid grid-cols-12 gap-2 w-full"
         data-testid="manager-page"
       >
         <div

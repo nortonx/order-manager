@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { Asset } from "@/types/asset.type";
 import { getAssets } from "@/actions";
 import { useOrderStore } from "@/store/useOrderStore";
-import { AssetSearch } from "./asset-search";
+import { AssetSearchResults } from "./asset-search-results";
 import { AssetFormFields } from "./asset-form-fields";
 import { OrderSummary } from "./order-summary";
 import { ActionButtons } from "./action-buttons";
@@ -21,7 +21,7 @@ export default function AssetForm() {
   const [symbol, setSymbol] = useState<string>("");
   const [selectedAsset, setSelectedAsset] = useState<Asset | null>(null);
   const [quantity, setQuantity] = useState<number>(1);
-  const [assetType, setAssetType] = useState<string>("buy"); // Default to "buy"
+  const [assetType, setAssetType] = useState<string>("compra"); // Default to "compra"
   const [totalPrice, setTotalPrice] = useState<number>(0);
 
   // Validation state
@@ -47,7 +47,7 @@ export default function AssetForm() {
 
     const formData: Partial<AssetFormData> = {
       symbol: symbol.trim(),
-      assetType: assetType as "buy" | "sell",
+      assetType: assetType as "compra" | "venda",
       quantity,
       selectedAssetId: selectedAsset?.id ?? "",
     };
@@ -111,11 +111,11 @@ export default function AssetForm() {
 
     // Normalize asset type to lowercase to match form select values
     // Map uppercase BUY/SELL to lowercase buy/sell as expected by the select component
-    let normalizedType = "buy"; // Default value
+    let normalizedType = "compra"; // Default value
     if (asset.type) {
       const assetType = asset.type.toString().toLowerCase();
       // Ensure we only have the expected values
-      normalizedType = assetType === "sell" ? "sell" : "buy";
+      normalizedType = assetType === "venda" ? "venda" : "compra";
     }
     setAssetType(normalizedType);
 
@@ -168,7 +168,7 @@ export default function AssetForm() {
     // Final validation before submission
     const formData: AssetFormData = {
       symbol: symbol.trim(),
-      assetType: assetType as "buy" | "sell",
+      assetType: assetType as "compra" | "venda",
       quantity,
       selectedAssetId: selectedAsset?.id ?? "",
     };
@@ -263,7 +263,7 @@ export default function AssetForm() {
         </div>
       )}
 
-      <AssetSearch
+      <AssetSearchResults
         results={result}
         onSelectAsset={handleSelectedAsset}
       />

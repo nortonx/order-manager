@@ -4,7 +4,7 @@ import { ColumnDef } from "@tanstack/react-table";
 import { formatCurrency, formatDate } from "@/utils";
 import type { Order } from "@/types/order.type";
 import HeaderSortButton from "@/app/components/header-sort-button";
-import { Button } from "@/app/components/ui/button";
+import StatusButton from "@/app/components/asset-manager/status-button";
 
 export const columnsAssets: ColumnDef<Order>[] = [
   {
@@ -43,7 +43,11 @@ export const columnsAssets: ColumnDef<Order>[] = [
       </div>
     ),
     cell: ({ row }) => {
-      return <div className="flex justify-center">{row.original.type}</div>;
+      return (
+        <div className="flex justify-center capitalize">
+          {row.original.type}
+        </div>
+      );
     },
   },
   {
@@ -74,24 +78,7 @@ export const columnsAssets: ColumnDef<Order>[] = [
       </div>
     ),
     cell: ({ row }) => {
-      const open =
-        "border-green-700 dark:border-green-500 text-green-700 dark:text-green-500 hover:bg-green-50 dark:hover:bg-green-900/20";
-      const closed =
-        "border-red-700 dark:border-red-500 text-red-700 dark:text-red-500 hover:bg-red-50 dark:hover:bg-red-900/20";
-      const statusClass =
-        row.original.status.toLowerCase() === "aberto" ? open : closed;
-
-      return (
-        <div className="flex justify-center">
-          <Button
-            variant="outline"
-            size="sm"
-            className={`${statusClass} capitalize`}
-          >
-            {row.original.status}
-          </Button>
-        </div>
-      );
+      return <StatusButton row={row.original} />;
     },
   },
   {

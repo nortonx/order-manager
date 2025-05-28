@@ -1,14 +1,14 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import { AssetSearch } from "@/app/components/asset-manager/asset-search";
+import { AssetSearchResults } from "@/app/components/asset-manager/asset-search-results";
 import { Asset } from "@/types/asset.type";
 
-describe("AssetSearch", () => {
+describe("AssetSearchResults", () => {
   const mockAssets: Asset[] = [
     {
       id: "1",
       symbol: "AAPL",
       price: 150,
-      type: "BUY",
+      type: "compra",
       remainingQuantity: 100,
       status: "OPEN",
       dateTime: "2024-06-01T10:15:00Z",
@@ -17,7 +17,7 @@ describe("AssetSearch", () => {
       id: "2",
       symbol: "GOOGL",
       price: 2500,
-      type: "BUY",
+      type: "compra",
       remainingQuantity: 50,
       status: "OPEN",
       dateTime: "2024-06-01T10:15:00Z",
@@ -26,7 +26,7 @@ describe("AssetSearch", () => {
 
   it("renders asset list when results are present", () => {
     render(
-      <AssetSearch
+      <AssetSearchResults
         results={mockAssets}
         onSelectAsset={jest.fn()}
       />
@@ -40,7 +40,7 @@ describe("AssetSearch", () => {
 
   it('renders "Nenhum resultado listado" when results are empty', () => {
     render(
-      <AssetSearch
+      <AssetSearchResults
         results={[]}
         onSelectAsset={jest.fn()}
       />
@@ -51,7 +51,7 @@ describe("AssetSearch", () => {
   it("calls onSelectAsset with correct asset when button is clicked", () => {
     const onSelectAsset = jest.fn();
     render(
-      <AssetSearch
+      <AssetSearchResults
         results={mockAssets}
         onSelectAsset={onSelectAsset}
       />
@@ -63,7 +63,7 @@ describe("AssetSearch", () => {
 
   it("displays formatted price for each asset", () => {
     render(
-      <AssetSearch
+      <AssetSearchResults
         results={mockAssets}
         onSelectAsset={jest.fn()}
       />

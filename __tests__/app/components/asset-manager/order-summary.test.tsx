@@ -14,12 +14,12 @@ describe("OrderSummary Component", () => {
       id: "123",
       symbol: "PETR4",
       price: 28.45,
-      type: "BUY",
+      type: "compra",
       remainingQuantity: 100,
-      status: "ACTIVE",
+      status: "aberto",
       dateTime: new Date().toISOString(),
     },
-    assetType: "buy", // This is already normalized for the UI
+    assetType: "compra",
     quantity: 100,
     totalPrice: 2845,
   };
@@ -32,19 +32,19 @@ describe("OrderSummary Component", () => {
     render(<OrderSummary {...defaultProps} />);
 
     // Check for heading
-    expect(screen.getByText("Order Summary")).toBeInTheDocument();
+    expect(screen.getByText("Ativo Selecionado")).toBeInTheDocument();
 
     // Check for symbol
-    expect(screen.getByText("Symbol: PETR4")).toBeInTheDocument();
+    expect(screen.getByText("Instrumento: PETR4")).toBeInTheDocument();
 
     // Check for type (buy)
-    expect(screen.getByText("Type: Compra")).toBeInTheDocument();
+    expect(screen.getByText("Lado: Compra")).toBeInTheDocument();
 
     // Check for price display
-    expect(screen.getByText("Price per unit: R$ 28.45")).toBeInTheDocument();
+    expect(screen.getByText("Preço unitário: R$ 28.45")).toBeInTheDocument();
 
     // Check for quantity
-    expect(screen.getByText("Quantity: 100")).toBeInTheDocument();
+    expect(screen.getByText("Quantidade solicitada: 100")).toBeInTheDocument();
 
     // Check for total price
     expect(screen.getByText("Total: R$ 2845.00")).toBeInTheDocument();
@@ -58,12 +58,12 @@ describe("OrderSummary Component", () => {
     render(
       <OrderSummary
         {...defaultProps}
-        assetType="sell"
+        assetType="venda"
       />
     );
 
     // Check that it displays "Venda" for sell type
-    expect(screen.getByText("Type: Venda")).toBeInTheDocument();
+    expect(screen.getByText("Lado: Venda")).toBeInTheDocument();
   });
 
   it("handles missing price gracefully", () => {
@@ -72,10 +72,10 @@ describe("OrderSummary Component", () => {
       selectedAsset: {
         id: "123",
         symbol: "PETR4",
-        type: "buy",
+        type: "compra",
         // price is missing
         remainingQuantity: 100,
-        status: "active",
+        status: "aberto",
         dateTime: new Date().toISOString(),
       },
     };
@@ -83,7 +83,7 @@ describe("OrderSummary Component", () => {
     render(<OrderSummary {...assetWithoutPrice} />);
 
     // Should use fallback value of 0
-    expect(screen.getByText("Price per unit: R$ 0.00")).toBeInTheDocument();
+    expect(screen.getByText("Preço unitário: R$ 0.00")).toBeInTheDocument();
 
     // Verify currency formatter was called with 0
     expect(formatCurrency).toHaveBeenCalledWith(0, "BRL");
@@ -99,7 +99,7 @@ describe("OrderSummary Component", () => {
     render(<OrderSummary {...customProps} />);
 
     // Check for updated quantity and total
-    expect(screen.getByText("Quantity: 50")).toBeInTheDocument();
+    expect(screen.getByText("Quantidade solicitada: 50")).toBeInTheDocument();
     expect(screen.getByText("Total: R$ 1422.50")).toBeInTheDocument();
 
     expect(formatCurrency).toHaveBeenCalledWith(1422.5, "BRL");
