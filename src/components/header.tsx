@@ -24,7 +24,7 @@ export default function Header() {
         href="/"
         className="text-xl font-bold"
       >
-        Flowa - Gerenciador de Ordens (Home)
+        Flowa - Aplicação Order Manager
       </Link>
       <div className="flex justify-between items-center gap-4">
         <div>
