@@ -1,6 +1,6 @@
 Flowa Order Manager — aplicação [Next.js](https://nextjs.org) para gerenciamento de ordens de ativos.
 
-## Iniciando
+## Getting Started
 
 > Este projeto usa **pnpm** como gerenciador de pacotes (fixado via campo `packageManager`). Habilite com `corepack enable` ou siga https://pnpm.io/installation. Usar npm/yarn ignora os `overrides` de segurança definidos em `pnpm-workspace.yaml`.
 
@@ -10,30 +10,30 @@ Instalação de dependências:
 pnpm install
 ```
 
-Iniciar o servidor de desenvolvimento:
+Start the development server:
 
 ```bash
 pnpm dev
 ```
 
-Abra o link [http://localhost:3000](http://localhost:3000) no seu navegador para ver a aplicação.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-Instruções:
+Instructions:
 
-- A aplicação possui 3 links principais:
+- The application has 3 main links:
 
-  - **Home**: A página inicial da aplicação.
-  - **Ativos**: Uma página que mostra lista de ativos, obtida de dados locais (mocked).
-  - **Gerenciador de Ordens**: Uma página que contém o data-grid vazio e um formulário para busca de ativos.
+  - **Home**: The application's home page.
+  - **Assets**: A page that shows a list of assets, obtained from local data (mocked).
+  - **Order Manager**: A page that contains an empty data grid and a form for searching assets.
 
-    - O formulário permite buscar ativos por nome (Instrumento/Ticker).
-    - Ao digitar o nome de um dos ativos da lista exibida na página de Ativos, o formulário lista os ativos que correspondem à string digitada no campo.
-    - A partir da listagem, o nome do ativo é exibido em um botão, que o usuário pode clicar para selecionar o mesmo.
-    - No formulário, o usuário pode alterar o valor do campo "Quantidade" para definir a quantidade de ativos que deseja comprar.
-    - Após clicar no botão adicionar, o ativo é adicionado ao data-grid. Ao lado do indicador de "Status", o usuário verá um botão de cancelamento, que ao ser clicado remove o ativo do data-grid com um modal de confirmação.
-    - Caso o ativo não seja cancelado, após 8 segundos, o status do ativo é alterado para "Fechado" e o botão de cancelamento é removido.
+    - The form allows searching for assets by name (Instrument/Ticker).
+    - When typing the name of one of the assets from the list displayed on the Assets page, the form lists the assets that match the string typed in the field.
+    - From the listing, the asset name is displayed on a button that the user can click to select it.
+    - In the form, the user can change the value of the "Quantity" field to define the quantity of assets they want to buy.
+    - After clicking the add button, the asset is added to the data grid. Next to the "Status" indicator, the user will see a cancel button, which when clicked removes the asset from the data grid with a confirmation modal.
+    - If the asset is not canceled, after 8 seconds, the asset status changes to "Closed" and the cancel button is removed.
 
-    ## Testes
+    ## Testing
 
     - A aplicação possui testes unitários e de integração.
     - A cobertura de testes está acima de 80%
@@ -41,7 +41,7 @@ Instruções:
     - Foram criados, para o DX (Developer Experience), scripts de análise estática de código, linting e formatação de código.
     - Um script chamado "precommit" (`pnpm precommit`) roda linting, formatação, testes e build. Rode-o manualmente antes de commitar: caso existam erros, faça os ajustes necessários e rode novamente. Se não houver erros, o CI vai rodar sem problemas no Github.
 
-    ## Stack utilizada
+    ## Tech Stack
 
     - Next.js
     - Zod (Validação)
