@@ -9,42 +9,46 @@ export default function Header() {
   const pathname = usePathname();
 
   const getLinkClassName = (href: string) => {
-    const baseClasses = "text-lg font-bold";
-    const activeClasses = "active font-bold text-green-600 dark:text-green-400";
+    const baseClasses =
+      "text-sm font-medium text-muted-foreground transition-colors hover:text-foreground";
+    const activeClasses = "text-foreground";
 
     return pathname === href ? `${baseClasses} ${activeClasses}` : baseClasses;
   };
 
   return (
     <header
-      className="flex justify-between items-center mt-10 p-4 "
+      className="sticky top-0 z-30 flex items-center justify-between gap-4 border-b border-border bg-background/80 py-4 backdrop-blur"
       data-testid="header-component"
     >
       <Link
         href="/"
-        className="text-xl font-bold"
+        className="flex items-baseline gap-2"
       >
-        Flowa - Aplicação Order Manager
+        <span
+          className="h-2.5 w-2.5 self-center rounded-full bg-primary"
+          aria-hidden="true"
+        />
+        <span className="text-lg font-bold tracking-tight">Flowa</span>
+        <span className="hidden text-sm text-muted-foreground sm:inline">
+          Order Manager
+        </span>
       </Link>
-      <div className="flex justify-between items-center gap-4">
-        <div>
-          <Link
-            href="/assets"
-            className={getLinkClassName("/assets")}
-          >
-            Ativos
-          </Link>
-        </div>
-        <div>
-          <Link
-            href="/manager"
-            className={getLinkClassName("/manager")}
-          >
-            Gerenciador de Ordens
-          </Link>
-        </div>
+      <nav className="flex items-center gap-6">
+        <Link
+          href="/assets"
+          className={getLinkClassName("/assets")}
+        >
+          Ativos
+        </Link>
+        <Link
+          href="/manager"
+          className={getLinkClassName("/manager")}
+        >
+          Gerenciador de Ordens
+        </Link>
         <ModeToggle />
-      </div>
+      </nav>
     </header>
   );
 }

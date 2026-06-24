@@ -60,15 +60,21 @@ export function DataTable<TData, TValue>({
   return (
     <>
       <div
-        className="rounded-md border"
+        className="overflow-x-auto"
         data-testid="data-table"
       >
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
-              <TableRow key={headerGroup.id}>
+              <TableRow
+                key={headerGroup.id}
+                className="border-border bg-muted/40 hover:bg-muted/40"
+              >
                 {headerGroup.headers.map((header) => (
-                  <TableHead key={header.id}>
+                  <TableHead
+                    key={header.id}
+                    className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                  >
                     {header.isPlaceholder
                       ? null
                       : flexRender(
@@ -83,9 +89,15 @@ export function DataTable<TData, TValue>({
           <TableBody>
             {table.getRowModel().rows?.length ? (
               table.getRowModel().rows.map((row) => (
-                <TableRow key={row.id}>
+                <TableRow
+                  key={row.id}
+                  className="border-border transition-colors hover:bg-muted/30"
+                >
                   {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id}>
+                    <TableCell
+                      key={cell.id}
+                      className="text-sm tabular-nums"
+                    >
                       {flexRender(
                         cell.column.columnDef.cell,
                         cell.getContext()
@@ -98,7 +110,7 @@ export function DataTable<TData, TValue>({
               <TableRow>
                 <TableCell
                   colSpan={columns.length}
-                  className="h-24 text-center"
+                  className="h-24 text-center text-muted-foreground"
                 >
                   Sem resultados.
                 </TableCell>

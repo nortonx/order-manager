@@ -35,11 +35,11 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="container mx-auto w-full px-4 dark:text-white text-slate-900">
+          <div className="container mx-auto w-full px-4">
             <Header />
             <main className="my-10">{children}</main>
           </div>
