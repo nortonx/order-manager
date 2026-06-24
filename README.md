@@ -1,29 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Flowa Order Manager — aplicação [Next.js](https://nextjs.org) para gerenciamento de ordens de ativos.
 
 ## Getting Started
 
-Install dependencies:
+> Este projeto usa **pnpm** como gerenciador de pacotes (fixado via campo `packageManager`). Habilite com `corepack enable` ou siga https://pnpm.io/installation. Usar npm/yarn ignora os `overrides` de segurança definidos em `pnpm-workspace.yaml`.
+
+Instalação de dependências:
 
 ```bash
-npm install
-# or
-yarn install
-# or
 pnpm install
-# or
-bun install
 ```
 
 Start the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
@@ -45,11 +35,11 @@ Instructions:
 
     ## Testing
 
-    - The application has unit and integration tests.
-    - Test coverage is above 80%
-    - GitHub Actions pipelines were created to run tests and verify test coverage.
-    - For DX (Developer Experience), static code analysis, linting, and code formatting scripts were created.
-    - An NPM script called "precommit" was created to run linting and code formatting scripts before each commit. This script checks for linting and formatting errors. If there are errors, make the necessary adjustments and run it again. If there are no errors, the CI will run without issues on GitHub.
+    - A aplicação possui testes unitários e de integração.
+    - A cobertura de testes está acima de 80%
+    - Foram criados Pipelines no GitHub Actions para rodar os testes e verificar a cobertura de testes.
+    - Foram criados, para o DX (Developer Experience), scripts de análise estática de código, linting e formatação de código.
+    - Um script chamado "precommit" (`pnpm precommit`) roda linting, formatação, testes e build. Rode-o manualmente antes de commitar: caso existam erros, faça os ajustes necessários e rode novamente. Se não houver erros, o CI vai rodar sem problemas no Github.
 
     ## Tech Stack
 
@@ -61,3 +51,9 @@ Instructions:
     - Playwright (End-to-End Testing Framework)
     - Prettier (Formatting)
     - ESLint (Linting and Formatting)
+
+## Convenções de dependências
+
+- **Gerenciador de pacotes**: pnpm é obrigatório. `packageManager` fixa a versão exata para o corepack; `engines.pnpm` define o piso mínimo. `.npmrc` tem `engine-strict=true` para falhar instalações com a ferramenta/Node errados.
+- **Node**: `.nvmrc` fixa a versão exata usada localmente e no CI (lida via `node-version-file`); `engines.node` é apenas o piso mínimo.
+- **Pinning**: `next`, `eslint-config-next` e `prettier` são fixados em versão exata (sem `^`) para reprodutibilidade do toolchain e do `format:check`; as demais dependências usam faixas com `^`. `next` e `eslint-config-next` devem subir juntos. Ao subir o `next`, acrescente a nova versão exata em `minimumReleaseAgeExclude` no `pnpm-workspace.yaml`, senão a janela de quarentena (minimum-release-age) bloqueia a instalação.
