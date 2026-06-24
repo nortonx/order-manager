@@ -1,0 +1,17 @@
+# Native packages allowed to run install build scripts (blocked by default).
+allowBuilds:
+  sharp: true
+  unrs-resolver: true
+# Security overrides: force transitive deps off vulnerable versions.
+#   postcss <8.5.10 -> ReDoS (GHSA-qx2v-qp2m-jg93); js-yaml <=4.1.1 (GHSA-h67p-54hq-rp68).
+overrides:
+  postcss@<8.5.10: ^8.5.15
+  js-yaml@<=4.1.1: ^4.1.2
+# Versions exempt from the minimum-release-age supply-chain quarantine
+# (known-good security patches pulled in ahead of the cooldown window).
+# When bumping `next`, append the new exact version here or the cooldown
+# window will block the install until the version ages out.
+minimumReleaseAgeExclude:
+  - next@15.3.3 || 15.3.6 || 15.3.7 || 15.3.9 || 15.4.5 || 15.4.7 || 15.5.10 || 15.5.13 || 15.5.14 || 15.5.15 || 15.5.16 || 15.5.18 || 15.5.19
+  - postcss@8.5.10
+  - js-yaml@4.1.2
