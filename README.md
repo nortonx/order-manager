@@ -1,29 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Flowa Order Manager — aplicação [Next.js](https://nextjs.org) para gerenciamento de ordens de ativos.
 
 ## Iniciando
+
+> Este projeto usa **pnpm** como gerenciador de pacotes (fixado via campo `packageManager`). Habilite com `corepack enable` ou siga https://pnpm.io/installation. Usar npm/yarn ignora os `overrides` de segurança definidos em `pnpm-workspace.yaml`.
 
 Instalação de dependências:
 
 ```bash
-npm install
-# or
-yarn install
-# or
 pnpm install
-# or
-bun install
 ```
 
 Iniciar o servidor de desenvolvimento:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
 Abra o link [http://localhost:3000](http://localhost:3000) no seu navegador para ver a aplicação.
@@ -49,7 +39,7 @@ Instruções:
     - A cobertura de testes está acima de 80%
     - Foram criados Pipelines no GitHub Actions para rodar os testes e verificar a cobertura de testes.
     - Foram criados, para o DX (Developer Experience), scripts de análise estática de código, linting e formatação de código.
-    - Um script NPM chamado "precommit" foi criado para rodar os scripts de linting e formatação de código antes de cada commit. Esse script verifica se há erros de linting e formatação. Caso existam erros, faça os ajustes necessários e o rode novamente. Se não houver erros, o CI vai rodar sem problemas no Github.
+    - Um script chamado "precommit" (`pnpm precommit`) roda linting, formatação, testes e build. Rode-o manualmente antes de commitar: caso existam erros, faça os ajustes necessários e rode novamente. Se não houver erros, o CI vai rodar sem problemas no Github.
 
     ## Stack utilizada
 
@@ -61,3 +51,9 @@ Instruções:
     - Playwright (End-to-End Testing Framework)
     - Prettier (Formatting)
     - ESLint (Linting and Formatting)
+
+## Convenções de dependências
+
+- **Gerenciador de pacotes**: pnpm é obrigatório. `packageManager` fixa a versão exata para o corepack; `engines.pnpm` define o piso mínimo. `.npmrc` tem `engine-strict=true` para falhar instalações com a ferramenta/Node errados.
+- **Node**: `.nvmrc` fixa a versão exata usada localmente e no CI (lida via `node-version-file`); `engines.node` é apenas o piso mínimo.
+- **Pinning**: `next`, `eslint-config-next` e `prettier` são fixados em versão exata (sem `^`) para reprodutibilidade do toolchain e do `format:check`; as demais dependências usam faixas com `^`. `next` e `eslint-config-next` devem subir juntos. Ao subir o `next`, acrescente a nova versão exata em `minimumReleaseAgeExclude` no `pnpm-workspace.yaml`, senão a janela de quarentena (minimum-release-age) bloqueia a instalação.
