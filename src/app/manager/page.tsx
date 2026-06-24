@@ -11,15 +11,15 @@ export default function OrderManagerPage() {
   const data = store.orders;
 
   return (
-    <div className="w-full border rounded-sm p-2">
+    <div className="w-full">
       <PageTitle name="Gerenciador de Ordens" />
 
       <div
-        className="grid grid-cols-12 gap-2 w-full"
+        className="grid w-full grid-cols-1 gap-4 lg:grid-cols-12"
         data-testid="manager-page"
       >
         <div
-          className="col-span-10 w-full bg-white dark:bg-slate-800 rounded-lg shadow"
+          className="w-full overflow-hidden rounded-xl border border-border bg-card shadow-sm lg:col-span-9"
           data-testid="orders-table"
         >
           {store.orders.length > 0 ? (
@@ -28,13 +28,18 @@ export default function OrderManagerPage() {
               data={data}
             />
           ) : (
-            <p className="max-w-fit mx-auto p-4 font-bold text-xl">
-              Nenhum resultado listado
-            </p>
+            <div className="flex min-h-[16rem] flex-col items-center justify-center gap-1 p-8 text-center">
+              <p className="text-sm font-medium text-foreground">
+                Nenhum resultado listado
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Use o painel ao lado para buscar um ativo e registrar uma ordem.
+              </p>
+            </div>
           )}
         </div>
         <div
-          className="col-span-2 border border-slate-800 bg-white dark:bg-slate-800 rounded-lg shadow"
+          className="w-full rounded-xl border border-border bg-card shadow-sm lg:col-span-3"
           data-testid="manager-panel"
         >
           <AssetForm />

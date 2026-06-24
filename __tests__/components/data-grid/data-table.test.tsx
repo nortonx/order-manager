@@ -174,7 +174,9 @@ describe("DataTable", () => {
     );
 
     const tableContainer = screen.getByTestId("data-table");
-    expect(tableContainer).toHaveClass("rounded-md", "border");
+    // The card border/radius now lives on the parent panel; the table wrapper
+    // only handles horizontal overflow.
+    expect(tableContainer).toHaveClass("overflow-x-auto");
   });
 
   it("shows empty state with correct colspan", () => {
